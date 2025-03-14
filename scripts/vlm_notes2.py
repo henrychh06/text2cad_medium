@@ -39,22 +39,14 @@ def generate_shape_description(image_paths, device, vlm_pipe):
         return "Shape description not available."
     
     descriptions = []
-    
-    prompt = """
-[INST] This is an image of a Computer Aided Design (CAD) model.
-You are a senior CAD engineer who knows the object name, where and how the CAD model is used.
-Give an accurate natural language description about the CAD model to a junior CAD designer who can design it from your simple description.
-Wrap the description in the following tags <OBJECT> and </OBJECT>.
-Following are some bad examples:
-CAD model
-Metal object
-Abide by the following rules.
-Rules:
-Do not use words like - "blue", "shadow", "transparent", "metal", "plastic", "image", "black", "grey", "CAD model", "abstract", "orange", "purple", "golden", "green"
-Focus on shape, structure, and geometric features.
-Do not mention colors, materials, or rendering aspects.
-/INST]
-    """
+    prompt = ("This is an image of a Computer Aided Design (CAD) model. "
+              "You are a senior CAD engineer who knows the object name, where and how the CAD model is used. "
+              "Give an accurate natural language description about the CAD model to a junior CAD designer who can design it from your simple description. "
+              "Wrap the description in the following tags <OBJECT> and </OBJECT>. "
+              "Following are some bad examples: CAD model, Metal object. "
+              "Abide by the following rules: Do not use words like 'blue', 'shadow', 'transparent', 'metal', 'plastic', 'image', 'black', 'grey', 'CAD model', 'abstract', 'orange', 'purple', 'golden', 'green'. "
+              "Focus on shape, structure, and geometric features. "
+              "Do not mention colors, materials, or rendering aspects.")
     
     for img_path in image_paths:
         try:
@@ -65,9 +57,20 @@ Do not mention colors, materials, or rendering aspects.
             continue
         
         try:
-            # Enviamos el prompt y la imagen a la pipeline
-            output = vlm_pipe({"text": prompt, "image": image})
+            # Construimos el mensaje con la estructura requerida:
+            messages = [
+                {
+                    "role": "user",
+                    "content": [
+                        {"type": "image", "image": image},
+                        {"type": "text", "text": prompt}
+                    ]
+                }
+            ]
+            # Llamamos a la pipeline pasando el mensaje en el parámetro `text` (o `input`, según el modelo)
+            output = vlm_pipe(text=messages, max_new_tokens=100)
             description = output[0].get('generated_text', "").strip()
+            # Si la respuesta incluye un prefijo innecesario, lo quitamos
             if ":" in description:
                 description = description.split(":", 1)[1].strip()
             print(f"[DEBUG] Descripción generada para {img_path}: {description}")
