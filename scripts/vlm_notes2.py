@@ -39,14 +39,21 @@ def generate_shape_description(image_paths, device, vlm_pipe):
         return "Shape description not available."
     
     descriptions = []
-    prompt = ("This is an image of a Computer Aided Design (CAD) model. "
-              "You are a senior CAD engineer who knows the object name, where and how the CAD model is used. "
-              "Give an accurate natural language description about the CAD model to a junior CAD designer who can design it from your simple description. "
-              "Wrap the description in the following tags <OBJECT> and </OBJECT>. "
-              "Following are some bad examples: CAD model, Metal object. "
-              "Abide by the following rules: Do not use words like 'blue', 'shadow', 'transparent', 'metal', 'plastic', 'image', 'black', 'grey', 'CAD model', 'abstract', 'orange', 'purple', 'golden', 'green'. "
-              "Focus on shape, structure, and geometric features. "
-              "Do not mention colors, materials, or rendering aspects.")
+    prompt = """
+[INST] This is an image of a Computer Aided Design (CAD) model.
+You are a senior CAD engineer who knows the object name, where and how the CAD model is used.
+Give an accurate natural language description about the CAD model to a junior CAD designer who can design it from your simple description.
+Wrap the description in the following tags <OBJECT> and </OBJECT>.
+Following are some bad examples:
+CAD model
+Metal object
+Abide by the following rules.
+Rules:
+Do not use words like - "blue", "shadow", "transparent", "metal", "plastic", "image", "black", "grey", "CAD model", "abstract", "orange", "purple", "golden", "green"
+Focus on shape, structure, and geometric features.
+Do not mention colors, materials, or rendering aspects.
+/INST]
+    """
     
     for img_path in image_paths:
         try:
@@ -57,7 +64,6 @@ def generate_shape_description(image_paths, device, vlm_pipe):
             continue
         
         try:
-            # Construimos el mensaje con la estructura requerida:
             messages = [
                 {
                     "role": "user",
@@ -67,12 +73,13 @@ def generate_shape_description(image_paths, device, vlm_pipe):
                     ]
                 }
             ]
-            # Llamamos a la pipeline pasando el mensaje en el parámetro `text` (o `input`, según el modelo)
+            # Llamada a la pipeline con el parámetro 'text'
             output = vlm_pipe(text=messages, max_new_tokens=100)
-            description = output[0].get('generated_text', "").strip()
-            # Si la respuesta incluye un prefijo innecesario, lo quitamos
-            if ":" in description:
-                description = description.split(":", 1)[1].strip()
+            gen_text = output[0].get('generated_text', "")
+            if isinstance(gen_text, list):
+                description = " ".join(str(x) for x in gen_text).strip()
+            else:
+                description = gen_text.strip()
             print(f"[DEBUG] Descripción generada para {img_path}: {description}")
             descriptions.append(description)
         except Exception as e:
@@ -82,6 +89,7 @@ def generate_shape_description(image_paths, device, vlm_pipe):
     combined = " ".join(descriptions)
     print(f"[DEBUG] Descripción combinada (longitud {len(combined)} caracteres)")
     return combined
+
 
 def process_cad_file(uid, json_path, renders_base_dir, output_dir, device, args, vlm_pipe):
     try:
