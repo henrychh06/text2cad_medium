@@ -108,6 +108,7 @@ def main(args):
             "image-text-to-text",
             model="llava-hf/llama3-llava-next-8b-hf",
             device=0 if device == "cuda" else -1,
+            torch_dtype=torch.float16,  # Reduce el consumo de memoria
             low_cpu_mem_usage=True,
             trust_remote_code=True
         )
