@@ -52,14 +52,12 @@ def generate_shape_description(image_paths, device, vlm_pipe):
     
     for img_path in image_paths:
         try:
-            print(f"[DEBUG] Procesando imagen: {img_path}")
             image = Image.open(img_path).convert("RGB")
         except Exception as e:
             print(f"[DEBUG] Error abriendo {img_path}: {e}")
             continue
         
         try:
-            # Construir la conversación en formato de lista de mensajes.
             messages = [
                 {
                     "role": "user",
@@ -69,23 +67,19 @@ def generate_shape_description(image_paths, device, vlm_pipe):
                     ]
                 }
             ]
-            # Llamada a la pipeline. Nota: usamos el parámetro 'text' para pasar la conversación.
             output = vlm_pipe(text=messages, max_new_tokens=100)
-            print(f"[DEBUG] Salida de pipeline: {output}")
-            # Extraemos la descripción desde 'generated_text'
-            description = output[0].get('generated_text', '')
-            if isinstance(description, list):
-                description = " ".join(str(x) for x in description).strip()
+            # Extraemos solo el contenido generado
+            gen_text = output[0].get('generated_text', '')
+            if isinstance(gen_text, list):
+                description = " ".join(str(x) for x in gen_text).strip()
             else:
-                description = description.strip()
-            print(f"[DEBUG] Descripción generada para {img_path}: {description}")
+                description = gen_text.strip()
             descriptions.append(description)
         except Exception as e:
             print(f"[DEBUG] Error generando descripción para {img_path}: {e}")
             continue
     
     combined = " ".join(descriptions)
-    print(f"[DEBUG] Descripción combinada (longitud {len(combined)} caracteres)")
     return combined
 
 
