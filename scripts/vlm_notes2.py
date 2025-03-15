@@ -52,34 +52,39 @@ def generate_shape_description(image_paths, device, vlm_pipe):
     
     for img_path in image_paths:
         try:
-            image = Image.open(img_path).convert("RGB")
+            # Ahora no cargamos la imagen con PIL, sino usamos la ruta directamente.
+            print(f"[DEBUG] Procesando imagen: {img_path}")
         except Exception as e:
-            print(f"[DEBUG] Error abriendo {img_path}: {e}")
+            print(f"[DEBUG] Error procesando {img_path}: {e}")
             continue
         
         try:
+            # Construimos la conversación usando "url" en lugar de "image"
             messages = [
                 {
                     "role": "user",
                     "content": [
-                        {"type": "image", "image": image},
+                        {"type": "image", "url": img_path},
                         {"type": "text", "text": prompt}
                     ]
                 }
             ]
+            # Llamamos a la pipeline con el parámetro 'text'
             output = vlm_pipe(text=messages, max_new_tokens=100)
-            # Extraemos solo el contenido generado
+            # Extraemos solo el texto generado
             gen_text = output[0].get('generated_text', '')
             if isinstance(gen_text, list):
                 description = " ".join(str(x) for x in gen_text).strip()
             else:
                 description = gen_text.strip()
+            print(f"[DEBUG] Descripción generada para {img_path}: {description}")
             descriptions.append(description)
         except Exception as e:
             print(f"[DEBUG] Error generando descripción para {img_path}: {e}")
             continue
     
     combined = " ".join(descriptions)
+    print(f"[DEBUG] Descripción combinada (longitud {len(combined)} caracteres)")
     return combined
 
 
