@@ -68,7 +68,7 @@ def generate_shape_description(image_paths, device, vlm_pipe):
                 }
             ]
             # Llamamos a la pipeline pasando el parámetro 'text'
-            output = vlm_pipe(text=messages, max_new_tokens=100)
+            output = vlm_pipe(text=messages, max_new_tokens=50)
             # Se espera que output sea una lista de mensajes; buscamos el mensaje con role "assistant"
             assistant_message = None
             if isinstance(output, list):
