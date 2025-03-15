@@ -39,14 +39,16 @@ def generate_shape_description(image_paths, device, vlm_pipe):
         return "Shape description not available."
     
     descriptions = []
-    prompt = ("This is an image of a Computer Aided Design (CAD) model. "
-              "You are a senior CAD engineer who knows the object name, where and how the CAD model is used. "
-              "Give an accurate natural language description about the CAD model to a junior CAD designer who can design it from your simple description. "
-              "Wrap the description in the following tags <OBJECT> and </OBJECT>. "
-              "Following are some bad examples: CAD model, Metal object. "
-              "Abide by the following rules: Do not use words like 'blue', 'shadow', 'transparent', 'metal', 'plastic', 'image', 'black', 'grey', 'CAD model', 'abstract', 'orange', 'purple', 'golden', 'green'. "
-              "Focus on shape, structure, and geometric features. "
-              "Do not mention colors, materials, or rendering aspects.")
+    prompt = (
+        "This is an image of a Computer Aided Design (CAD) model. "
+        "You are a senior CAD engineer who knows the object name, where and how the CAD model is used. "
+        "Give an accurate natural language description about the CAD model to a junior CAD designer who can design it from your simple description. "
+        "Wrap the description in the following tags <OBJECT> and </OBJECT>. "
+        "Following are some bad examples: CAD model, Metal object. "
+        "Abide by the following rules: Do not use words like 'blue', 'shadow', 'transparent', 'metal', 'plastic', 'image', 'black', 'grey', 'CAD model', 'abstract', 'orange', 'purple', 'golden', 'green'. "
+        "Focus on shape, structure, and geometric features. "
+        "Do not mention colors, materials, or rendering aspects."
+    )
     
     for img_path in image_paths:
         try:
@@ -57,7 +59,7 @@ def generate_shape_description(image_paths, device, vlm_pipe):
             continue
         
         try:
-            # Construimos la conversación siguiendo el formato requerido:
+            # Construir la conversación en formato de lista de mensajes.
             messages = [
                 {
                     "role": "user",
@@ -67,20 +69,15 @@ def generate_shape_description(image_paths, device, vlm_pipe):
                     ]
                 }
             ]
-            # Llamamos a la pipeline pasando el parámetro 'text'
-            output = vlm_pipe(text=messages, max_new_tokens=50)
-            # Se espera que output sea una lista de mensajes; buscamos el mensaje con role "assistant"
-            assistant_message = None
-            if isinstance(output, list):
-                for msg in output:
-                    if isinstance(msg, dict) and msg.get("role") == "assistant":
-                        assistant_message = msg.get("content", "")
-                        break
-            if assistant_message is None:
-                print("[DEBUG] No se encontró respuesta del asistente en la salida.")
-                description = ""
+            # Llamada a la pipeline. Nota: usamos el parámetro 'text' para pasar la conversación.
+            output = vlm_pipe(text=messages, max_new_tokens=100)
+            print(f"[DEBUG] Salida de pipeline: {output}")
+            # Extraemos la descripción desde 'generated_text'
+            description = output[0].get('generated_text', '')
+            if isinstance(description, list):
+                description = " ".join(str(x) for x in description).strip()
             else:
-                description = assistant_message.strip()
+                description = description.strip()
             print(f"[DEBUG] Descripción generada para {img_path}: {description}")
             descriptions.append(description)
         except Exception as e:
