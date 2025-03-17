@@ -57,13 +57,13 @@ train:
   # Learning rate for training
   lr: 0.0001
   # Batch size for training
-  batch_size: 16 # for 80 GB gpu
+  batch_size: 2 # for 80 GB gpu
   # Number of epochs for training
-  num_epochs: 150
+  num_epochs: 5
   # Number of workers for the DataLoader during training
-  num_workers: 30
+  num_workers: 5
   # Prefetch factor for the DataLoader during training
-  prefetch_factor: 10
+  prefetch_factor: 5
   # Directory for logging training information
   log_dir: "YOUR DIR"
   # Path to saved model checkpoint for Resuming Training (optional)
