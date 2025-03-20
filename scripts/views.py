@@ -15,6 +15,8 @@ from OCC.Core.V3d import V3d_XposYnegZpos, V3d_XnegYnegZpos, V3d_XnegYposZpos, V
 from OCC.Display.SimpleGui import init_display
 from OCC.Core.Graphic3d import Graphic3d_Camera, Graphic3d_TypeOfBackground
 
+os.environ['QT_QPA_PLATFORM'] = 'offscreen'
+
 # Configuración del logger
 try:
     from loguru import logger
@@ -68,7 +70,7 @@ def generate_views(step_file_path, output_dir, uid, number_views=4, img_size=(80
         view_output_dir = os.path.join(output_dir, uid, "views")
         ensure_dir(view_output_dir)
         
-        # Obtener el nombre base del archivo STEP (ej: 00010001_final)
+        # Obtener el nombre base del archivo STEP (ej: 00010471_final)
         step_basename = os.path.splitext(os.path.basename(step_file_path))[0]
         
         # Crear una subcarpeta dentro de "views" con el nombre base del archivo STEP
@@ -79,13 +81,15 @@ def generate_views(step_file_path, output_dir, uid, number_views=4, img_size=(80
             logger.info(f"Generando vistas para {step_file_path}")
             logger.info(f"Guardando en {step_subfolder}")
         
-        display, start_display, _, _ = init_display(backend_str="opengl2")
-        # Configurar el modo offscreen en el objeto View, si el método está disponible
+        # Inicializar el display con un backend válido (pyqt5)
+        display, start_display, _, _ = init_display(backend_str="pyqt5")
+        
+        # Intentar configurar la vista en modo offscreen (si el método está disponible)
         try:
             display.View.SetOffScreen(True)
         except Exception as e:
             logger.error("No se pudo configurar el modo offscreen: " + str(e))
-                
+        
         # Cargar el archivo STEP
         step_reader = STEPControl_Reader()
         status = step_reader.ReadFile(step_file_path)
@@ -107,7 +111,7 @@ def generate_views(step_file_path, output_dir, uid, number_views=4, img_size=(80
         
         # Definir las vistas según el número solicitado
         views = []
-
+        
         if number_views >= 1:
             views.append({"name": "isometric", "dir": V3d_XposYnegZpos})
         if number_views >= 2:
@@ -116,25 +120,16 @@ def generate_views(step_file_path, output_dir, uid, number_views=4, img_size=(80
             views.append({"name": "side", "dir": V3d_XnegYnegZpos})
         if number_views >= 4:
             views.append({"name": "top", "dir": V3d_XnegYposZpos})
-
-        # Vistas adicionales para llegar a 9
         if number_views >= 5:
-            # Vista trasera: se puede definir como la inversa de la frontal.
-            # Nota: Si los objetos V3d_* no se pueden invertir directamente, puedes definir el vector manualmente.
             views.append({"name": "back", "dir": (-1, -1, -1)})
         if number_views >= 6:
-            # Vista izquierda: opuesta a la lateral (por ejemplo, manualmente definida)
             views.append({"name": "left", "dir": (-1, 1, 1)})
         if number_views >= 7:
-            # Vista inferior: opuesta a la superior (invirtiendo la componente Z)
             views.append({"name": "bottom", "dir": (1, -1, -1)})
         if number_views >= 8:
-            # Vista diagonal 45°: combinación entre isométrica y frontal (valores de ejemplo)
             views.append({"name": "diagonal_45", "dir": (0.5, 0.5, 0.707)})
         if number_views >= 9:
-            # Vista diagonal 135°: otra orientación diagonal (valores de ejemplo)
             views.append({"name": "diagonal_135", "dir": (-0.5, 0.5, 0.707)})
-
         
         # Generar imágenes para cada vista
         for i, view in enumerate(views, start=1):
@@ -142,7 +137,7 @@ def generate_views(step_file_path, output_dir, uid, number_views=4, img_size=(80
             display.View.SetProj(view["dir"])
             display.FitAll()
             
-            # Nombre de salida: "00010001_final_view_1.png", "00010001_final_view_2.png", etc.
+            # Nombre de salida: "nombreSTEP_view_1.png", "nombreSTEP_view_2.png", etc.
             output_path = os.path.join(step_subfolder, f"{step_basename}_view_{i}.png")
             display.View.Dump(output_path)
             
@@ -158,7 +153,6 @@ def generate_views(step_file_path, output_dir, uid, number_views=4, img_size=(80
         logger.error(f"Error al generar vistas para {step_file_path}: {str(e)}")
         logger.error(traceback.format_exc())
         return False
-
 
 # Función para procesar un archivo STEP específico
 def process_step_file(step_file_path, args):
