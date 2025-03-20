@@ -192,7 +192,7 @@ def process_step_file(step_file_path, args):
         # Generar las vistas
         success = generate_views(
             step_file_path=step_file_path,
-            output_dir=args.output_dir,
+            output_dir=args.output,
             uid=uid,
             number_views=args.number_views,
             img_size=(args.img_width, args.img_height),
