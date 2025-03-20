@@ -82,7 +82,7 @@ def generate_views(step_file_path, output_dir, uid, number_views=4, img_size=(80
             logger.info(f"Guardando en {step_subfolder}")
         
         # Inicializar el display con un backend válido (pyqt5)
-        display, start_display, _, _ = init_display(backend_str="pyqt5")
+        display, start_display, _, _ = init_display(backend_str="pyside2")
         
         # Intentar configurar la vista en modo offscreen (si el método está disponible)
         try:
