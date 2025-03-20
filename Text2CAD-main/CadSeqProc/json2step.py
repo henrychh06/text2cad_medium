@@ -97,12 +97,18 @@ def process_deepcad(args, clglogger):
     with open(args.split_json, "r") as f:
         data = json.load(f)
 
-    all_json_files = (
+    all_json_files_uids = (
         data["train"][:82000]
         + data["train"][84000:]
         + data["test"]
         + data["validation"]
     )
+    
+    # Convertir UIDs a rutas completas
+    all_json_files = [
+        os.path.join(args.input_dir, uid + ".json")
+        for uid in all_json_files_uids
+    ]
 
     # --------------------------------- Method 1 --------------------------------- #
     process_all_jsons(all_json_files, args, clglogger)
@@ -114,14 +120,14 @@ def process_deepcad(args, clglogger):
 
     # --------------------------------- Method 2 --------------------------------- #
     clglogger.info(f"Preprocessing {len(extra_json_files)} using Method 2")
-    for json_path in tqdm(all_json_files):
+    for json_path in tqdm(extra_json_files):
         try:
             process_json(json_path, args)
-        except:
-            pass
+        except Exception as e:
+            clglogger.error(f"Problem processing {json_path}. Error: {e}")
 
     clglogger.success(f"Task Complete")
-
+    
 
 def process_all_jsons(all_json_files, args, clglogger):
     """
