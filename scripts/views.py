@@ -79,9 +79,13 @@ def generate_views(step_file_path, output_dir, uid, number_views=4, img_size=(80
             logger.info(f"Generando vistas para {step_file_path}")
             logger.info(f"Guardando en {step_subfolder}")
         
-        # Inicializar el display en modo offscreen para evitar requerir una interfaz gráfica
-        display, start_display, _, _ = init_display(backend_str="opengl2", offscreen=True)
-        
+        display, start_display, _, _ = init_display(backend_str="opengl2")
+        # Configurar el modo offscreen en el objeto View, si el método está disponible
+        try:
+            display.View.SetOffScreen(True)
+        except Exception as e:
+            logger.error("No se pudo configurar el modo offscreen: " + str(e))
+                
         # Cargar el archivo STEP
         step_reader = STEPControl_Reader()
         status = step_reader.ReadFile(step_file_path)
