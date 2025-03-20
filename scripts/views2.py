@@ -27,15 +27,6 @@ except ImportError:
     handler.setFormatter(formatter)
     logger.addHandler(handler)
 
-# Evitar problemas con el método de inicio de procesos en diferentes plataformas
-try:
-    multiprocessing.set_start_method("forkserver", force=True)
-except RuntimeError:
-    try:
-        multiprocessing.set_start_method("spawn", force=True)
-    except RuntimeError:
-        pass
-
 # Función para asegurar que un directorio existe
 def ensure_dir(directory):
     """
@@ -99,7 +90,7 @@ def generate_views(step_file_path, output_dir, uid, number_views=4, img_size=(80
         display.FitAll()
         
         # Configurar el tamaño de la imagen
-        display.View.Window().SetSize(img_size[0], img_size[1])
+        #display.Resize(img_size[0], img_size[1])
         
         # Definir las vistas según el número solicitado
         views = []
@@ -135,7 +126,10 @@ def generate_views(step_file_path, output_dir, uid, number_views=4, img_size=(80
         # Generar imágenes para cada vista
         for i, view in enumerate(views, start=1):
             # Configurar la vista
-            display.View.SetProj(view["dir"])
+            if isinstance(view["dir"], tuple):
+                display.View.SetProj(*view["dir"])
+            else:
+                display.View.SetProj(view["dir"], True)
             display.FitAll()
             
             # Nombre de salida: "00010001_final_view_1.png", "00010001_final_view_2.png", etc.
