@@ -1,0 +1,459 @@
+{
+     "final_name": "",
+     "final_shape": "",
+     "parts": {
+          "part_1": {
+               "coordinate_system": {
+                    "Euler Angles": [
+                         0.0,
+                         0.0,
+                         -90.0
+                    ],
+                    "Translation Vector": [
+                         0.3607,
+                         0.0286,
+                         0.5
+                    ]
+               },
+               "sketch": {
+                    "face_1": {
+                         "loop_1": {
+                              "circle_1": {
+                                   "Center": [
+                                        0.0143,
+                                        0.0143
+                                   ],
+                                   "Radius": 0.0143
+                              }
+                         }
+                    },
+                    "face_2": {
+                         "loop_1": {
+                              "circle_1": {
+                                   "Center": [
+                                        0.0143,
+                                        0.0143
+                                   ],
+                                   "Radius": 0.0143
+                              }
+                         }
+                    },
+                    "face_3": {
+                         "loop_1": {
+                              "circle_1": {
+                                   "Center": [
+                                        0.0143,
+                                        0.0143
+                                   ],
+                                   "Radius": 0.0143
+                              }
+                         }
+                    }
+               },
+               "extrusion": {
+                    "extrude_depth_towards_normal": 0.0,
+                    "extrude_depth_opposite_normal": 0.0714,
+                    "sketch_scale": 0.0286,
+                    "operation": "CutFeatureOperation"
+               },
+               "description": {
+                    "name": "",
+                    "shape": "",
+                    "length": 0.028571238164550282,
+                    "width": 0.028571238164550282,
+                    "height": 0.0714280954113757
+               }
+          },
+          "part_2": {
+               "coordinate_system": {
+                    "Euler Angles": [
+                         0.0,
+                         0.0,
+                         -90.0
+                    ],
+                    "Translation Vector": [
+                         0.0001,
+                         0.0286,
+                         0.0
+                    ]
+               },
+               "sketch": {
+                    "face_1": {
+                         "loop_1": {
+                              "arc_1": {
+                                   "Start Point": [
+                                        0.0034,
+                                        0.011
+                                   ],
+                                   "Mid Point": [
+                                        0.0,
+                                        0.0046
+                                   ],
+                                   "End Point": [
+                                        0.0056,
+                                        0.0
+                                   ]
+                              },
+                              "line_1": {
+                                   "Start Point": [
+                                        0.0056,
+                                        0.0
+                                   ],
+                                   "End Point": [
+                                        0.0596,
+                                        0.0
+                                   ]
+                              },
+                              "arc_2": {
+                                   "Start Point": [
+                                        0.0596,
+                                        0.0
+                                   ],
+                                   "Mid Point": [
+                                        0.0606,
+                                        0.0001
+                                   ],
+                                   "End Point": [
+                                        0.0615,
+                                        0.0003
+                                   ]
+                              },
+                              "arc_3": {
+                                   "Start Point": [
+                                        0.0615,
+                                        0.0003
+                                   ],
+                                   "Mid Point": [
+                                        0.3749,
+                                        0.0539
+                                   ],
+                                   "End Point": [
+                                        0.6883,
+                                        0.0003
+                                   ]
+                              },
+                              "arc_4": {
+                                   "Start Point": [
+                                        0.6883,
+                                        0.0003
+                                   ],
+                                   "Mid Point": [
+                                        0.6892,
+                                        0.0001
+                                   ],
+                                   "End Point": [
+                                        0.6901,
+                                        0.0
+                                   ]
+                              },
+                              "line_2": {
+                                   "Start Point": [
+                                        0.6901,
+                                        0.0
+                                   ],
+                                   "End Point": [
+                                        0.7442,
+                                        0.0
+                                   ]
+                              },
+                              "arc_5": {
+                                   "Start Point": [
+                                        0.7442,
+                                        0.0
+                                   ],
+                                   "Mid Point": [
+                                        0.7498,
+                                        0.0046
+                                   ],
+                                   "End Point": [
+                                        0.7464,
+                                        0.011
+                                   ]
+                              },
+                              "arc_6": {
+                                   "Start Point": [
+                                        0.7464,
+                                        0.011
+                                   ],
+                                   "Mid Point": [
+                                        0.5093,
+                                        0.2127
+                                   ],
+                                   "End Point": [
+                                        0.432,
+                                        0.5143
+                                   ]
+                              },
+                              "arc_7": {
+                                   "Start Point": [
+                                        0.432,
+                                        0.5143
+                                   ],
+                                   "Mid Point": [
+                                        0.3749,
+                                        0.5714
+                                   ],
+                                   "End Point": [
+                                        0.3177,
+                                        0.5143
+                                   ]
+                              },
+                              "arc_8": {
+                                   "Start Point": [
+                                        0.3177,
+                                        0.5143
+                                   ],
+                                   "Mid Point": [
+                                        0.2405,
+                                        0.2127
+                                   ],
+                                   "End Point": [
+                                        0.0034,
+                                        0.011
+                                   ]
+                              }
+                         },
+                         "loop_2": {
+                              "circle_1": {
+                                   "Center": [
+                                        0.2341,
+                                        0.1041
+                                   ],
+                                   "Radius": 0.0458
+                              }
+                         },
+                         "loop_3": {
+                              "circle_1": {
+                                   "Center": [
+                                        0.3749,
+                                        0.1846
+                                   ],
+                                   "Radius": 0.1021
+                              }
+                         },
+                         "loop_4": {
+                              "circle_1": {
+                                   "Center": [
+                                        0.3749,
+                                        0.3467
+                                   ],
+                                   "Radius": 0.0457
+                              }
+                         },
+                         "loop_5": {
+                              "circle_1": {
+                                   "Center": [
+                                        0.3749,
+                                        0.5143
+                                   ],
+                                   "Radius": 0.0143
+                              }
+                         },
+                         "loop_6": {
+                              "circle_1": {
+                                   "Center": [
+                                        0.5157,
+                                        0.1041
+                                   ],
+                                   "Radius": 0.0458
+                              }
+                         }
+                    },
+                    "face_2": {
+                         "loop_1": {
+                              "arc_1": {
+                                   "Start Point": [
+                                        0.0034,
+                                        0.011
+                                   ],
+                                   "Mid Point": [
+                                        0.0,
+                                        0.0046
+                                   ],
+                                   "End Point": [
+                                        0.0056,
+                                        0.0
+                                   ]
+                              },
+                              "line_1": {
+                                   "Start Point": [
+                                        0.0056,
+                                        0.0
+                                   ],
+                                   "End Point": [
+                                        0.0596,
+                                        0.0
+                                   ]
+                              },
+                              "arc_2": {
+                                   "Start Point": [
+                                        0.0596,
+                                        0.0
+                                   ],
+                                   "Mid Point": [
+                                        0.0606,
+                                        0.0001
+                                   ],
+                                   "End Point": [
+                                        0.0615,
+                                        0.0003
+                                   ]
+                              },
+                              "arc_3": {
+                                   "Start Point": [
+                                        0.0615,
+                                        0.0003
+                                   ],
+                                   "Mid Point": [
+                                        0.3749,
+                                        0.0539
+                                   ],
+                                   "End Point": [
+                                        0.6883,
+                                        0.0003
+                                   ]
+                              },
+                              "arc_4": {
+                                   "Start Point": [
+                                        0.6883,
+                                        0.0003
+                                   ],
+                                   "Mid Point": [
+                                        0.6892,
+                                        0.0001
+                                   ],
+                                   "End Point": [
+                                        0.6901,
+                                        0.0
+                                   ]
+                              },
+                              "line_2": {
+                                   "Start Point": [
+                                        0.6901,
+                                        0.0
+                                   ],
+                                   "End Point": [
+                                        0.7442,
+                                        0.0
+                                   ]
+                              },
+                              "arc_5": {
+                                   "Start Point": [
+                                        0.7442,
+                                        0.0
+                                   ],
+                                   "Mid Point": [
+                                        0.7498,
+                                        0.0046
+                                   ],
+                                   "End Point": [
+                                        0.7464,
+                                        0.011
+                                   ]
+                              },
+                              "arc_6": {
+                                   "Start Point": [
+                                        0.7464,
+                                        0.011
+                                   ],
+                                   "Mid Point": [
+                                        0.5093,
+                                        0.2127
+                                   ],
+                                   "End Point": [
+                                        0.432,
+                                        0.5143
+                                   ]
+                              },
+                              "arc_7": {
+                                   "Start Point": [
+                                        0.432,
+                                        0.5143
+                                   ],
+                                   "Mid Point": [
+                                        0.3749,
+                                        0.5714
+                                   ],
+                                   "End Point": [
+                                        0.3177,
+                                        0.5143
+                                   ]
+                              },
+                              "arc_8": {
+                                   "Start Point": [
+                                        0.3177,
+                                        0.5143
+                                   ],
+                                   "Mid Point": [
+                                        0.2405,
+                                        0.2127
+                                   ],
+                                   "End Point": [
+                                        0.0034,
+                                        0.011
+                                   ]
+                              }
+                         },
+                         "loop_2": {
+                              "circle_1": {
+                                   "Center": [
+                                        0.2341,
+                                        0.1041
+                                   ],
+                                   "Radius": 0.0458
+                              }
+                         },
+                         "loop_3": {
+                              "circle_1": {
+                                   "Center": [
+                                        0.3749,
+                                        0.1846
+                                   ],
+                                   "Radius": 0.1021
+                              }
+                         },
+                         "loop_4": {
+                              "circle_1": {
+                                   "Center": [
+                                        0.3749,
+                                        0.3467
+                                   ],
+                                   "Radius": 0.0457
+                              }
+                         },
+                         "loop_5": {
+                              "circle_1": {
+                                   "Center": [
+                                        0.3749,
+                                        0.5143
+                                   ],
+                                   "Radius": 0.0143
+                              }
+                         },
+                         "loop_6": {
+                              "circle_1": {
+                                   "Center": [
+                                        0.5157,
+                                        0.1041
+                                   ],
+                                   "Radius": 0.0458
+                              }
+                         }
+                    }
+               },
+               "extrusion": {
+                    "extrude_depth_towards_normal": 0.0286,
+                    "extrude_depth_opposite_normal": 0.0,
+                    "sketch_scale": 0.7498,
+                    "operation": "NewBodyFeatureOperation"
+               },
+               "description": {
+                    "name": "",
+                    "shape": "",
+                    "length": 0.7497749567087605,
+                    "width": 0.5714247632910056,
+                    "height": 0.02857123816455028
+               }
+          }
+     }
+}

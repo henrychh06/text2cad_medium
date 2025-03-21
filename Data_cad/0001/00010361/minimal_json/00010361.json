@@ -1,0 +1,113 @@
+{
+     "final_name": "",
+     "final_shape": "",
+     "parts": {
+          "part_1": {
+               "coordinate_system": {
+                    "Euler Angles": [
+                         -90.0,
+                         0.0,
+                         -90.0
+                    ],
+                    "Translation Vector": [
+                         0.3068,
+                         0.0,
+                         0.0
+                    ]
+               },
+               "sketch": {
+                    "face_1": {
+                         "loop_1": {
+                              "line_1": {
+                                   "Start Point": [
+                                        0.0,
+                                        0.0
+                                   ],
+                                   "End Point": [
+                                        0.75,
+                                        0.0
+                                   ]
+                              },
+                              "line_2": {
+                                   "Start Point": [
+                                        0.75,
+                                        0.0
+                                   ],
+                                   "End Point": [
+                                        0.75,
+                                        0.0649
+                                   ]
+                              },
+                              "line_3": {
+                                   "Start Point": [
+                                        0.75,
+                                        0.0649
+                                   ],
+                                   "End Point": [
+                                        0.1299,
+                                        0.0649
+                                   ]
+                              },
+                              "arc_1": {
+                                   "Start Point": [
+                                        0.1299,
+                                        0.0649
+                                   ],
+                                   "Mid Point": [
+                                        0.084,
+                                        0.084
+                                   ],
+                                   "End Point": [
+                                        0.0649,
+                                        0.1299
+                                   ]
+                              },
+                              "line_4": {
+                                   "Start Point": [
+                                        0.0649,
+                                        0.1299
+                                   ],
+                                   "End Point": [
+                                        0.0649,
+                                        0.75
+                                   ]
+                              },
+                              "line_5": {
+                                   "Start Point": [
+                                        0.0649,
+                                        0.75
+                                   ],
+                                   "End Point": [
+                                        0.0,
+                                        0.75
+                                   ]
+                              },
+                              "line_6": {
+                                   "Start Point": [
+                                        0.0,
+                                        0.75
+                                   ],
+                                   "End Point": [
+                                        0.0,
+                                        0.0
+                                   ]
+                              }
+                         }
+                    }
+               },
+               "extrusion": {
+                    "extrude_depth_towards_normal": 0.1534,
+                    "extrude_depth_opposite_normal": 0.1534,
+                    "sketch_scale": 0.75,
+                    "operation": "NewBodyFeatureOperation"
+               },
+               "description": {
+                    "name": "",
+                    "shape": "",
+                    "length": 0.7499999999999999,
+                    "width": 0.7499999999999999,
+                    "height": 0.3068181818181818
+               }
+          }
+     }
+}

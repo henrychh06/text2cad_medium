@@ -1,0 +1,548 @@
+{
+     "final_name": "",
+     "final_shape": "",
+     "parts": {
+          "part_1": {
+               "coordinate_system": {
+                    "Euler Angles": [
+                         0.0,
+                         0.0,
+                         0.0
+                    ],
+                    "Translation Vector": [
+                         0.0273,
+                         0.0216,
+                         0.0
+                    ]
+               },
+               "sketch": {
+                    "face_1": {
+                         "loop_1": {
+                              "line_1": {
+                                   "Start Point": [
+                                        0.0,
+                                        0.012
+                                   ],
+                                   "End Point": [
+                                        0.0069,
+                                        0.0
+                                   ]
+                              },
+                              "line_2": {
+                                   "Start Point": [
+                                        0.0069,
+                                        0.0
+                                   ],
+                                   "End Point": [
+                                        0.294,
+                                        0.1658
+                                   ]
+                              },
+                              "line_3": {
+                                   "Start Point": [
+                                        0.294,
+                                        0.1658
+                                   ],
+                                   "End Point": [
+                                        0.294,
+                                        0.1817
+                                   ]
+                              },
+                              "line_4": {
+                                   "Start Point": [
+                                        0.294,
+                                        0.1817
+                                   ],
+                                   "End Point": [
+                                        0.0,
+                                        0.012
+                                   ]
+                              }
+                         }
+                    },
+                    "face_2": {
+                         "loop_1": {
+                              "line_1": {
+                                   "Start Point": [
+                                        0.0,
+                                        0.5958
+                                   ],
+                                   "End Point": [
+                                        0.294,
+                                        0.4261
+                                   ]
+                              },
+                              "line_2": {
+                                   "Start Point": [
+                                        0.294,
+                                        0.4261
+                                   ],
+                                   "End Point": [
+                                        0.294,
+                                        0.442
+                                   ]
+                              },
+                              "line_3": {
+                                   "Start Point": [
+                                        0.294,
+                                        0.442
+                                   ],
+                                   "End Point": [
+                                        0.0069,
+                                        0.6078
+                                   ]
+                              },
+                              "line_4": {
+                                   "Start Point": [
+                                        0.0069,
+                                        0.6078
+                                   ],
+                                   "End Point": [
+                                        0.0,
+                                        0.5958
+                                   ]
+                              }
+                         }
+                    },
+                    "face_3": {
+                         "loop_1": {
+                              "line_1": {
+                                   "Start Point": [
+                                        0.294,
+                                        0.1658
+                                   ],
+                                   "End Point": [
+                                        0.4045,
+                                        0.1658
+                                   ]
+                              },
+                              "line_2": {
+                                   "Start Point": [
+                                        0.4045,
+                                        0.1658
+                                   ],
+                                   "End Point": [
+                                        0.4045,
+                                        0.1817
+                                   ]
+                              },
+                              "line_3": {
+                                   "Start Point": [
+                                        0.4045,
+                                        0.1817
+                                   ],
+                                   "End Point": [
+                                        0.4045,
+                                        0.4261
+                                   ]
+                              },
+                              "line_4": {
+                                   "Start Point": [
+                                        0.4045,
+                                        0.4261
+                                   ],
+                                   "End Point": [
+                                        0.4045,
+                                        0.442
+                                   ]
+                              },
+                              "line_5": {
+                                   "Start Point": [
+                                        0.4045,
+                                        0.442
+                                   ],
+                                   "End Point": [
+                                        0.294,
+                                        0.442
+                                   ]
+                              },
+                              "line_6": {
+                                   "Start Point": [
+                                        0.294,
+                                        0.442
+                                   ],
+                                   "End Point": [
+                                        0.294,
+                                        0.4261
+                                   ]
+                              },
+                              "line_7": {
+                                   "Start Point": [
+                                        0.294,
+                                        0.4261
+                                   ],
+                                   "End Point": [
+                                        0.294,
+                                        0.1817
+                                   ]
+                              },
+                              "line_8": {
+                                   "Start Point": [
+                                        0.294,
+                                        0.1817
+                                   ],
+                                   "End Point": [
+                                        0.294,
+                                        0.1658
+                                   ]
+                              }
+                         }
+                    },
+                    "face_4": {
+                         "loop_1": {
+                              "line_1": {
+                                   "Start Point": [
+                                        0.4045,
+                                        0.1658
+                                   ],
+                                   "End Point": [
+                                        0.6916,
+                                        0.0
+                                   ]
+                              },
+                              "line_2": {
+                                   "Start Point": [
+                                        0.6916,
+                                        0.0
+                                   ],
+                                   "End Point": [
+                                        0.6985,
+                                        0.012
+                                   ]
+                              },
+                              "line_3": {
+                                   "Start Point": [
+                                        0.6985,
+                                        0.012
+                                   ],
+                                   "End Point": [
+                                        0.4045,
+                                        0.1817
+                                   ]
+                              },
+                              "line_4": {
+                                   "Start Point": [
+                                        0.4045,
+                                        0.1817
+                                   ],
+                                   "End Point": [
+                                        0.4045,
+                                        0.1658
+                                   ]
+                              }
+                         }
+                    },
+                    "face_5": {
+                         "loop_1": {
+                              "line_1": {
+                                   "Start Point": [
+                                        0.4045,
+                                        0.4261
+                                   ],
+                                   "End Point": [
+                                        0.6985,
+                                        0.5958
+                                   ]
+                              },
+                              "line_2": {
+                                   "Start Point": [
+                                        0.6985,
+                                        0.5958
+                                   ],
+                                   "End Point": [
+                                        0.6916,
+                                        0.6078
+                                   ]
+                              },
+                              "line_3": {
+                                   "Start Point": [
+                                        0.6916,
+                                        0.6078
+                                   ],
+                                   "End Point": [
+                                        0.4045,
+                                        0.442
+                                   ]
+                              },
+                              "line_4": {
+                                   "Start Point": [
+                                        0.4045,
+                                        0.442
+                                   ],
+                                   "End Point": [
+                                        0.4045,
+                                        0.4261
+                                   ]
+                              }
+                         }
+                    }
+               },
+               "extrusion": {
+                    "extrude_depth_towards_normal": 0.0035,
+                    "extrude_depth_opposite_normal": 0.0,
+                    "sketch_scale": 0.6985,
+                    "operation": "NewBodyFeatureOperation"
+               },
+               "description": {
+                    "name": "",
+                    "shape": "",
+                    "length": 0.6985142902715203,
+                    "width": 0.6077734527432572,
+                    "height": 0.0034532582542230526
+               }
+          },
+          "part_2": {
+               "coordinate_system": {
+                    "Euler Angles": [
+                         0.0,
+                         0.0,
+                         0.0
+                    ],
+                    "Translation Vector": [
+                         0.3282,
+                         0.1909,
+                         0.0035
+                    ]
+               },
+               "sketch": {
+                    "face_1": {
+                         "loop_1": {
+                              "line_1": {
+                                   "Start Point": [
+                                        0.0,
+                                        0.0088
+                                   ],
+                                   "End Point": [
+                                        0.0414,
+                                        0.1347
+                                   ]
+                              },
+                              "line_2": {
+                                   "Start Point": [
+                                        0.0414,
+                                        0.1347
+                                   ],
+                                   "End Point": [
+                                        0.0,
+                                        0.2601
+                                   ]
+                              },
+                              "line_3": {
+                                   "Start Point": [
+                                        0.0,
+                                        0.2601
+                                   ],
+                                   "End Point": [
+                                        0.0,
+                                        0.0088
+                                   ]
+                              }
+                         }
+                    },
+                    "face_2": {
+                         "loop_1": {
+                              "line_1": {
+                                   "Start Point": [
+                                        0.0126,
+                                        0.0
+                                   ],
+                                   "End Point": [
+                                        0.0841,
+                                        0.0
+                                   ]
+                              },
+                              "line_2": {
+                                   "Start Point": [
+                                        0.0841,
+                                        0.0
+                                   ],
+                                   "End Point": [
+                                        0.0483,
+                                        0.1278
+                                   ]
+                              },
+                              "line_3": {
+                                   "Start Point": [
+                                        0.0483,
+                                        0.1278
+                                   ],
+                                   "End Point": [
+                                        0.0126,
+                                        0.0
+                                   ]
+                              }
+                         }
+                    },
+                    "face_3": {
+                         "loop_1": {
+                              "line_1": {
+                                   "Start Point": [
+                                        0.0138,
+                                        0.2384
+                                   ],
+                                   "End Point": [
+                                        0.0207,
+                                        0.2384
+                                   ]
+                              },
+                              "line_2": {
+                                   "Start Point": [
+                                        0.0207,
+                                        0.2384
+                                   ],
+                                   "End Point": [
+                                        0.0207,
+                                        0.266
+                                   ]
+                              },
+                              "line_3": {
+                                   "Start Point": [
+                                        0.0207,
+                                        0.266
+                                   ],
+                                   "End Point": [
+                                        0.0138,
+                                        0.266
+                                   ]
+                              },
+                              "line_4": {
+                                   "Start Point": [
+                                        0.0138,
+                                        0.266
+                                   ],
+                                   "End Point": [
+                                        0.0138,
+                                        0.2384
+                                   ]
+                              }
+                         }
+                    },
+                    "face_4": {
+                         "loop_1": {
+                              "line_1": {
+                                   "Start Point": [
+                                        0.0216,
+                                        0.2288
+                                   ],
+                                   "End Point": [
+                                        0.0483,
+                                        0.1416
+                                   ]
+                              },
+                              "line_2": {
+                                   "Start Point": [
+                                        0.0483,
+                                        0.1416
+                                   ],
+                                   "End Point": [
+                                        0.0754,
+                                        0.2288
+                                   ]
+                              },
+                              "line_3": {
+                                   "Start Point": [
+                                        0.0754,
+                                        0.2288
+                                   ],
+                                   "End Point": [
+                                        0.0216,
+                                        0.2288
+                                   ]
+                              }
+                         }
+                    },
+                    "face_5": {
+                         "loop_1": {
+                              "line_1": {
+                                   "Start Point": [
+                                        0.0553,
+                                        0.1347
+                                   ],
+                                   "End Point": [
+                                        0.0967,
+                                        0.0037
+                                   ]
+                              },
+                              "line_2": {
+                                   "Start Point": [
+                                        0.0967,
+                                        0.0037
+                                   ],
+                                   "End Point": [
+                                        0.0967,
+                                        0.264
+                                   ]
+                              },
+                              "line_3": {
+                                   "Start Point": [
+                                        0.0967,
+                                        0.264
+                                   ],
+                                   "End Point": [
+                                        0.0553,
+                                        0.1347
+                                   ]
+                              }
+                         }
+                    },
+                    "face_6": {
+                         "loop_1": {
+                              "line_1": {
+                                   "Start Point": [
+                                        0.076,
+                                        0.2368
+                                   ],
+                                   "End Point": [
+                                        0.0829,
+                                        0.2368
+                                   ]
+                              },
+                              "line_2": {
+                                   "Start Point": [
+                                        0.0829,
+                                        0.2368
+                                   ],
+                                   "End Point": [
+                                        0.0829,
+                                        0.2644
+                                   ]
+                              },
+                              "line_3": {
+                                   "Start Point": [
+                                        0.0829,
+                                        0.2644
+                                   ],
+                                   "End Point": [
+                                        0.076,
+                                        0.2644
+                                   ]
+                              },
+                              "line_4": {
+                                   "Start Point": [
+                                        0.076,
+                                        0.2644
+                                   ],
+                                   "End Point": [
+                                        0.076,
+                                        0.2368
+                                   ]
+                              }
+                         }
+                    }
+               },
+               "extrusion": {
+                    "extrude_depth_towards_normal": 0.0,
+                    "extrude_depth_opposite_normal": 0.0035,
+                    "sketch_scale": 0.266,
+                    "operation": "CutFeatureOperation"
+               },
+               "description": {
+                    "name": "",
+                    "shape": "",
+                    "length": 0.09669123111824547,
+                    "width": 0.2660438015230821,
+                    "height": 0.0034532582542230526
+               }
+          }
+     }
+}

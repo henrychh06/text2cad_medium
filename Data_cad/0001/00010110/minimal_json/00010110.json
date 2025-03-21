@@ -1,0 +1,72 @@
+{
+     "final_name": "",
+     "final_shape": "",
+     "parts": {
+          "part_1": {
+               "coordinate_system": {
+                    "Euler Angles": [
+                         0.0,
+                         0.0,
+                         -90.0
+                    ],
+                    "Translation Vector": [
+                         0.0,
+                         0.2609,
+                         0.0
+                    ]
+               },
+               "sketch": {
+                    "face_1": {
+                         "loop_1": {
+                              "circle_1": {
+                                   "Center": [
+                                        0.375,
+                                        0.375
+                                   ],
+                                   "Radius": 0.375
+                              }
+                         },
+                         "loop_2": {
+                              "arc_1": {
+                                   "Start Point": [
+                                        0.3385,
+                                        0.4076
+                                   ],
+                                   "Mid Point": [
+                                        0.375,
+                                        0.3261
+                                   ],
+                                   "End Point": [
+                                        0.4115,
+                                        0.4076
+                                   ]
+                              },
+                              "line_1": {
+                                   "Start Point": [
+                                        0.4115,
+                                        0.4076
+                                   ],
+                                   "End Point": [
+                                        0.3385,
+                                        0.4076
+                                   ]
+                              }
+                         }
+                    }
+               },
+               "extrusion": {
+                    "extrude_depth_towards_normal": 0.2609,
+                    "extrude_depth_opposite_normal": 0.0,
+                    "sketch_scale": 0.75,
+                    "operation": "NewBodyFeatureOperation"
+               },
+               "description": {
+                    "name": "",
+                    "shape": "",
+                    "length": 0.75,
+                    "width": 0.75,
+                    "height": 0.2608695652173913
+               }
+          }
+     }
+}

@@ -1,0 +1,196 @@
+{
+     "final_name": "",
+     "final_shape": "",
+     "parts": {
+          "part_1": {
+               "coordinate_system": {
+                    "Euler Angles": [
+                         0.0,
+                         0.0,
+                         0.0
+                    ],
+                    "Translation Vector": [
+                         0.0,
+                         0.0,
+                         0.0
+                    ]
+               },
+               "sketch": {
+                    "face_1": {
+                         "loop_1": {
+                              "line_1": {
+                                   "Start Point": [
+                                        0.0,
+                                        0.0
+                                   ],
+                                   "End Point": [
+                                        0.75,
+                                        0.0352
+                                   ]
+                              },
+                              "line_2": {
+                                   "Start Point": [
+                                        0.75,
+                                        0.0352
+                                   ],
+                                   "End Point": [
+                                        0.75,
+                                        0.1055
+                                   ]
+                              },
+                              "line_3": {
+                                   "Start Point": [
+                                        0.75,
+                                        0.1055
+                                   ],
+                                   "End Point": [
+                                        0.0,
+                                        0.1406
+                                   ]
+                              },
+                              "line_4": {
+                                   "Start Point": [
+                                        0.0,
+                                        0.1406
+                                   ],
+                                   "End Point": [
+                                        0.0,
+                                        0.0
+                                   ]
+                              }
+                         },
+                         "loop_2": {
+                              "circle_1": {
+                                   "Center": [
+                                        0.0516,
+                                        0.0703
+                                   ],
+                                   "Radius": 0.0234
+                              }
+                         },
+                         "loop_3": {
+                              "circle_1": {
+                                   "Center": [
+                                        0.1207,
+                                        0.0703
+                                   ],
+                                   "Radius": 0.0223
+                              }
+                         },
+                         "loop_4": {
+                              "circle_1": {
+                                   "Center": [
+                                        0.1875,
+                                        0.0703
+                                   ],
+                                   "Radius": 0.0211
+                              }
+                         },
+                         "loop_5": {
+                              "circle_1": {
+                                   "Center": [
+                                        0.252,
+                                        0.0703
+                                   ],
+                                   "Radius": 0.0199
+                              }
+                         },
+                         "loop_6": {
+                              "circle_1": {
+                                   "Center": [
+                                        0.3141,
+                                        0.0703
+                                   ],
+                                   "Radius": 0.0187
+                              }
+                         },
+                         "loop_7": {
+                              "circle_1": {
+                                   "Center": [
+                                        0.3738,
+                                        0.0703
+                                   ],
+                                   "Radius": 0.0176
+                              }
+                         },
+                         "loop_8": {
+                              "circle_1": {
+                                   "Center": [
+                                        0.4312,
+                                        0.0703
+                                   ],
+                                   "Radius": 0.0164
+                              }
+                         },
+                         "loop_9": {
+                              "circle_1": {
+                                   "Center": [
+                                        0.4863,
+                                        0.0703
+                                   ],
+                                   "Radius": 0.0152
+                              }
+                         },
+                         "loop_10": {
+                              "circle_1": {
+                                   "Center": [
+                                        0.5391,
+                                        0.0703
+                                   ],
+                                   "Radius": 0.0141
+                              }
+                         },
+                         "loop_11": {
+                              "circle_1": {
+                                   "Center": [
+                                        0.5895,
+                                        0.0703
+                                   ],
+                                   "Radius": 0.0129
+                              }
+                         },
+                         "loop_12": {
+                              "circle_1": {
+                                   "Center": [
+                                        0.6375,
+                                        0.0703
+                                   ],
+                                   "Radius": 0.0117
+                              }
+                         },
+                         "loop_13": {
+                              "circle_1": {
+                                   "Center": [
+                                        0.6832,
+                                        0.0703
+                                   ],
+                                   "Radius": 0.0105
+                              }
+                         },
+                         "loop_14": {
+                              "circle_1": {
+                                   "Center": [
+                                        0.7266,
+                                        0.0703
+                                   ],
+                                   "Radius": 0.0094
+                              }
+                         }
+                    }
+               },
+               "extrusion": {
+                    "extrude_depth_towards_normal": 0.1172,
+                    "extrude_depth_opposite_normal": 0.0,
+                    "sketch_scale": 0.75,
+                    "operation": "NewBodyFeatureOperation"
+               },
+               "description": {
+                    "name": "",
+                    "shape": "",
+                    "length": 0.7499999999999999,
+                    "width": 0.14062499999999997,
+                    "height": 0.11718749999999999
+               }
+          }
+     }
+}
