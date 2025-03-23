@@ -78,13 +78,12 @@ def generate_shape_description(image_paths, device, vlm_pipe, is_part=False):
         "Format your response EXACTLY as follows (including the tags):\n"
         "<NAME>Brief component name (1-3 words)</NAME>\n"
         "<DESCRIPTION>Detailed description focusing on shape, structure, and geometric features (6-12 words)</DESCRIPTION>\n"
-        "<KEYWORDS>keyword1, keyword2, keyword3, ...(4-6 keywords)</KEYWORDS>\n"
+        "<KEYWORDS>keyword1, keyword2, keyword3, ...(4 keywords)</KEYWORDS>\n"
         
         "Rules:\n"
         "- Do not use words like 'blue', 'shadow', 'transparent', 'metal', 'plastic', 'image', 'black', 'grey', 'CAD model', 'abstract', 'orange', 'purple', 'golden', 'green'\n"
         "- Focus on shape, structure, and geometric features\n"
         "- Do not mention colors, materials, or rendering aspects\n"
-        "- Following are some bad examples: 1. CAD model 2. Metal object\n"
         f"- You are looking at {'a part of a larger assembly' if is_part else 'a complete CAD model'}"
     )
     
@@ -126,7 +125,7 @@ def generate_shape_description(image_paths, device, vlm_pipe, is_part=False):
         best_description = max(valid_descriptions, key=len)
     else:
         # Si no tenemos una descripción válida, generamos una con placeholders
-        best_description = "<NAME>Unknown object</NAME>\n<DESCRIPTION>A CAD model with geometric features</DESCRIPTION>\n<KEYWORDS>cad, model, geometry</KEYWORDS>"
+        best_description = "<NAME>Unknown object</NAME>\n<DESCRIPTION>A CAD model with geometric features</DESCRIPTION>\n<KEYWORDS>\n</KEYWORDS>"
     
     print(f"[DEBUG] Descripción final (longitud {len(best_description)} caracteres)")
     return best_description
