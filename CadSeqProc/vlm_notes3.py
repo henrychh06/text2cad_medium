@@ -6,6 +6,7 @@ from PIL import Image
 from tqdm import tqdm
 from transformers import pipeline
 import glob
+import re
 
 def ensure_dir(directory):
     """Ensure a directory exists."""
@@ -126,6 +127,19 @@ def generate_shape_description(image_paths, device, vlm_pipe, is_part=False):
     else:
         # Si no tenemos una descripción válida, generamos una con placeholders
         best_description = "<NAME>Unknown object</NAME>\n<DESCRIPTION>A CAD model with geometric features</DESCRIPTION>\n<KEYWORDS>Keywords</KEYWORDS>"
+    
+    def extract_four_keywords(description):
+        match = re.search(r"<KEYWORDS>(.*?)</KEYWORDS>", description)
+        if match:
+            keywords = match.group(1)
+            # Se asume que las keywords están separadas por comas
+            keywords_list = [kw.strip() for kw in keywords.split(',') if kw.strip()]
+            return ", ".join(keywords_list[:4])
+        return ""
+    
+    final_keywords = extract_four_keywords(best_description)
+    # Reemplaza la sección de keywords con el resultado procesado
+    best_description = re.sub(r"<KEYWORDS>.*?</KEYWORDS>", f"<KEYWORDS>{final_keywords}</KEYWORDS>", best_description)
     
     print(f"[DEBUG] Descripción final (longitud {len(best_description)} caracteres)")
     return best_description
