@@ -13,10 +13,19 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 
 def extract_shape_info(input_string):
     # Function to extract content between tags
-    def extract_content(tag, text):
+    def extract_content(tag, text, occurrence=2):
         pattern = f"<{tag}>(.*?)</{tag}>"
-        match = re.search(pattern, text, re.DOTALL)
-        return match.group(1).strip() if match else None
+        matches = re.findall(pattern, text, re.DOTALL)
+        
+        # If not enough occurrences found, fall back to first occurrence or None
+        if len(matches) < occurrence:
+            if matches:  # At least one occurrence exists
+                print(f"Warning: Only found {len(matches)} occurrences of {tag}, using first occurrence")
+                return matches[0].strip()
+            return None
+        
+        # Return the specified occurrence (0-indexed, so occurrence 2 is index 1)
+        return matches[occurrence-1].strip()
 
     # Extracting values
     name = extract_content("NAME", input_string)
