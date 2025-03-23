@@ -79,7 +79,7 @@ def generate_shape_description(image_paths, device, vlm_pipe, is_part=False):
         "Format your response EXACTLY as follows (including the tags):\n"
         "<NAME>Brief component name (1-3 words)</NAME>\n"
         "<DESCRIPTION>Detailed description focusing on shape, structure, and geometric features (6-12 words)</DESCRIPTION>\n"
-        "<KEYWORDS></KEYWORDS>\n"
+        "<KEYWORDS>Just 4 keayword related to the figure, not any additonal text, it must be just a maximum of 5 words in here</KEYWORDS>\n"
 
         "Rules:\n"
         "- Do not use words like 'blue', 'shadow', 'transparent', 'metal', 'plastic', 'image', 'black', 'grey', 'CAD model', 'abstract', 'orange', 'purple', 'golden', 'green'\n"
