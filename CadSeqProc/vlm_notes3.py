@@ -73,7 +73,7 @@ def generate_shape_description(image_paths, device, vlm_pipe, is_part=False):
         "You are a senior CAD engineer who needs to: "
         "1. Identify a precise name for this CAD component "
         "2. Describe its shape and structure "
-        "3. List keywords related to the component "
+        "3. List four keywords related to the component "
         
         "Format your response EXACTLY as follows (including the tags):\n"
         "<NAME>Brief component name (1-3 words)</NAME>\n"
@@ -125,7 +125,7 @@ def generate_shape_description(image_paths, device, vlm_pipe, is_part=False):
         best_description = max(valid_descriptions, key=len)
     else:
         # Si no tenemos una descripción válida, generamos una con placeholders
-        best_description = "<NAME>Unknown object</NAME>\n<DESCRIPTION>A CAD model with geometric features</DESCRIPTION>\n<KEYWORDS>\n</KEYWORDS>"
+        best_description = "<NAME>Unknown object</NAME>\n<DESCRIPTION>A CAD model with geometric features</DESCRIPTION>\n<KEYWORDS>Keywords</KEYWORDS>"
     
     print(f"[DEBUG] Descripción final (longitud {len(best_description)} caracteres)")
     return best_description
