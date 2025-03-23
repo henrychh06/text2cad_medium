@@ -78,7 +78,7 @@ def generate_shape_description(image_paths, device, vlm_pipe, is_part=False):
         "Format your response EXACTLY as follows (including the tags):\n"
         "<NAME>Brief component name (1-3 words)</NAME>\n"
         "<DESCRIPTION>Detailed description focusing on shape, structure, and geometric features (6-12 words)</DESCRIPTION>\n"
-        "<KEYWORDS>keyword1, keyword2, keyword3, ...(4-6 keywords)</KEYWORDS>\n\n"
+        "<KEYWORDS>keyword1, keyword2, keyword3, ...(4-6 keywords)</KEYWORDS>\n"
         
         "Rules:\n"
         "- Do not use words like 'blue', 'shadow', 'transparent', 'metal', 'plastic', 'image', 'black', 'grey', 'CAD model', 'abstract', 'orange', 'purple', 'golden', 'green'\n"
@@ -107,7 +107,7 @@ def generate_shape_description(image_paths, device, vlm_pipe, is_part=False):
                 }
             ]
             # Llamamos a la pipeline con el parámetro 'text'
-            output = vlm_pipe(text=messages, max_new_tokens=300)  # Aumentamos el número de tokens para capturar toda la respuesta
+            output = vlm_pipe(text=messages, max_new_tokens=200)  # Aumentamos el número de tokens para capturar toda la respuesta
             # Extraemos solo el texto generado
             gen_text = output[0].get('generated_text', '')
             if isinstance(gen_text, list):
@@ -121,7 +121,7 @@ def generate_shape_description(image_paths, device, vlm_pipe, is_part=False):
             continue
     
     # Tomamos la descripción más completa (la que contiene todas las etiquetas)
-    valid_descriptions = [desc for desc in descriptions if "<NAME>" in desc and "<DESCRIPTION>" in desc]
+    valid_descriptions = [desc for desc in descriptions if "<NAME>" in desc and "<DESCRIPTION>" in desc and "<KEYWORDS>" in desc]
     if valid_descriptions:
         best_description = max(valid_descriptions, key=len)
     else:
