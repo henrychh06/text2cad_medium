@@ -102,17 +102,33 @@ def main():
         "--output_dir", type=str
     )
     parser.add_argument("--max_workers", type=int, default=8)
+
+    parser.add_argument("--process_split", type=str, default="all", 
+                  help="Specify which split to process: 'train', 'test', 'validation', or 'all' (default)")
     
     args = parser.parse_args()
 
     with open(args.split_json, "r") as f:
         split_json_data = json.load(f)
 
-    all_uids = (
-        split_json_data["train"]
-        + split_json_data["test"]
-        + split_json_data["validation"]
-    )
+    if args.process_split.lower() == "all":
+        all_uids = (
+            split_json_data.get("train", [])
+            + split_json_data.get("test", [])
+            + split_json_data.get("validation", [])
+        )
+        print(f"Processing all splits: {len(all_uids)} UIDs total")
+    else:
+        if args.process_split.lower() not in ["train", "test", "validation"]:
+            print(f"Warning: Invalid split '{args.process_split}', defaulting to 'all'")
+            all_uids = (
+                split_json_data.get("train", [])
+                + split_json_data.get("test", [])
+                + split_json_data.get("validation", [])
+            )
+        else:
+            all_uids = split_json_data.get(args.process_split.lower(), [])
+            print(f"Processing {args.process_split} split: {len(all_uids)} UIDs")
 
     errors = []
     with ThreadPoolExecutor(max_workers=args.max_workers) as executor:
