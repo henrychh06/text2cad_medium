@@ -79,12 +79,14 @@ def generate_shape_description(image_paths, device, vlm_pipe, is_part=False):
         "Format your response EXACTLY as follows (including the tags):\n"
         "<NAME>Brief component name (1-3 words)</NAME>\n"
         "<DESCRIPTION>Detailed description focusing on shape, structure, and geometric features (6-12 words)</DESCRIPTION>\n"
-        "<KEYWORDS>Exactly 4 keywords, separated by commas, with no extra text</KEYWORDS>\n"
+        "<KEYWORDS>EXACTLY 4 keywords, separated by commas, with no extra text</KEYWORDS>\n"
 
         "Rules:\n"
         "- Do not use words like 'blue', 'shadow', 'transparent', 'metal', 'plastic', 'image', 'black', 'grey', 'CAD model', 'abstract', 'orange', 'purple', 'golden', 'green'\n"
         "- Focus on shape, structure, and geometric features\n"
         "- Do not mention colors, materials, or rendering aspects\n"
+        "- Description must be short 6-11112 words\n"
+        "- Keywords must be exactly 4, separated by commas\n"
         f"- You are looking at {'a part of a larger assembly' if is_part else 'a complete CAD model'}"
     )
     
@@ -107,7 +109,7 @@ def generate_shape_description(image_paths, device, vlm_pipe, is_part=False):
                 }
             ]
             # Llamamos a la pipeline con el parámetro 'text'
-            output = vlm_pipe(text=messages, max_new_tokens=150)  # Aumentamos el número de tokens para capturar toda la respuesta
+            output = vlm_pipe(text=messages, max_new_tokens=200)  # Aumentamos el número de tokens para capturar toda la respuesta
             # Extraemos solo el texto generado
             gen_text = output[0].get('generated_text', '')
             if isinstance(gen_text, list):
