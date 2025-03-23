@@ -65,22 +65,26 @@ def generate_shape_description(image_paths, device, vlm_pipe, is_part=False):
     
     # Modificamos el prompt para generar el formato esperado
     prompt = (
-        "This is an image of a Computer Aided Design (CAD) model. "
+        """This is an image of a Computer Aided Design (CAD) model.  You
+        are a senior CAD engineer who knows the object name, where and how
+        the CAD model is used. Give an accurate natural language description
+        about the CAD model to a junior CAD designer who can design it from
+        your simple description. Wrap the description in the following tags"""
         "You are a senior CAD engineer who needs to: "
         "1. Identify a precise name for this CAD component "
-        "2. Describe its shape and structure in detail "
+        "2. Describe its shape and structure "
         "3. List keywords related to the component "
         
         "Format your response EXACTLY as follows (including the tags):\n"
-        "<NAME>Brief component name (1-5 words)</NAME>\n"
-        "<DESCRIPTION>Detailed description focusing on shape, structure, and geometric features (30-100 words)</DESCRIPTION>\n"
-        "<KEYWORDS>keyword1, keyword2, keyword3, ...</KEYWORDS>\n\n"
+        "<NAME>Brief component name (1-3 words)</NAME>\n"
+        "<DESCRIPTION>Detailed description focusing on shape, structure, and geometric features (6-12 words)</DESCRIPTION>\n"
+        "<KEYWORDS>keyword1, keyword2, keyword3, ...(4-6 keywords)</KEYWORDS>\n\n"
         
         "Rules:\n"
         "- Do not use words like 'blue', 'shadow', 'transparent', 'metal', 'plastic', 'image', 'black', 'grey', 'CAD model', 'abstract', 'orange', 'purple', 'golden', 'green'\n"
         "- Focus on shape, structure, and geometric features\n"
         "- Do not mention colors, materials, or rendering aspects\n"
-        "- Be precise and technical in your description\n"
+        "- Following are some bad examples: 1. CAD model 2. Metal object\n"
         f"- You are looking at {'a part of a larger assembly' if is_part else 'a complete CAD model'}"
     )
     
