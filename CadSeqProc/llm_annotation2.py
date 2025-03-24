@@ -264,6 +264,7 @@ Step 1: Draw a 2D sketch.
 Step 2: Scale the 2D sketch using the sketch_scale scaling parameter.
 Step 3: Transform the scaled 2D sketch into 3D Sketch using the euler angles and translation.
 Step 4: Extrude the 2D sketch to generate the 3D model.
+Step 5: Final dimensions of the 3D model are defined by the length, width, and height parameters.
 
 Detailed CAD assembly JSON:
 """
