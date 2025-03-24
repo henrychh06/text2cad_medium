@@ -1,0 +1,320 @@
+{
+    "final_name": "Rectangular Wooden Box",
+    "final_shape": "A three-dimensional representation of a rectangular wooden box with a flat top and bottom, and a slightly tapered front and back. The box has a simple, clean design with a flat surface and a slightly angled front and back for aesthetic appeal.",
+    "parts": {
+        "part_1": {
+            "coordinate_system": {
+                "Euler Angles": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "Translation Vector": [
+                    0.0035,
+                    0.0,
+                    0.0188
+                ]
+            },
+            "sketch": {
+                "face_1": {
+                    "loop_1": {
+                        "line_1": {
+                            "Start Point": [
+                                0.0,
+                                0.0
+                            ],
+                            "End Point": [
+                                0.375,
+                                0.0
+                            ]
+                        },
+                        "line_2": {
+                            "Start Point": [
+                                0.375,
+                                0.0
+                            ],
+                            "End Point": [
+                                0.375,
+                                0.75
+                            ]
+                        },
+                        "line_3": {
+                            "Start Point": [
+                                0.375,
+                                0.75
+                            ],
+                            "End Point": [
+                                0.0,
+                                0.75
+                            ]
+                        },
+                        "line_4": {
+                            "Start Point": [
+                                0.0,
+                                0.75
+                            ],
+                            "End Point": [
+                                0.0,
+                                0.0
+                            ]
+                        }
+                    }
+                }
+            },
+            "extrusion": {
+                "extrude_depth_towards_normal": 0.0,
+                "extrude_depth_opposite_normal": 0.0188,
+                "sketch_scale": 0.75,
+                "operation": "NewBodyFeatureOperation"
+            },
+            "description": {
+                "name": "Rectangular Wooden Box",
+                "shape": "A three-dimensional representation of a rectangular wooden box with a flat top and bottom, and a slightly tapered front and back. The box has a simple, clean design with a flat surface and a slightly angled front and back for aesthetic appeal.",
+                "length": 0.37500000000000006,
+                "width": 0.7500000000000001,
+                "height": 0.018750000000000003
+            }
+        },
+        "part_2": {
+            "coordinate_system": {
+                "Euler Angles": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "Translation Vector": [
+                    0.0035,
+                    0.0,
+                    0.0188
+                ]
+            },
+            "sketch": {
+                "face_1": {
+                    "loop_1": {
+                        "line_1": {
+                            "Start Point": [
+                                0.0,
+                                0.0
+                            ],
+                            "End Point": [
+                                0.375,
+                                0.0
+                            ]
+                        },
+                        "line_2": {
+                            "Start Point": [
+                                0.375,
+                                0.0
+                            ],
+                            "End Point": [
+                                0.375,
+                                0.75
+                            ]
+                        },
+                        "line_3": {
+                            "Start Point": [
+                                0.375,
+                                0.75
+                            ],
+                            "End Point": [
+                                0.0,
+                                0.75
+                            ]
+                        },
+                        "line_4": {
+                            "Start Point": [
+                                0.0,
+                                0.75
+                            ],
+                            "End Point": [
+                                0.0,
+                                0.0
+                            ]
+                        }
+                    },
+                    "loop_2": {
+                        "line_1": {
+                            "Start Point": [
+                                0.0094,
+                                0.0094
+                            ],
+                            "End Point": [
+                                0.3656,
+                                0.0094
+                            ]
+                        },
+                        "line_2": {
+                            "Start Point": [
+                                0.3656,
+                                0.0094
+                            ],
+                            "End Point": [
+                                0.3656,
+                                0.7406
+                            ]
+                        },
+                        "line_3": {
+                            "Start Point": [
+                                0.3656,
+                                0.7406
+                            ],
+                            "End Point": [
+                                0.0094,
+                                0.7406
+                            ]
+                        },
+                        "line_4": {
+                            "Start Point": [
+                                0.0094,
+                                0.7406
+                            ],
+                            "End Point": [
+                                0.0094,
+                                0.0094
+                            ]
+                        }
+                    }
+                }
+            },
+            "extrusion": {
+                "extrude_depth_towards_normal": 0.1312,
+                "extrude_depth_opposite_normal": 0.0,
+                "sketch_scale": 0.75,
+                "operation": "NewBodyFeatureOperation"
+            },
+            "description": {
+                "name": "Rectangular Wooden Box",
+                "shape": "A three-dimensional representation of a rectangular wooden box with a flat top and bottom, and a slightly tapered front and back. The box has a simple, clean design with a flat surface and a slightly angled front and back for aesthetic appeal.",
+                "length": 0.37500000000000006,
+                "width": 0.7500000000000001,
+                "height": 0.13125
+            }
+        },
+        "part_3": {
+            "coordinate_system": {
+                "Euler Angles": [
+                    0.0,
+                    0.0,
+                    -90.0
+                ],
+                "Translation Vector": [
+                    0.0035,
+                    0.0,
+                    0.15
+                ]
+            },
+            "sketch": {
+                "face_1": {
+                    "loop_1": {
+                        "line_1": {
+                            "Start Point": [
+                                0.0,
+                                0.0
+                            ],
+                            "End Point": [
+                                0.375,
+                                0.0
+                            ]
+                        },
+                        "line_2": {
+                            "Start Point": [
+                                0.375,
+                                0.0
+                            ],
+                            "End Point": [
+                                0.1875,
+                                0.1312
+                            ]
+                        },
+                        "line_3": {
+                            "Start Point": [
+                                0.1875,
+                                0.1312
+                            ],
+                            "End Point": [
+                                0.0,
+                                0.0
+                            ]
+                        }
+                    }
+                }
+            },
+            "extrusion": {
+                "extrude_depth_towards_normal": 0.0,
+                "extrude_depth_opposite_normal": 0.0094,
+                "sketch_scale": 0.375,
+                "operation": "JoinFeatureOperation"
+            },
+            "description": {
+                "name": "Rectangular Wooden Box",
+                "shape": "A three-dimensional representation of a rectangular wooden box with a flat top and bottom, and a slightly tapered front and back. The box has a simple, clean design with a flat surface and a slightly angled front and back for aesthetic appeal.",
+                "length": 0.37500000000000006,
+                "width": 0.13125,
+                "height": 0.009375000000000001
+            }
+        },
+        "part_4": {
+            "coordinate_system": {
+                "Euler Angles": [
+                    180.0,
+                    0.0,
+                    -90.0
+                ],
+                "Translation Vector": [
+                    0.3785,
+                    0.75,
+                    0.15
+                ]
+            },
+            "sketch": {
+                "face_1": {
+                    "loop_1": {
+                        "line_1": {
+                            "Start Point": [
+                                0.0,
+                                0.0
+                            ],
+                            "End Point": [
+                                0.375,
+                                0.0
+                            ]
+                        },
+                        "line_2": {
+                            "Start Point": [
+                                0.375,
+                                0.0
+                            ],
+                            "End Point": [
+                                0.1875,
+                                0.1312
+                            ]
+                        },
+                        "line_3": {
+                            "Start Point": [
+                                0.1875,
+                                0.1312
+                            ],
+                            "End Point": [
+                                0.0,
+                                0.0
+                            ]
+                        }
+                    }
+                }
+            },
+            "extrusion": {
+                "extrude_depth_towards_normal": 0.0,
+                "extrude_depth_opposite_normal": 0.0094,
+                "sketch_scale": 0.375,
+                "operation": "JoinFeatureOperation"
+            },
+            "description": {
+                "name": "Rectangular Wooden Box",
+                "shape": "A three-dimensional representation of a rectangular wooden box with a flat top and bottom, and a slightly tapered front and back. The box has a simple, clean design with a flat surface and a slightly angled front and back for aesthetic appeal.",
+                "length": 0.37500000000000006,
+                "width": 0.13125,
+                "height": 0.009375000000000001
+            }
+        }
+    }
+}

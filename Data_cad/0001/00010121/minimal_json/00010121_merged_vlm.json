@@ -1,0 +1,334 @@
+{
+    "final_name": "Hexagonal Gear",
+    "final_shape": "A three-dimensional model of a hexagonal gear with six teeth and a central hole, suitable for mechanical applications.",
+    "parts": {
+        "part_1": {
+            "coordinate_system": {
+                "Euler Angles": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "Translation Vector": [
+                    0.0215,
+                    0.0,
+                    0.0
+                ]
+            },
+            "sketch": {
+                "face_1": {
+                    "loop_1": {
+                        "arc_1": {
+                            "Start Point": [
+                                0.0,
+                                0.4939
+                            ],
+                            "Mid Point": [
+                                0.0287,
+                                0.1812
+                            ],
+                            "End Point": [
+                                0.2852,
+                                0.0
+                            ]
+                        },
+                        "line_1": {
+                            "Start Point": [
+                                0.2852,
+                                0.0
+                            ],
+                            "End Point": [
+                                0.3061,
+                                0.1131
+                            ]
+                        },
+                        "arc_2": {
+                            "Start Point": [
+                                0.3061,
+                                0.1131
+                            ],
+                            "Mid Point": [
+                                0.3535,
+                                0.1087
+                            ],
+                            "End Point": [
+                                0.4009,
+                                0.1131
+                            ]
+                        },
+                        "line_2": {
+                            "Start Point": [
+                                0.4009,
+                                0.1131
+                            ],
+                            "End Point": [
+                                0.4218,
+                                0.0
+                            ]
+                        },
+                        "arc_3": {
+                            "Start Point": [
+                                0.4218,
+                                0.0
+                            ],
+                            "Mid Point": [
+                                0.6783,
+                                0.1812
+                            ],
+                            "End Point": [
+                                0.707,
+                                0.4939
+                            ]
+                        },
+                        "line_3": {
+                            "Start Point": [
+                                0.707,
+                                0.4939
+                            ],
+                            "End Point": [
+                                0.5986,
+                                0.4555
+                            ]
+                        },
+                        "arc_4": {
+                            "Start Point": [
+                                0.5986,
+                                0.4555
+                            ],
+                            "Mid Point": [
+                                0.5787,
+                                0.4987
+                            ],
+                            "End Point": [
+                                0.5512,
+                                0.5376
+                            ]
+                        },
+                        "line_4": {
+                            "Start Point": [
+                                0.5512,
+                                0.5376
+                            ],
+                            "End Point": [
+                                0.6386,
+                                0.6123
+                            ]
+                        },
+                        "arc_5": {
+                            "Start Point": [
+                                0.6386,
+                                0.6123
+                            ],
+                            "Mid Point": [
+                                0.3535,
+                                0.7437
+                            ],
+                            "End Point": [
+                                0.0683,
+                                0.6123
+                            ]
+                        },
+                        "line_5": {
+                            "Start Point": [
+                                0.0683,
+                                0.6123
+                            ],
+                            "End Point": [
+                                0.1558,
+                                0.5376
+                            ]
+                        },
+                        "arc_6": {
+                            "Start Point": [
+                                0.1558,
+                                0.5376
+                            ],
+                            "Mid Point": [
+                                0.1283,
+                                0.4987
+                            ],
+                            "End Point": [
+                                0.1084,
+                                0.4555
+                            ]
+                        },
+                        "line_6": {
+                            "Start Point": [
+                                0.1084,
+                                0.4555
+                            ],
+                            "End Point": [
+                                0.0,
+                                0.4939
+                            ]
+                        }
+                    },
+                    "loop_2": {
+                        "circle_1": {
+                            "Center": [
+                                0.2735,
+                                0.3687
+                            ],
+                            "Radius": 0.02
+                        }
+                    },
+                    "loop_3": {
+                        "circle_1": {
+                            "Center": [
+                                0.3535,
+                                0.3687
+                            ],
+                            "Radius": 0.055
+                        }
+                    },
+                    "loop_4": {
+                        "circle_1": {
+                            "Center": [
+                                0.4335,
+                                0.3687
+                            ],
+                            "Radius": 0.02
+                        }
+                    }
+                }
+            },
+            "extrusion": {
+                "extrude_depth_towards_normal": 0.02,
+                "extrude_depth_opposite_normal": 0.0,
+                "sketch_scale": 0.7437,
+                "operation": "NewBodyFeatureOperation"
+            },
+            "description": {
+                "name": "Hexagonal Gear",
+                "shape": "A three-dimensional model of a hexagonal gear with six teeth and a central hole, suitable for mechanical applications.",
+                "length": 0.7069812000000002,
+                "width": 0.7437206000000001,
+                "height": 0.020000000000000004
+            }
+        },
+        "part_2": {
+            "coordinate_system": {
+                "Euler Angles": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "Translation Vector": [
+                    0.1579,
+                    0.2207,
+                    0.02
+                ]
+            },
+            "sketch": {
+                "face_1": {
+                    "loop_1": {
+                        "circle_1": {
+                            "Center": [
+                                0.02,
+                                0.02
+                            ],
+                            "Radius": 0.02
+                        }
+                    }
+                },
+                "face_2": {
+                    "loop_1": {
+                        "circle_1": {
+                            "Center": [
+                                0.2171,
+                                0.383
+                            ],
+                            "Radius": 0.02
+                        }
+                    }
+                },
+                "face_3": {
+                    "loop_1": {
+                        "circle_1": {
+                            "Center": [
+                                0.4142,
+                                0.02
+                            ],
+                            "Radius": 0.02
+                        }
+                    }
+                }
+            },
+            "extrusion": {
+                "extrude_depth_towards_normal": 0.025,
+                "extrude_depth_opposite_normal": 0.0,
+                "sketch_scale": 0.4342,
+                "operation": "JoinFeatureOperation"
+            },
+            "description": {
+                "name": "Hexagonal Gear",
+                "shape": "A three-dimensional model of a hexagonal gear with six teeth and a central hole, suitable for mechanical applications.",
+                "length": 0.4341752000000001,
+                "width": 0.4029902000000001,
+                "height": 0.025000000000000005
+            }
+        },
+        "part_3": {
+            "coordinate_system": {
+                "Euler Angles": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "Translation Vector": [
+                    0.1659,
+                    0.2287,
+                    0.045
+                ]
+            },
+            "sketch": {
+                "face_1": {
+                    "loop_1": {
+                        "circle_1": {
+                            "Center": [
+                                0.012,
+                                0.012
+                            ],
+                            "Radius": 0.012
+                        }
+                    }
+                },
+                "face_2": {
+                    "loop_1": {
+                        "circle_1": {
+                            "Center": [
+                                0.2091,
+                                0.375
+                            ],
+                            "Radius": 0.012
+                        }
+                    }
+                },
+                "face_3": {
+                    "loop_1": {
+                        "circle_1": {
+                            "Center": [
+                                0.4062,
+                                0.012
+                            ],
+                            "Radius": 0.012
+                        }
+                    }
+                }
+            },
+            "extrusion": {
+                "extrude_depth_towards_normal": 0.095,
+                "extrude_depth_opposite_normal": 0.0,
+                "sketch_scale": 0.4182,
+                "operation": "JoinFeatureOperation"
+            },
+            "description": {
+                "name": "Hexagonal Gear",
+                "shape": "A three-dimensional model of a hexagonal gear with six teeth and a central hole, suitable for mechanical applications.",
+                "length": 0.4181752,
+                "width": 0.38699020000000006,
+                "height": 0.09500000000000001
+            }
+        }
+    }
+}

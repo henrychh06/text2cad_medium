@@ -1,0 +1,79 @@
+{
+    "final_name": "Rectangular Solid",
+    "final_shape": "A three-dimensional rectangular solid with a flat top and bottom, and a smooth, straight-edged surface.",
+    "parts": {
+        "part_1": {
+            "coordinate_system": {
+                "Euler Angles": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "Translation Vector": [
+                    0.1105,
+                    0.0,
+                    0.0
+                ]
+            },
+            "sketch": {
+                "face_1": {
+                    "loop_1": {
+                        "line_1": {
+                            "Start Point": [
+                                0.0,
+                                0.0
+                            ],
+                            "End Point": [
+                                0.529,
+                                0.0
+                            ]
+                        },
+                        "line_2": {
+                            "Start Point": [
+                                0.529,
+                                0.0
+                            ],
+                            "End Point": [
+                                0.529,
+                                0.2774
+                            ]
+                        },
+                        "line_3": {
+                            "Start Point": [
+                                0.529,
+                                0.2774
+                            ],
+                            "End Point": [
+                                0.0,
+                                0.2774
+                            ]
+                        },
+                        "line_4": {
+                            "Start Point": [
+                                0.0,
+                                0.2774
+                            ],
+                            "End Point": [
+                                0.0,
+                                0.0
+                            ]
+                        }
+                    }
+                }
+            },
+            "extrusion": {
+                "extrude_depth_towards_normal": 0.3738,
+                "extrude_depth_opposite_normal": 0.0,
+                "sketch_scale": 0.529,
+                "operation": "NewBodyFeatureOperation"
+            },
+            "description": {
+                "name": "Rectangular Solid",
+                "shape": "A three-dimensional rectangular solid with a flat top and bottom, and a smooth, straight-edged surface.",
+                "length": 0.5289968652037618,
+                "width": 0.27742946708463945,
+                "height": 0.37382445141065834
+            }
+        }
+    }
+}

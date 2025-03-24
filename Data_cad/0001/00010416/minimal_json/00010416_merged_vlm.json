@@ -1,0 +1,257 @@
+{
+    "final_name": "Triangular Wedge",
+    "final_shape": "A three-dimensional triangular wedge with a flat base and a tapered point at the top, suitable for use in mechanical or architectural designs.",
+    "parts": {
+        "part_1": {
+            "coordinate_system": {
+                "Euler Angles": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "Translation Vector": [
+                    0.0,
+                    0.0,
+                    0.0
+                ]
+            },
+            "sketch": {
+                "face_1": {
+                    "loop_1": {
+                        "line_1": {
+                            "Start Point": [
+                                0.0,
+                                0.0842
+                            ],
+                            "End Point": [
+                                0.0243,
+                                0.0421
+                            ]
+                        },
+                        "line_2": {
+                            "Start Point": [
+                                0.0243,
+                                0.0421
+                            ],
+                            "End Point": [
+                                0.0486,
+                                0.0
+                            ]
+                        },
+                        "arc_1": {
+                            "Start Point": [
+                                0.0486,
+                                0.0
+                            ],
+                            "Mid Point": [
+                                0.375,
+                                0.0691
+                            ],
+                            "End Point": [
+                                0.7014,
+                                0.0
+                            ]
+                        },
+                        "line_3": {
+                            "Start Point": [
+                                0.7014,
+                                0.0
+                            ],
+                            "End Point": [
+                                0.7257,
+                                0.0421
+                            ]
+                        },
+                        "line_4": {
+                            "Start Point": [
+                                0.7257,
+                                0.0421
+                            ],
+                            "End Point": [
+                                0.75,
+                                0.0842
+                            ]
+                        },
+                        "arc_2": {
+                            "Start Point": [
+                                0.75,
+                                0.0842
+                            ],
+                            "Mid Point": [
+                                0.527,
+                                0.3323
+                            ],
+                            "End Point": [
+                                0.4236,
+                                0.6495
+                            ]
+                        },
+                        "line_5": {
+                            "Start Point": [
+                                0.4236,
+                                0.6495
+                            ],
+                            "End Point": [
+                                0.375,
+                                0.6495
+                            ]
+                        },
+                        "line_6": {
+                            "Start Point": [
+                                0.375,
+                                0.6495
+                            ],
+                            "End Point": [
+                                0.3264,
+                                0.6495
+                            ]
+                        },
+                        "arc_3": {
+                            "Start Point": [
+                                0.3264,
+                                0.6495
+                            ],
+                            "Mid Point": [
+                                0.223,
+                                0.3323
+                            ],
+                            "End Point": [
+                                0.0,
+                                0.0842
+                            ]
+                        }
+                    },
+                    "loop_2": {
+                        "circle_1": {
+                            "Center": [
+                                0.0711,
+                                0.0691
+                            ],
+                            "Radius": 0.0094
+                        }
+                    },
+                    "loop_3": {
+                        "circle_1": {
+                            "Center": [
+                                0.375,
+                                0.5955
+                            ],
+                            "Radius": 0.0094
+                        }
+                    },
+                    "loop_4": {
+                        "circle_1": {
+                            "Center": [
+                                0.6789,
+                                0.0691
+                            ],
+                            "Radius": 0.0094
+                        }
+                    }
+                }
+            },
+            "extrusion": {
+                "extrude_depth_towards_normal": 0.0432,
+                "extrude_depth_opposite_normal": 0.0,
+                "sketch_scale": 0.75,
+                "operation": "NewBodyFeatureOperation"
+            },
+            "description": {
+                "name": "Triangular Wedge",
+                "shape": "A three-dimensional triangular wedge with a flat base and a tapered point at the top, suitable for use in mechanical or architectural designs.",
+                "length": 0.7500000509291335,
+                "width": 0.6495190602136132,
+                "height": 0.04319535925961624
+            }
+        },
+        "part_2": {
+            "coordinate_system": {
+                "Euler Angles": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "Translation Vector": [
+                    0.3541,
+                    0.2236,
+                    0.0432
+                ]
+            },
+            "sketch": {
+                "face_1": {
+                    "loop_1": {
+                        "circle_1": {
+                            "Center": [
+                                0.0209,
+                                0.0209
+                            ],
+                            "Radius": 0.0209
+                        }
+                    }
+                }
+            },
+            "extrusion": {
+                "extrude_depth_towards_normal": 0.0432,
+                "extrude_depth_opposite_normal": 0.0,
+                "sketch_scale": 0.0418,
+                "operation": "JoinFeatureOperation"
+            },
+            "description": {
+                "name": "Triangular Wedge",
+                "shape": "A three-dimensional triangular wedge with a flat base and a tapered point at the top, suitable for use in mechanical or architectural designs.",
+                "length": 0.04184550428275323,
+                "width": 0.04184550428275323,
+                "height": 0.04319535925961624
+            }
+        },
+        "part_3": {
+            "coordinate_system": {
+                "Euler Angles": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "Translation Vector": [
+                    0.344,
+                    0.2135,
+                    0.0432
+                ]
+            },
+            "sketch": {
+                "face_1": {
+                    "loop_1": {
+                        "circle_1": {
+                            "Center": [
+                                0.031,
+                                0.031
+                            ],
+                            "Radius": 0.031
+                        }
+                    },
+                    "loop_2": {
+                        "circle_1": {
+                            "Center": [
+                                0.031,
+                                0.031
+                            ],
+                            "Radius": 0.0209
+                        }
+                    }
+                }
+            },
+            "extrusion": {
+                "extrude_depth_towards_normal": 0.0054,
+                "extrude_depth_opposite_normal": 0.0,
+                "sketch_scale": 0.0621,
+                "operation": "JoinFeatureOperation"
+            },
+            "description": {
+                "name": "Triangular Wedge",
+                "shape": "A three-dimensional triangular wedge with a flat base and a tapered point at the top, suitable for use in mechanical or architectural designs.",
+                "length": 0.06209332893569834,
+                "width": 0.06209332893569834,
+                "height": 0.00539941990745203
+            }
+        }
+    }
+}

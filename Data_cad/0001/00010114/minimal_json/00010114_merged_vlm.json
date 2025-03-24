@@ -1,0 +1,296 @@
+{
+    "final_name": "Triangular Tower",
+    "final_shape": "A tall, three-dimensional structure composed of multiple triangular shapes, with a series of horizontal and vertical lines connecting them, creating a complex geometric form.",
+    "parts": {
+        "part_1": {
+            "coordinate_system": {
+                "Euler Angles": [
+                    -90.0,
+                    0.0,
+                    -90.0
+                ],
+                "Translation Vector": [
+                    0.0,
+                    0.0,
+                    0.0
+                ]
+            },
+            "sketch": {
+                "face_1": {
+                    "loop_1": {
+                        "line_1": {
+                            "Start Point": [
+                                0.0,
+                                0.0
+                            ],
+                            "End Point": [
+                                0.1298,
+                                0.0
+                            ]
+                        },
+                        "line_2": {
+                            "Start Point": [
+                                0.1298,
+                                0.0
+                            ],
+                            "End Point": [
+                                0.1298,
+                                0.2596
+                            ]
+                        },
+                        "line_3": {
+                            "Start Point": [
+                                0.1298,
+                                0.2596
+                            ],
+                            "End Point": [
+                                0.3058,
+                                0.2596
+                            ]
+                        },
+                        "line_4": {
+                            "Start Point": [
+                                0.3058,
+                                0.2596
+                            ],
+                            "End Point": [
+                                0.4817,
+                                0.2596
+                            ]
+                        },
+                        "line_5": {
+                            "Start Point": [
+                                0.4817,
+                                0.2596
+                            ],
+                            "End Point": [
+                                0.4817,
+                                0.0
+                            ]
+                        },
+                        "line_6": {
+                            "Start Point": [
+                                0.4817,
+                                0.0
+                            ],
+                            "End Point": [
+                                0.6115,
+                                0.0
+                            ]
+                        },
+                        "line_7": {
+                            "Start Point": [
+                                0.6115,
+                                0.0
+                            ],
+                            "End Point": [
+                                0.6115,
+                                0.1154
+                            ]
+                        },
+                        "line_8": {
+                            "Start Point": [
+                                0.6115,
+                                0.1154
+                            ],
+                            "End Point": [
+                                0.525,
+                                0.1154
+                            ]
+                        },
+                        "line_9": {
+                            "Start Point": [
+                                0.525,
+                                0.1154
+                            ],
+                            "End Point": [
+                                0.525,
+                                0.3173
+                            ]
+                        },
+                        "line_10": {
+                            "Start Point": [
+                                0.525,
+                                0.3173
+                            ],
+                            "End Point": [
+                                0.3058,
+                                0.3173
+                            ]
+                        },
+                        "line_11": {
+                            "Start Point": [
+                                0.3058,
+                                0.3173
+                            ],
+                            "End Point": [
+                                0.0865,
+                                0.3173
+                            ]
+                        },
+                        "line_12": {
+                            "Start Point": [
+                                0.0865,
+                                0.3173
+                            ],
+                            "End Point": [
+                                0.0865,
+                                0.1154
+                            ]
+                        },
+                        "line_13": {
+                            "Start Point": [
+                                0.0865,
+                                0.1154
+                            ],
+                            "End Point": [
+                                0.0,
+                                0.1154
+                            ]
+                        },
+                        "line_14": {
+                            "Start Point": [
+                                0.0,
+                                0.1154
+                            ],
+                            "End Point": [
+                                0.0,
+                                0.0
+                            ]
+                        }
+                    }
+                }
+            },
+            "extrusion": {
+                "extrude_depth_towards_normal": 0.75,
+                "extrude_depth_opposite_normal": 0.0,
+                "sketch_scale": 0.6115,
+                "operation": "NewBodyFeatureOperation"
+            },
+            "description": {
+                "name": "Triangular Tower",
+                "shape": "A tall, three-dimensional structure composed of multiple triangular shapes, with a series of horizontal and vertical lines connecting them, creating a complex geometric form.",
+                "length": 0.6115384615384615,
+                "width": 0.3173076923076923,
+                "height": 0.75
+            }
+        },
+        "part_2": {
+            "coordinate_system": {
+                "Euler Angles": [
+                    0.0,
+                    0.0,
+                    180.0
+                ],
+                "Translation Vector": [
+                    0.0,
+                    0.4817,
+                    0.2596
+                ]
+            },
+            "sketch": {
+                "face_1": {
+                    "loop_1": {
+                        "line_1": {
+                            "Start Point": [
+                                0.0,
+                                0.0
+                            ],
+                            "End Point": [
+                                0.0288,
+                                0.0
+                            ]
+                        },
+                        "line_2": {
+                            "Start Point": [
+                                0.0288,
+                                0.0
+                            ],
+                            "End Point": [
+                                0.0288,
+                                0.3519
+                            ]
+                        },
+                        "line_3": {
+                            "Start Point": [
+                                0.0288,
+                                0.3519
+                            ],
+                            "End Point": [
+                                0.0,
+                                0.3519
+                            ]
+                        },
+                        "line_4": {
+                            "Start Point": [
+                                0.0,
+                                0.3519
+                            ],
+                            "End Point": [
+                                0.0,
+                                0.0
+                            ]
+                        }
+                    }
+                },
+                "face_2": {
+                    "loop_1": {
+                        "line_1": {
+                            "Start Point": [
+                                0.7212,
+                                0.0
+                            ],
+                            "End Point": [
+                                0.75,
+                                0.0
+                            ]
+                        },
+                        "line_2": {
+                            "Start Point": [
+                                0.75,
+                                0.0
+                            ],
+                            "End Point": [
+                                0.75,
+                                0.3519
+                            ]
+                        },
+                        "line_3": {
+                            "Start Point": [
+                                0.75,
+                                0.3519
+                            ],
+                            "End Point": [
+                                0.7212,
+                                0.3519
+                            ]
+                        },
+                        "line_4": {
+                            "Start Point": [
+                                0.7212,
+                                0.3519
+                            ],
+                            "End Point": [
+                                0.7212,
+                                0.0
+                            ]
+                        }
+                    }
+                }
+            },
+            "extrusion": {
+                "extrude_depth_towards_normal": 0.0288,
+                "extrude_depth_opposite_normal": 0.0,
+                "sketch_scale": 0.75,
+                "operation": "JoinFeatureOperation"
+            },
+            "description": {
+                "name": "Triangular Tower",
+                "shape": "A tall, three-dimensional structure composed of multiple triangular shapes, with a series of horizontal and vertical lines connecting them, creating a complex geometric form.",
+                "length": 0.7499999999999999,
+                "width": 0.3519230769230769,
+                "height": 0.028846153846153844
+            }
+        }
+    }
+}

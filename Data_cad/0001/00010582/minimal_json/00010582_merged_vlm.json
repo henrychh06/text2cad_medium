@@ -1,0 +1,135 @@
+{
+    "final_name": "Rectangular Signboard",
+    "final_shape": "A 3D model of a rectangular signboard with a flat surface and a simple, straight edge design.",
+    "parts": {
+        "part_1": {
+            "coordinate_system": {
+                "Euler Angles": [
+                    0.0,
+                    0.0,
+                    -90.0
+                ],
+                "Translation Vector": [
+                    0.0,
+                    0.0178,
+                    0.0
+                ]
+            },
+            "sketch": {
+                "face_1": {
+                    "loop_1": {
+                        "arc_1": {
+                            "Start Point": [
+                                0.0,
+                                0.02
+                            ],
+                            "Mid Point": [
+                                0.0058,
+                                0.0058
+                            ],
+                            "End Point": [
+                                0.02,
+                                0.0
+                            ]
+                        },
+                        "line_1": {
+                            "Start Point": [
+                                0.02,
+                                0.0
+                            ],
+                            "End Point": [
+                                0.73,
+                                0.0
+                            ]
+                        },
+                        "arc_2": {
+                            "Start Point": [
+                                0.73,
+                                0.0
+                            ],
+                            "Mid Point": [
+                                0.7442,
+                                0.0058
+                            ],
+                            "End Point": [
+                                0.75,
+                                0.02
+                            ]
+                        },
+                        "line_2": {
+                            "Start Point": [
+                                0.75,
+                                0.02
+                            ],
+                            "End Point": [
+                                0.75,
+                                0.4516
+                            ]
+                        },
+                        "arc_3": {
+                            "Start Point": [
+                                0.75,
+                                0.4516
+                            ],
+                            "Mid Point": [
+                                0.7442,
+                                0.4657
+                            ],
+                            "End Point": [
+                                0.73,
+                                0.4715
+                            ]
+                        },
+                        "line_3": {
+                            "Start Point": [
+                                0.73,
+                                0.4715
+                            ],
+                            "End Point": [
+                                0.02,
+                                0.4715
+                            ]
+                        },
+                        "arc_4": {
+                            "Start Point": [
+                                0.02,
+                                0.4715
+                            ],
+                            "Mid Point": [
+                                0.0058,
+                                0.4657
+                            ],
+                            "End Point": [
+                                0.0,
+                                0.4516
+                            ]
+                        },
+                        "line_4": {
+                            "Start Point": [
+                                0.0,
+                                0.4516
+                            ],
+                            "End Point": [
+                                0.0,
+                                0.02
+                            ]
+                        }
+                    }
+                }
+            },
+            "extrusion": {
+                "extrude_depth_towards_normal": 0.0178,
+                "extrude_depth_opposite_normal": 0.0,
+                "sketch_scale": 0.75,
+                "operation": "NewBodyFeatureOperation"
+            },
+            "description": {
+                "name": "Rectangular Signboard",
+                "shape": "A 3D model of a rectangular signboard with a flat surface and a simple, straight edge design.",
+                "length": 0.7499999999999998,
+                "width": 0.4715236686390531,
+                "height": 0.01775147928994083
+            }
+        }
+    }
+}

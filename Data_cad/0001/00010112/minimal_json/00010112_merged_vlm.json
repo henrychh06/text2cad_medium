@@ -1,0 +1,3869 @@
+{
+    "final_name": "Hexagonal Gear",
+    "final_shape": "A three-dimensional model of a hexagonal gear with a central hole and six evenly spaced teeth on each side.",
+    "parts": {
+        "part_1": {
+            "coordinate_system": {
+                "Euler Angles": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "Translation Vector": [
+                    0.0,
+                    0.0002,
+                    0.0
+                ]
+            },
+            "sketch": {
+                "face_1": {
+                    "loop_1": {
+                        "arc_1": {
+                            "Start Point": [
+                                0.0,
+                                0.4009
+                            ],
+                            "Mid Point": [
+                                0.006,
+                                0.4463
+                            ],
+                            "End Point": [
+                                0.0174,
+                                0.4907
+                            ]
+                        },
+                        "line_1": {
+                            "Start Point": [
+                                0.0174,
+                                0.4907
+                            ],
+                            "End Point": [
+                                0.0925,
+                                0.4663
+                            ]
+                        },
+                        "arc_2": {
+                            "Start Point": [
+                                0.0925,
+                                0.4663
+                            ],
+                            "Mid Point": [
+                                0.1016,
+                                0.4904
+                            ],
+                            "End Point": [
+                                0.1127,
+                                0.5138
+                            ]
+                        },
+                        "line_2": {
+                            "Start Point": [
+                                0.1127,
+                                0.5138
+                            ],
+                            "End Point": [
+                                0.043,
+                                0.5508
+                            ]
+                        },
+                        "arc_3": {
+                            "Start Point": [
+                                0.043,
+                                0.5508
+                            ],
+                            "Mid Point": [
+                                0.0669,
+                                0.5899
+                            ],
+                            "End Point": [
+                                0.0954,
+                                0.6257
+                            ]
+                        },
+                        "line_3": {
+                            "Start Point": [
+                                0.0954,
+                                0.6257
+                            ],
+                            "End Point": [
+                                0.1541,
+                                0.5729
+                            ]
+                        },
+                        "arc_4": {
+                            "Start Point": [
+                                0.1541,
+                                0.5729
+                            ],
+                            "Mid Point": [
+                                0.1722,
+                                0.5913
+                            ],
+                            "End Point": [
+                                0.1918,
+                                0.6081
+                            ]
+                        },
+                        "line_4": {
+                            "Start Point": [
+                                0.1918,
+                                0.6081
+                            ],
+                            "End Point": [
+                                0.1432,
+                                0.6703
+                            ]
+                        },
+                        "arc_5": {
+                            "Start Point": [
+                                0.1432,
+                                0.6703
+                            ],
+                            "Mid Point": [
+                                0.1809,
+                                0.6962
+                            ],
+                            "End Point": [
+                                0.2216,
+                                0.7174
+                            ]
+                        },
+                        "line_5": {
+                            "Start Point": [
+                                0.2216,
+                                0.7174
+                            ],
+                            "End Point": [
+                                0.2537,
+                                0.6452
+                            ]
+                        },
+                        "arc_6": {
+                            "Start Point": [
+                                0.2537,
+                                0.6452
+                            ],
+                            "Mid Point": [
+                                0.2777,
+                                0.6547
+                            ],
+                            "End Point": [
+                                0.3025,
+                                0.662
+                            ]
+                        },
+                        "line_6": {
+                            "Start Point": [
+                                0.3025,
+                                0.662
+                            ],
+                            "End Point": [
+                                0.2834,
+                                0.7386
+                            ]
+                        },
+                        "arc_7": {
+                            "Start Point": [
+                                0.2834,
+                                0.7386
+                            ],
+                            "Mid Point": [
+                                0.3284,
+                                0.747
+                            ],
+                            "End Point": [
+                                0.3741,
+                                0.7498
+                            ]
+                        },
+                        "line_7": {
+                            "Start Point": [
+                                0.3741,
+                                0.7498
+                            ],
+                            "End Point": [
+                                0.3741,
+                                0.6708
+                            ]
+                        },
+                        "arc_8": {
+                            "Start Point": [
+                                0.3741,
+                                0.6708
+                            ],
+                            "Mid Point": [
+                                0.3999,
+                                0.6697
+                            ],
+                            "End Point": [
+                                0.4255,
+                                0.6663
+                            ]
+                        },
+                        "line_8": {
+                            "Start Point": [
+                                0.4255,
+                                0.6663
+                            ],
+                            "End Point": [
+                                0.4392,
+                                0.7441
+                            ]
+                        },
+                        "arc_9": {
+                            "Start Point": [
+                                0.4392,
+                                0.7441
+                            ],
+                            "Mid Point": [
+                                0.4837,
+                                0.7334
+                            ],
+                            "End Point": [
+                                0.5266,
+                                0.7174
+                            ]
+                        },
+                        "line_9": {
+                            "Start Point": [
+                                0.5266,
+                                0.7174
+                            ],
+                            "End Point": [
+                                0.4945,
+                                0.6452
+                            ]
+                        },
+                        "arc_10": {
+                            "Start Point": [
+                                0.4945,
+                                0.6452
+                            ],
+                            "Mid Point": [
+                                0.5176,
+                                0.6337
+                            ],
+                            "End Point": [
+                                0.5396,
+                                0.6202
+                            ]
+                        },
+                        "line_10": {
+                            "Start Point": [
+                                0.5396,
+                                0.6202
+                            ],
+                            "End Point": [
+                                0.5838,
+                                0.6857
+                            ]
+                        },
+                        "arc_11": {
+                            "Start Point": [
+                                0.5838,
+                                0.6857
+                            ],
+                            "Mid Point": [
+                                0.6201,
+                                0.6578
+                            ],
+                            "End Point": [
+                                0.6528,
+                                0.6257
+                            ]
+                        },
+                        "line_11": {
+                            "Start Point": [
+                                0.6528,
+                                0.6257
+                            ],
+                            "End Point": [
+                                0.5941,
+                                0.5729
+                            ]
+                        },
+                        "arc_12": {
+                            "Start Point": [
+                                0.5941,
+                                0.5729
+                            ],
+                            "Mid Point": [
+                                0.6105,
+                                0.5529
+                            ],
+                            "End Point": [
+                                0.6252,
+                                0.5317
+                            ]
+                        },
+                        "line_12": {
+                            "Start Point": [
+                                0.6252,
+                                0.5317
+                            ],
+                            "End Point": [
+                                0.6921,
+                                0.5735
+                            ]
+                        },
+                        "arc_13": {
+                            "Start Point": [
+                                0.6921,
+                                0.5735
+                            ],
+                            "Mid Point": [
+                                0.714,
+                                0.5333
+                            ],
+                            "End Point": [
+                                0.7307,
+                                0.4907
+                            ]
+                        },
+                        "line_13": {
+                            "Start Point": [
+                                0.7307,
+                                0.4907
+                            ],
+                            "End Point": [
+                                0.6556,
+                                0.4663
+                            ]
+                        },
+                        "arc_14": {
+                            "Start Point": [
+                                0.6556,
+                                0.4663
+                            ],
+                            "Mid Point": [
+                                0.6626,
+                                0.4414
+                            ],
+                            "End Point": [
+                                0.6673,
+                                0.416
+                            ]
+                        },
+                        "line_14": {
+                            "Start Point": [
+                                0.6673,
+                                0.416
+                            ],
+                            "End Point": [
+                                0.7454,
+                                0.427
+                            ]
+                        },
+                        "arc_15": {
+                            "Start Point": [
+                                0.7454,
+                                0.427
+                            ],
+                            "Mid Point": [
+                                0.749,
+                                0.3813
+                            ],
+                            "End Point": [
+                                0.747,
+                                0.3356
+                            ]
+                        },
+                        "line_15": {
+                            "Start Point": [
+                                0.747,
+                                0.3356
+                            ],
+                            "End Point": [
+                                0.6685,
+                                0.3438
+                            ]
+                        },
+                        "arc_16": {
+                            "Start Point": [
+                                0.6685,
+                                0.3438
+                            ],
+                            "Mid Point": [
+                                0.6647,
+                                0.3183
+                            ],
+                            "End Point": [
+                                0.6587,
+                                0.2932
+                            ]
+                        },
+                        "line_16": {
+                            "Start Point": [
+                                0.6587,
+                                0.2932
+                            ],
+                            "End Point": [
+                                0.7346,
+                                0.2714
+                            ]
+                        },
+                        "arc_17": {
+                            "Start Point": [
+                                0.7346,
+                                0.2714
+                            ],
+                            "Mid Point": [
+                                0.7193,
+                                0.2282
+                            ],
+                            "End Point": [
+                                0.6988,
+                                0.1873
+                            ]
+                        },
+                        "line_17": {
+                            "Start Point": [
+                                0.6988,
+                                0.1873
+                            ],
+                            "End Point": [
+                                0.6305,
+                                0.2267
+                            ]
+                        },
+                        "arc_18": {
+                            "Start Point": [
+                                0.6305,
+                                0.2267
+                            ],
+                            "Mid Point": [
+                                0.6166,
+                                0.205
+                            ],
+                            "End Point": [
+                                0.6009,
+                                0.1845
+                            ]
+                        },
+                        "line_18": {
+                            "Start Point": [
+                                0.6009,
+                                0.1845
+                            ],
+                            "End Point": [
+                                0.6614,
+                                0.1337
+                            ]
+                        },
+                        "arc_19": {
+                            "Start Point": [
+                                0.6614,
+                                0.1337
+                            ],
+                            "Mid Point": [
+                                0.6298,
+                                0.1005
+                            ],
+                            "End Point": [
+                                0.5945,
+                                0.0714
+                            ]
+                        },
+                        "line_19": {
+                            "Start Point": [
+                                0.5945,
+                                0.0714
+                            ],
+                            "End Point": [
+                                0.5481,
+                                0.1353
+                            ]
+                        },
+                        "arc_20": {
+                            "Start Point": [
+                                0.5481,
+                                0.1353
+                            ],
+                            "Mid Point": [
+                                0.5266,
+                                0.121
+                            ],
+                            "End Point": [
+                                0.5039,
+                                0.1087
+                            ]
+                        },
+                        "line_20": {
+                            "Start Point": [
+                                0.5039,
+                                0.1087
+                            ],
+                            "End Point": [
+                                0.5385,
+                                0.0377
+                            ]
+                        },
+                        "arc_21": {
+                            "Start Point": [
+                                0.5385,
+                                0.0377
+                            ],
+                            "Mid Point": [
+                                0.4962,
+                                0.0202
+                            ],
+                            "End Point": [
+                                0.4521,
+                                0.008
+                            ]
+                        },
+                        "line_21": {
+                            "Start Point": [
+                                0.4521,
+                                0.008
+                            ],
+                            "End Point": [
+                                0.4356,
+                                0.0852
+                            ]
+                        },
+                        "arc_22": {
+                            "Start Point": [
+                                0.4356,
+                                0.0852
+                            ],
+                            "Mid Point": [
+                                0.4102,
+                                0.0809
+                            ],
+                            "End Point": [
+                                0.3844,
+                                0.0789
+                            ]
+                        },
+                        "line_22": {
+                            "Start Point": [
+                                0.3844,
+                                0.0789
+                            ],
+                            "End Point": [
+                                0.3872,
+                                0.0
+                            ]
+                        },
+                        "arc_23": {
+                            "Start Point": [
+                                0.3872,
+                                0.0
+                            ],
+                            "Mid Point": [
+                                0.3414,
+                                0.0012
+                            ],
+                            "End Point": [
+                                0.2961,
+                                0.008
+                            ]
+                        },
+                        "line_23": {
+                            "Start Point": [
+                                0.2961,
+                                0.008
+                            ],
+                            "End Point": [
+                                0.3125,
+                                0.0852
+                            ]
+                        },
+                        "arc_24": {
+                            "Start Point": [
+                                0.3125,
+                                0.0852
+                            ],
+                            "Mid Point": [
+                                0.2875,
+                                0.0917
+                            ],
+                            "End Point": [
+                                0.2632,
+                                0.1003
+                            ]
+                        },
+                        "line_24": {
+                            "Start Point": [
+                                0.2632,
+                                0.1003
+                            ],
+                            "End Point": [
+                                0.2336,
+                                0.0271
+                            ]
+                        },
+                        "arc_25": {
+                            "Start Point": [
+                                0.2336,
+                                0.0271
+                            ],
+                            "Mid Point": [
+                                0.1923,
+                                0.0468
+                            ],
+                            "End Point": [
+                                0.1537,
+                                0.0714
+                            ]
+                        },
+                        "line_25": {
+                            "Start Point": [
+                                0.1537,
+                                0.0714
+                            ],
+                            "End Point": [
+                                0.2001,
+                                0.1353
+                            ]
+                        },
+                        "arc_26": {
+                            "Start Point": [
+                                0.2001,
+                                0.1353
+                            ],
+                            "Mid Point": [
+                                0.1799,
+                                0.1513
+                            ],
+                            "End Point": [
+                                0.1611,
+                                0.1691
+                            ]
+                        },
+                        "line_26": {
+                            "Start Point": [
+                                0.1611,
+                                0.1691
+                            ],
+                            "End Point": [
+                                0.1043,
+                                0.1143
+                            ]
+                        },
+                        "arc_27": {
+                            "Start Point": [
+                                0.1043,
+                                0.1143
+                            ],
+                            "Mid Point": [
+                                0.0746,
+                                0.1491
+                            ],
+                            "End Point": [
+                                0.0493,
+                                0.1873
+                            ]
+                        },
+                        "line_27": {
+                            "Start Point": [
+                                0.0493,
+                                0.1873
+                            ],
+                            "End Point": [
+                                0.1177,
+                                0.2267
+                            ]
+                        },
+                        "arc_28": {
+                            "Start Point": [
+                                0.1177,
+                                0.2267
+                            ],
+                            "Mid Point": [
+                                0.1058,
+                                0.2497
+                            ],
+                            "End Point": [
+                                0.0959,
+                                0.2735
+                            ]
+                        },
+                        "line_28": {
+                            "Start Point": [
+                                0.0959,
+                                0.2735
+                            ],
+                            "End Point": [
+                                0.0217,
+                                0.2465
+                            ]
+                        },
+                        "arc_29": {
+                            "Start Point": [
+                                0.0217,
+                                0.2465
+                            ],
+                            "Mid Point": [
+                                0.0087,
+                                0.2904
+                            ],
+                            "End Point": [
+                                0.0011,
+                                0.3356
+                            ]
+                        },
+                        "line_29": {
+                            "Start Point": [
+                                0.0011,
+                                0.3356
+                            ],
+                            "End Point": [
+                                0.0797,
+                                0.3438
+                            ]
+                        },
+                        "arc_30": {
+                            "Start Point": [
+                                0.0797,
+                                0.3438
+                            ],
+                            "Mid Point": [
+                                0.0781,
+                                0.3696
+                            ],
+                            "End Point": [
+                                0.0788,
+                                0.3954
+                            ]
+                        },
+                        "line_30": {
+                            "Start Point": [
+                                0.0788,
+                                0.3954
+                            ],
+                            "End Point": [
+                                0.0,
+                                0.4009
+                            ]
+                        }
+                    },
+                    "loop_2": {
+                        "arc_1": {
+                            "Start Point": [
+                                0.33,
+                                0.4142
+                            ],
+                            "Mid Point": [
+                                0.3741,
+                                0.3156
+                            ],
+                            "End Point": [
+                                0.4182,
+                                0.4142
+                            ]
+                        },
+                        "line_1": {
+                            "Start Point": [
+                                0.4182,
+                                0.4142
+                            ],
+                            "End Point": [
+                                0.33,
+                                0.4142
+                            ]
+                        }
+                    }
+                }
+            },
+            "extrusion": {
+                "extrude_depth_towards_normal": 0.3158,
+                "extrude_depth_opposite_normal": 0.0,
+                "sketch_scale": 0.7498,
+                "operation": "NewBodyFeatureOperation"
+            },
+            "description": {
+                "name": "Hexagonal Gear",
+                "shape": "A three-dimensional model of a hexagonal gear with a central hole and six evenly spaced teeth on each side.",
+                "length": 0.7490294661032878,
+                "width": 0.7497714473684131,
+                "height": 0.31578947368420723
+            }
+        },
+        "part_2": {
+            "coordinate_system": {
+                "Euler Angles": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "Translation Vector": [
+                    -0.0009,
+                    0.0002,
+                    0.3158
+                ]
+            },
+            "sketch": {
+                "face_1": {
+                    "loop_1": {
+                        "arc_1": {
+                            "Start Point": [
+                                0.0009,
+                                0.4009
+                            ],
+                            "Mid Point": [
+                                0.0,
+                                0.3682
+                            ],
+                            "End Point": [
+                                0.002,
+                                0.3356
+                            ]
+                        },
+                        "line_1": {
+                            "Start Point": [
+                                0.002,
+                                0.3356
+                            ],
+                            "End Point": [
+                                0.0805,
+                                0.3438
+                            ]
+                        },
+                        "arc_2": {
+                            "Start Point": [
+                                0.0805,
+                                0.3438
+                            ],
+                            "Mid Point": [
+                                0.0789,
+                                0.3696
+                            ],
+                            "End Point": [
+                                0.0796,
+                                0.3954
+                            ]
+                        },
+                        "line_2": {
+                            "Start Point": [
+                                0.0796,
+                                0.3954
+                            ],
+                            "End Point": [
+                                0.0009,
+                                0.4009
+                            ]
+                        }
+                    }
+                },
+                "face_2": {
+                    "loop_1": {
+                        "line_1": {
+                            "Start Point": [
+                                0.0009,
+                                0.4009
+                            ],
+                            "End Point": [
+                                0.0796,
+                                0.3954
+                            ]
+                        },
+                        "arc_1": {
+                            "Start Point": [
+                                0.0796,
+                                0.3954
+                            ],
+                            "Mid Point": [
+                                0.0789,
+                                0.3696
+                            ],
+                            "End Point": [
+                                0.0805,
+                                0.3438
+                            ]
+                        },
+                        "line_2": {
+                            "Start Point": [
+                                0.0805,
+                                0.3438
+                            ],
+                            "End Point": [
+                                0.002,
+                                0.3356
+                            ]
+                        },
+                        "arc_2": {
+                            "Start Point": [
+                                0.002,
+                                0.3356
+                            ],
+                            "Mid Point": [
+                                0.0096,
+                                0.2904
+                            ],
+                            "End Point": [
+                                0.0226,
+                                0.2465
+                            ]
+                        },
+                        "line_3": {
+                            "Start Point": [
+                                0.0226,
+                                0.2465
+                            ],
+                            "End Point": [
+                                0.0967,
+                                0.2735
+                            ]
+                        },
+                        "arc_3": {
+                            "Start Point": [
+                                0.0967,
+                                0.2735
+                            ],
+                            "Mid Point": [
+                                0.1066,
+                                0.2497
+                            ],
+                            "End Point": [
+                                0.1186,
+                                0.2267
+                            ]
+                        },
+                        "line_4": {
+                            "Start Point": [
+                                0.1186,
+                                0.2267
+                            ],
+                            "End Point": [
+                                0.0502,
+                                0.1873
+                            ]
+                        },
+                        "arc_4": {
+                            "Start Point": [
+                                0.0502,
+                                0.1873
+                            ],
+                            "Mid Point": [
+                                0.0755,
+                                0.1491
+                            ],
+                            "End Point": [
+                                0.1052,
+                                0.1143
+                            ]
+                        },
+                        "line_5": {
+                            "Start Point": [
+                                0.1052,
+                                0.1143
+                            ],
+                            "End Point": [
+                                0.162,
+                                0.1691
+                            ]
+                        },
+                        "arc_5": {
+                            "Start Point": [
+                                0.162,
+                                0.1691
+                            ],
+                            "Mid Point": [
+                                0.1807,
+                                0.1513
+                            ],
+                            "End Point": [
+                                0.2009,
+                                0.1353
+                            ]
+                        },
+                        "line_6": {
+                            "Start Point": [
+                                0.2009,
+                                0.1353
+                            ],
+                            "End Point": [
+                                0.1545,
+                                0.0714
+                            ]
+                        },
+                        "arc_6": {
+                            "Start Point": [
+                                0.1545,
+                                0.0714
+                            ],
+                            "Mid Point": [
+                                0.1931,
+                                0.0468
+                            ],
+                            "End Point": [
+                                0.2345,
+                                0.0271
+                            ]
+                        },
+                        "line_7": {
+                            "Start Point": [
+                                0.2345,
+                                0.0271
+                            ],
+                            "End Point": [
+                                0.264,
+                                0.1003
+                            ]
+                        },
+                        "arc_7": {
+                            "Start Point": [
+                                0.264,
+                                0.1003
+                            ],
+                            "Mid Point": [
+                                0.2884,
+                                0.0917
+                            ],
+                            "End Point": [
+                                0.3134,
+                                0.0852
+                            ]
+                        },
+                        "line_8": {
+                            "Start Point": [
+                                0.3134,
+                                0.0852
+                            ],
+                            "End Point": [
+                                0.297,
+                                0.008
+                            ]
+                        },
+                        "arc_8": {
+                            "Start Point": [
+                                0.297,
+                                0.008
+                            ],
+                            "Mid Point": [
+                                0.3423,
+                                0.0012
+                            ],
+                            "End Point": [
+                                0.388,
+                                0.0
+                            ]
+                        },
+                        "line_9": {
+                            "Start Point": [
+                                0.388,
+                                0.0
+                            ],
+                            "End Point": [
+                                0.3853,
+                                0.0789
+                            ]
+                        },
+                        "arc_9": {
+                            "Start Point": [
+                                0.3853,
+                                0.0789
+                            ],
+                            "Mid Point": [
+                                0.411,
+                                0.0809
+                            ],
+                            "End Point": [
+                                0.4365,
+                                0.0852
+                            ]
+                        },
+                        "line_10": {
+                            "Start Point": [
+                                0.4365,
+                                0.0852
+                            ],
+                            "End Point": [
+                                0.4529,
+                                0.008
+                            ]
+                        },
+                        "arc_10": {
+                            "Start Point": [
+                                0.4529,
+                                0.008
+                            ],
+                            "Mid Point": [
+                                0.497,
+                                0.0202
+                            ],
+                            "End Point": [
+                                0.5393,
+                                0.0377
+                            ]
+                        },
+                        "line_11": {
+                            "Start Point": [
+                                0.5393,
+                                0.0377
+                            ],
+                            "End Point": [
+                                0.5047,
+                                0.1087
+                            ]
+                        },
+                        "arc_11": {
+                            "Start Point": [
+                                0.5047,
+                                0.1087
+                            ],
+                            "Mid Point": [
+                                0.5274,
+                                0.121
+                            ],
+                            "End Point": [
+                                0.549,
+                                0.1353
+                            ]
+                        },
+                        "line_12": {
+                            "Start Point": [
+                                0.549,
+                                0.1353
+                            ],
+                            "End Point": [
+                                0.5954,
+                                0.0714
+                            ]
+                        },
+                        "arc_12": {
+                            "Start Point": [
+                                0.5954,
+                                0.0714
+                            ],
+                            "Mid Point": [
+                                0.6307,
+                                0.1005
+                            ],
+                            "End Point": [
+                                0.6622,
+                                0.1337
+                            ]
+                        },
+                        "line_13": {
+                            "Start Point": [
+                                0.6622,
+                                0.1337
+                            ],
+                            "End Point": [
+                                0.6017,
+                                0.1845
+                            ]
+                        },
+                        "arc_13": {
+                            "Start Point": [
+                                0.6017,
+                                0.1845
+                            ],
+                            "Mid Point": [
+                                0.6175,
+                                0.205
+                            ],
+                            "End Point": [
+                                0.6313,
+                                0.2267
+                            ]
+                        },
+                        "line_14": {
+                            "Start Point": [
+                                0.6313,
+                                0.2267
+                            ],
+                            "End Point": [
+                                0.6997,
+                                0.1873
+                            ]
+                        },
+                        "arc_14": {
+                            "Start Point": [
+                                0.6997,
+                                0.1873
+                            ],
+                            "Mid Point": [
+                                0.7201,
+                                0.2282
+                            ],
+                            "End Point": [
+                                0.7354,
+                                0.2714
+                            ]
+                        },
+                        "line_15": {
+                            "Start Point": [
+                                0.7354,
+                                0.2714
+                            ],
+                            "End Point": [
+                                0.6595,
+                                0.2932
+                            ]
+                        },
+                        "arc_15": {
+                            "Start Point": [
+                                0.6595,
+                                0.2932
+                            ],
+                            "Mid Point": [
+                                0.6656,
+                                0.3183
+                            ],
+                            "End Point": [
+                                0.6694,
+                                0.3438
+                            ]
+                        },
+                        "line_16": {
+                            "Start Point": [
+                                0.6694,
+                                0.3438
+                            ],
+                            "End Point": [
+                                0.7479,
+                                0.3356
+                            ]
+                        },
+                        "arc_16": {
+                            "Start Point": [
+                                0.7479,
+                                0.3356
+                            ],
+                            "Mid Point": [
+                                0.7499,
+                                0.3813
+                            ],
+                            "End Point": [
+                                0.7463,
+                                0.427
+                            ]
+                        },
+                        "line_17": {
+                            "Start Point": [
+                                0.7463,
+                                0.427
+                            ],
+                            "End Point": [
+                                0.6681,
+                                0.416
+                            ]
+                        },
+                        "arc_17": {
+                            "Start Point": [
+                                0.6681,
+                                0.416
+                            ],
+                            "Mid Point": [
+                                0.6634,
+                                0.4414
+                            ],
+                            "End Point": [
+                                0.6565,
+                                0.4663
+                            ]
+                        },
+                        "line_18": {
+                            "Start Point": [
+                                0.6565,
+                                0.4663
+                            ],
+                            "End Point": [
+                                0.7316,
+                                0.4907
+                            ]
+                        },
+                        "arc_18": {
+                            "Start Point": [
+                                0.7316,
+                                0.4907
+                            ],
+                            "Mid Point": [
+                                0.7148,
+                                0.5333
+                            ],
+                            "End Point": [
+                                0.693,
+                                0.5735
+                            ]
+                        },
+                        "line_19": {
+                            "Start Point": [
+                                0.693,
+                                0.5735
+                            ],
+                            "End Point": [
+                                0.626,
+                                0.5317
+                            ]
+                        },
+                        "arc_19": {
+                            "Start Point": [
+                                0.626,
+                                0.5317
+                            ],
+                            "Mid Point": [
+                                0.6114,
+                                0.5529
+                            ],
+                            "End Point": [
+                                0.595,
+                                0.5729
+                            ]
+                        },
+                        "line_20": {
+                            "Start Point": [
+                                0.595,
+                                0.5729
+                            ],
+                            "End Point": [
+                                0.6536,
+                                0.6257
+                            ]
+                        },
+                        "arc_20": {
+                            "Start Point": [
+                                0.6536,
+                                0.6257
+                            ],
+                            "Mid Point": [
+                                0.621,
+                                0.6578
+                            ],
+                            "End Point": [
+                                0.5846,
+                                0.6857
+                            ]
+                        },
+                        "line_21": {
+                            "Start Point": [
+                                0.5846,
+                                0.6857
+                            ],
+                            "End Point": [
+                                0.5405,
+                                0.6202
+                            ]
+                        },
+                        "arc_21": {
+                            "Start Point": [
+                                0.5405,
+                                0.6202
+                            ],
+                            "Mid Point": [
+                                0.5185,
+                                0.6337
+                            ],
+                            "End Point": [
+                                0.4954,
+                                0.6452
+                            ]
+                        },
+                        "line_22": {
+                            "Start Point": [
+                                0.4954,
+                                0.6452
+                            ],
+                            "End Point": [
+                                0.5275,
+                                0.7174
+                            ]
+                        },
+                        "arc_22": {
+                            "Start Point": [
+                                0.5275,
+                                0.7174
+                            ],
+                            "Mid Point": [
+                                0.4846,
+                                0.7334
+                            ],
+                            "End Point": [
+                                0.4401,
+                                0.7441
+                            ]
+                        },
+                        "line_23": {
+                            "Start Point": [
+                                0.4401,
+                                0.7441
+                            ],
+                            "End Point": [
+                                0.4264,
+                                0.6663
+                            ]
+                        },
+                        "arc_23": {
+                            "Start Point": [
+                                0.4264,
+                                0.6663
+                            ],
+                            "Mid Point": [
+                                0.4007,
+                                0.6697
+                            ],
+                            "End Point": [
+                                0.3749,
+                                0.6708
+                            ]
+                        },
+                        "line_24": {
+                            "Start Point": [
+                                0.3749,
+                                0.6708
+                            ],
+                            "End Point": [
+                                0.3749,
+                                0.7498
+                            ]
+                        },
+                        "arc_24": {
+                            "Start Point": [
+                                0.3749,
+                                0.7498
+                            ],
+                            "Mid Point": [
+                                0.3292,
+                                0.747
+                            ],
+                            "End Point": [
+                                0.2842,
+                                0.7386
+                            ]
+                        },
+                        "line_25": {
+                            "Start Point": [
+                                0.2842,
+                                0.7386
+                            ],
+                            "End Point": [
+                                0.3033,
+                                0.662
+                            ]
+                        },
+                        "arc_25": {
+                            "Start Point": [
+                                0.3033,
+                                0.662
+                            ],
+                            "Mid Point": [
+                                0.2786,
+                                0.6547
+                            ],
+                            "End Point": [
+                                0.2545,
+                                0.6452
+                            ]
+                        },
+                        "line_26": {
+                            "Start Point": [
+                                0.2545,
+                                0.6452
+                            ],
+                            "End Point": [
+                                0.2224,
+                                0.7174
+                            ]
+                        },
+                        "arc_26": {
+                            "Start Point": [
+                                0.2224,
+                                0.7174
+                            ],
+                            "Mid Point": [
+                                0.1818,
+                                0.6962
+                            ],
+                            "End Point": [
+                                0.1441,
+                                0.6703
+                            ]
+                        },
+                        "line_27": {
+                            "Start Point": [
+                                0.1441,
+                                0.6703
+                            ],
+                            "End Point": [
+                                0.1927,
+                                0.6081
+                            ]
+                        },
+                        "arc_27": {
+                            "Start Point": [
+                                0.1927,
+                                0.6081
+                            ],
+                            "Mid Point": [
+                                0.173,
+                                0.5913
+                            ],
+                            "End Point": [
+                                0.1549,
+                                0.5729
+                            ]
+                        },
+                        "line_28": {
+                            "Start Point": [
+                                0.1549,
+                                0.5729
+                            ],
+                            "End Point": [
+                                0.0963,
+                                0.6257
+                            ]
+                        },
+                        "arc_28": {
+                            "Start Point": [
+                                0.0963,
+                                0.6257
+                            ],
+                            "Mid Point": [
+                                0.0678,
+                                0.5899
+                            ],
+                            "End Point": [
+                                0.0438,
+                                0.5508
+                            ]
+                        },
+                        "line_29": {
+                            "Start Point": [
+                                0.0438,
+                                0.5508
+                            ],
+                            "End Point": [
+                                0.1135,
+                                0.5138
+                            ]
+                        },
+                        "arc_29": {
+                            "Start Point": [
+                                0.1135,
+                                0.5138
+                            ],
+                            "Mid Point": [
+                                0.1024,
+                                0.4904
+                            ],
+                            "End Point": [
+                                0.0934,
+                                0.4663
+                            ]
+                        },
+                        "line_30": {
+                            "Start Point": [
+                                0.0934,
+                                0.4663
+                            ],
+                            "End Point": [
+                                0.0183,
+                                0.4907
+                            ]
+                        },
+                        "arc_30": {
+                            "Start Point": [
+                                0.0183,
+                                0.4907
+                            ],
+                            "Mid Point": [
+                                0.0068,
+                                0.4463
+                            ],
+                            "End Point": [
+                                0.0009,
+                                0.4009
+                            ]
+                        }
+                    },
+                    "loop_2": {
+                        "circle_1": {
+                            "Center": [
+                                0.3749,
+                                0.3748
+                            ],
+                            "Radius": 0.2171
+                        }
+                    }
+                },
+                "face_3": {
+                    "loop_1": {
+                        "line_1": {
+                            "Start Point": [
+                                0.0183,
+                                0.4907
+                            ],
+                            "End Point": [
+                                0.0934,
+                                0.4663
+                            ]
+                        },
+                        "arc_1": {
+                            "Start Point": [
+                                0.0934,
+                                0.4663
+                            ],
+                            "Mid Point": [
+                                0.1024,
+                                0.4904
+                            ],
+                            "End Point": [
+                                0.1135,
+                                0.5138
+                            ]
+                        },
+                        "line_2": {
+                            "Start Point": [
+                                0.1135,
+                                0.5138
+                            ],
+                            "End Point": [
+                                0.0438,
+                                0.5508
+                            ]
+                        },
+                        "arc_2": {
+                            "Start Point": [
+                                0.0438,
+                                0.5508
+                            ],
+                            "Mid Point": [
+                                0.0298,
+                                0.5213
+                            ],
+                            "End Point": [
+                                0.0183,
+                                0.4907
+                            ]
+                        }
+                    }
+                },
+                "face_4": {
+                    "loop_1": {
+                        "arc_1": {
+                            "Start Point": [
+                                0.0226,
+                                0.2465
+                            ],
+                            "Mid Point": [
+                                0.0351,
+                                0.2163
+                            ],
+                            "End Point": [
+                                0.0502,
+                                0.1873
+                            ]
+                        },
+                        "line_1": {
+                            "Start Point": [
+                                0.0502,
+                                0.1873
+                            ],
+                            "End Point": [
+                                0.1186,
+                                0.2267
+                            ]
+                        },
+                        "arc_2": {
+                            "Start Point": [
+                                0.1186,
+                                0.2267
+                            ],
+                            "Mid Point": [
+                                0.1066,
+                                0.2497
+                            ],
+                            "End Point": [
+                                0.0967,
+                                0.2735
+                            ]
+                        },
+                        "line_2": {
+                            "Start Point": [
+                                0.0967,
+                                0.2735
+                            ],
+                            "End Point": [
+                                0.0226,
+                                0.2465
+                            ]
+                        }
+                    }
+                },
+                "face_5": {
+                    "loop_1": {
+                        "line_1": {
+                            "Start Point": [
+                                0.0963,
+                                0.6257
+                            ],
+                            "End Point": [
+                                0.1549,
+                                0.5729
+                            ]
+                        },
+                        "arc_1": {
+                            "Start Point": [
+                                0.1549,
+                                0.5729
+                            ],
+                            "Mid Point": [
+                                0.173,
+                                0.5913
+                            ],
+                            "End Point": [
+                                0.1927,
+                                0.6081
+                            ]
+                        },
+                        "line_2": {
+                            "Start Point": [
+                                0.1927,
+                                0.6081
+                            ],
+                            "End Point": [
+                                0.1441,
+                                0.6703
+                            ]
+                        },
+                        "arc_2": {
+                            "Start Point": [
+                                0.1441,
+                                0.6703
+                            ],
+                            "Mid Point": [
+                                0.1192,
+                                0.649
+                            ],
+                            "End Point": [
+                                0.0963,
+                                0.6257
+                            ]
+                        }
+                    }
+                },
+                "face_6": {
+                    "loop_1": {
+                        "arc_1": {
+                            "Start Point": [
+                                0.1052,
+                                0.1143
+                            ],
+                            "Mid Point": [
+                                0.1289,
+                                0.0918
+                            ],
+                            "End Point": [
+                                0.1545,
+                                0.0714
+                            ]
+                        },
+                        "line_1": {
+                            "Start Point": [
+                                0.1545,
+                                0.0714
+                            ],
+                            "End Point": [
+                                0.2009,
+                                0.1353
+                            ]
+                        },
+                        "arc_2": {
+                            "Start Point": [
+                                0.2009,
+                                0.1353
+                            ],
+                            "Mid Point": [
+                                0.1807,
+                                0.1513
+                            ],
+                            "End Point": [
+                                0.162,
+                                0.1691
+                            ]
+                        },
+                        "line_2": {
+                            "Start Point": [
+                                0.162,
+                                0.1691
+                            ],
+                            "End Point": [
+                                0.1052,
+                                0.1143
+                            ]
+                        }
+                    }
+                },
+                "face_7": {
+                    "loop_1": {
+                        "line_1": {
+                            "Start Point": [
+                                0.2224,
+                                0.7174
+                            ],
+                            "End Point": [
+                                0.2545,
+                                0.6452
+                            ]
+                        },
+                        "arc_1": {
+                            "Start Point": [
+                                0.2545,
+                                0.6452
+                            ],
+                            "Mid Point": [
+                                0.2786,
+                                0.6547
+                            ],
+                            "End Point": [
+                                0.3033,
+                                0.662
+                            ]
+                        },
+                        "line_2": {
+                            "Start Point": [
+                                0.3033,
+                                0.662
+                            ],
+                            "End Point": [
+                                0.2842,
+                                0.7386
+                            ]
+                        },
+                        "arc_2": {
+                            "Start Point": [
+                                0.2842,
+                                0.7386
+                            ],
+                            "Mid Point": [
+                                0.2529,
+                                0.7293
+                            ],
+                            "End Point": [
+                                0.2224,
+                                0.7174
+                            ]
+                        }
+                    }
+                },
+                "face_8": {
+                    "loop_1": {
+                        "arc_1": {
+                            "Start Point": [
+                                0.2345,
+                                0.0271
+                            ],
+                            "Mid Point": [
+                                0.2653,
+                                0.0162
+                            ],
+                            "End Point": [
+                                0.297,
+                                0.008
+                            ]
+                        },
+                        "line_1": {
+                            "Start Point": [
+                                0.297,
+                                0.008
+                            ],
+                            "End Point": [
+                                0.3134,
+                                0.0852
+                            ]
+                        },
+                        "arc_2": {
+                            "Start Point": [
+                                0.3134,
+                                0.0852
+                            ],
+                            "Mid Point": [
+                                0.2884,
+                                0.0917
+                            ],
+                            "End Point": [
+                                0.264,
+                                0.1003
+                            ]
+                        },
+                        "line_2": {
+                            "Start Point": [
+                                0.264,
+                                0.1003
+                            ],
+                            "End Point": [
+                                0.2345,
+                                0.0271
+                            ]
+                        }
+                    }
+                },
+                "face_9": {
+                    "loop_1": {
+                        "arc_1": {
+                            "Start Point": [
+                                0.3749,
+                                0.6708
+                            ],
+                            "Mid Point": [
+                                0.4007,
+                                0.6697
+                            ],
+                            "End Point": [
+                                0.4264,
+                                0.6663
+                            ]
+                        },
+                        "line_1": {
+                            "Start Point": [
+                                0.4264,
+                                0.6663
+                            ],
+                            "End Point": [
+                                0.4401,
+                                0.7441
+                            ]
+                        },
+                        "arc_2": {
+                            "Start Point": [
+                                0.4401,
+                                0.7441
+                            ],
+                            "Mid Point": [
+                                0.4076,
+                                0.7483
+                            ],
+                            "End Point": [
+                                0.3749,
+                                0.7498
+                            ]
+                        },
+                        "line_2": {
+                            "Start Point": [
+                                0.3749,
+                                0.7498
+                            ],
+                            "End Point": [
+                                0.3749,
+                                0.6708
+                            ]
+                        }
+                    }
+                },
+                "face_10": {
+                    "loop_1": {
+                        "line_1": {
+                            "Start Point": [
+                                0.3853,
+                                0.0789
+                            ],
+                            "End Point": [
+                                0.388,
+                                0.0
+                            ]
+                        },
+                        "arc_1": {
+                            "Start Point": [
+                                0.388,
+                                0.0
+                            ],
+                            "Mid Point": [
+                                0.4206,
+                                0.0026
+                            ],
+                            "End Point": [
+                                0.4529,
+                                0.008
+                            ]
+                        },
+                        "line_2": {
+                            "Start Point": [
+                                0.4529,
+                                0.008
+                            ],
+                            "End Point": [
+                                0.4365,
+                                0.0852
+                            ]
+                        },
+                        "arc_2": {
+                            "Start Point": [
+                                0.4365,
+                                0.0852
+                            ],
+                            "Mid Point": [
+                                0.411,
+                                0.0809
+                            ],
+                            "End Point": [
+                                0.3853,
+                                0.0789
+                            ]
+                        }
+                    }
+                },
+                "face_11": {
+                    "loop_1": {
+                        "arc_1": {
+                            "Start Point": [
+                                0.4954,
+                                0.6452
+                            ],
+                            "Mid Point": [
+                                0.5185,
+                                0.6337
+                            ],
+                            "End Point": [
+                                0.5405,
+                                0.6202
+                            ]
+                        },
+                        "line_1": {
+                            "Start Point": [
+                                0.5405,
+                                0.6202
+                            ],
+                            "End Point": [
+                                0.5846,
+                                0.6857
+                            ]
+                        },
+                        "arc_2": {
+                            "Start Point": [
+                                0.5846,
+                                0.6857
+                            ],
+                            "Mid Point": [
+                                0.5567,
+                                0.7028
+                            ],
+                            "End Point": [
+                                0.5275,
+                                0.7174
+                            ]
+                        },
+                        "line_2": {
+                            "Start Point": [
+                                0.5275,
+                                0.7174
+                            ],
+                            "End Point": [
+                                0.4954,
+                                0.6452
+                            ]
+                        }
+                    }
+                },
+                "face_12": {
+                    "loop_1": {
+                        "line_1": {
+                            "Start Point": [
+                                0.5047,
+                                0.1087
+                            ],
+                            "End Point": [
+                                0.5393,
+                                0.0377
+                            ]
+                        },
+                        "arc_1": {
+                            "Start Point": [
+                                0.5393,
+                                0.0377
+                            ],
+                            "Mid Point": [
+                                0.5681,
+                                0.0533
+                            ],
+                            "End Point": [
+                                0.5954,
+                                0.0714
+                            ]
+                        },
+                        "line_2": {
+                            "Start Point": [
+                                0.5954,
+                                0.0714
+                            ],
+                            "End Point": [
+                                0.549,
+                                0.1353
+                            ]
+                        },
+                        "arc_2": {
+                            "Start Point": [
+                                0.549,
+                                0.1353
+                            ],
+                            "Mid Point": [
+                                0.5274,
+                                0.121
+                            ],
+                            "End Point": [
+                                0.5047,
+                                0.1087
+                            ]
+                        }
+                    }
+                },
+                "face_13": {
+                    "loop_1": {
+                        "arc_1": {
+                            "Start Point": [
+                                0.595,
+                                0.5729
+                            ],
+                            "Mid Point": [
+                                0.6114,
+                                0.5529
+                            ],
+                            "End Point": [
+                                0.626,
+                                0.5317
+                            ]
+                        },
+                        "line_1": {
+                            "Start Point": [
+                                0.626,
+                                0.5317
+                            ],
+                            "End Point": [
+                                0.693,
+                                0.5735
+                            ]
+                        },
+                        "arc_2": {
+                            "Start Point": [
+                                0.693,
+                                0.5735
+                            ],
+                            "Mid Point": [
+                                0.6744,
+                                0.6005
+                            ],
+                            "End Point": [
+                                0.6536,
+                                0.6257
+                            ]
+                        },
+                        "line_2": {
+                            "Start Point": [
+                                0.6536,
+                                0.6257
+                            ],
+                            "End Point": [
+                                0.595,
+                                0.5729
+                            ]
+                        }
+                    }
+                },
+                "face_14": {
+                    "loop_1": {
+                        "line_1": {
+                            "Start Point": [
+                                0.6017,
+                                0.1845
+                            ],
+                            "End Point": [
+                                0.6622,
+                                0.1337
+                            ]
+                        },
+                        "arc_1": {
+                            "Start Point": [
+                                0.6622,
+                                0.1337
+                            ],
+                            "Mid Point": [
+                                0.6821,
+                                0.1597
+                            ],
+                            "End Point": [
+                                0.6997,
+                                0.1873
+                            ]
+                        },
+                        "line_2": {
+                            "Start Point": [
+                                0.6997,
+                                0.1873
+                            ],
+                            "End Point": [
+                                0.6313,
+                                0.2267
+                            ]
+                        },
+                        "arc_2": {
+                            "Start Point": [
+                                0.6313,
+                                0.2267
+                            ],
+                            "Mid Point": [
+                                0.6175,
+                                0.205
+                            ],
+                            "End Point": [
+                                0.6017,
+                                0.1845
+                            ]
+                        }
+                    }
+                },
+                "face_15": {
+                    "loop_1": {
+                        "arc_1": {
+                            "Start Point": [
+                                0.6565,
+                                0.4663
+                            ],
+                            "Mid Point": [
+                                0.6634,
+                                0.4414
+                            ],
+                            "End Point": [
+                                0.6681,
+                                0.416
+                            ]
+                        },
+                        "line_1": {
+                            "Start Point": [
+                                0.6681,
+                                0.416
+                            ],
+                            "End Point": [
+                                0.7463,
+                                0.427
+                            ]
+                        },
+                        "arc_2": {
+                            "Start Point": [
+                                0.7463,
+                                0.427
+                            ],
+                            "Mid Point": [
+                                0.7403,
+                                0.4591
+                            ],
+                            "End Point": [
+                                0.7316,
+                                0.4907
+                            ]
+                        },
+                        "line_2": {
+                            "Start Point": [
+                                0.7316,
+                                0.4907
+                            ],
+                            "End Point": [
+                                0.6565,
+                                0.4663
+                            ]
+                        }
+                    }
+                },
+                "face_16": {
+                    "loop_1": {
+                        "line_1": {
+                            "Start Point": [
+                                0.6595,
+                                0.2932
+                            ],
+                            "End Point": [
+                                0.7354,
+                                0.2714
+                            ]
+                        },
+                        "arc_1": {
+                            "Start Point": [
+                                0.7354,
+                                0.2714
+                            ],
+                            "Mid Point": [
+                                0.7431,
+                                0.3032
+                            ],
+                            "End Point": [
+                                0.7479,
+                                0.3356
+                            ]
+                        },
+                        "line_2": {
+                            "Start Point": [
+                                0.7479,
+                                0.3356
+                            ],
+                            "End Point": [
+                                0.6694,
+                                0.3438
+                            ]
+                        },
+                        "arc_2": {
+                            "Start Point": [
+                                0.6694,
+                                0.3438
+                            ],
+                            "Mid Point": [
+                                0.6656,
+                                0.3183
+                            ],
+                            "End Point": [
+                                0.6595,
+                                0.2932
+                            ]
+                        }
+                    }
+                }
+            },
+            "extrusion": {
+                "extrude_depth_towards_normal": 0.0,
+                "extrude_depth_opposite_normal": 0.0395,
+                "sketch_scale": 0.7499,
+                "operation": "CutFeatureOperation"
+            },
+            "description": {
+                "name": "Hexagonal Gear",
+                "shape": "A three-dimensional model of a hexagonal gear with a central hole and six evenly spaced teeth on each side.",
+                "length": 0.7498857742146149,
+                "width": 0.7497714473684131,
+                "height": 0.039473684210525904
+            }
+        },
+        "part_3": {
+            "coordinate_system": {
+                "Euler Angles": [
+                    0.0,
+                    0.0,
+                    180.0
+                ],
+                "Translation Vector": [
+                    -0.0009,
+                    0.75,
+                    0.0
+                ]
+            },
+            "sketch": {
+                "face_1": {
+                    "loop_1": {
+                        "line_1": {
+                            "Start Point": [
+                                0.0009,
+                                0.3488
+                            ],
+                            "End Point": [
+                                0.0796,
+                                0.3543
+                            ]
+                        },
+                        "arc_1": {
+                            "Start Point": [
+                                0.0796,
+                                0.3543
+                            ],
+                            "Mid Point": [
+                                0.0789,
+                                0.3802
+                            ],
+                            "End Point": [
+                                0.0805,
+                                0.4059
+                            ]
+                        },
+                        "line_2": {
+                            "Start Point": [
+                                0.0805,
+                                0.4059
+                            ],
+                            "End Point": [
+                                0.002,
+                                0.4142
+                            ]
+                        },
+                        "arc_2": {
+                            "Start Point": [
+                                0.002,
+                                0.4142
+                            ],
+                            "Mid Point": [
+                                0.0,
+                                0.3815
+                            ],
+                            "End Point": [
+                                0.0009,
+                                0.3488
+                            ]
+                        }
+                    }
+                },
+                "face_2": {
+                    "loop_1": {
+                        "arc_1": {
+                            "Start Point": [
+                                0.0009,
+                                0.3488
+                            ],
+                            "Mid Point": [
+                                0.0068,
+                                0.3034
+                            ],
+                            "End Point": [
+                                0.0183,
+                                0.2591
+                            ]
+                        },
+                        "line_1": {
+                            "Start Point": [
+                                0.0183,
+                                0.2591
+                            ],
+                            "End Point": [
+                                0.0934,
+                                0.2835
+                            ]
+                        },
+                        "arc_2": {
+                            "Start Point": [
+                                0.0934,
+                                0.2835
+                            ],
+                            "Mid Point": [
+                                0.1024,
+                                0.2593
+                            ],
+                            "End Point": [
+                                0.1135,
+                                0.236
+                            ]
+                        },
+                        "line_2": {
+                            "Start Point": [
+                                0.1135,
+                                0.236
+                            ],
+                            "End Point": [
+                                0.0438,
+                                0.1989
+                            ]
+                        },
+                        "arc_3": {
+                            "Start Point": [
+                                0.0438,
+                                0.1989
+                            ],
+                            "Mid Point": [
+                                0.0678,
+                                0.1599
+                            ],
+                            "End Point": [
+                                0.0963,
+                                0.1241
+                            ]
+                        },
+                        "line_3": {
+                            "Start Point": [
+                                0.0963,
+                                0.1241
+                            ],
+                            "End Point": [
+                                0.1549,
+                                0.1769
+                            ]
+                        },
+                        "arc_4": {
+                            "Start Point": [
+                                0.1549,
+                                0.1769
+                            ],
+                            "Mid Point": [
+                                0.173,
+                                0.1585
+                            ],
+                            "End Point": [
+                                0.1927,
+                                0.1417
+                            ]
+                        },
+                        "line_4": {
+                            "Start Point": [
+                                0.1927,
+                                0.1417
+                            ],
+                            "End Point": [
+                                0.1441,
+                                0.0795
+                            ]
+                        },
+                        "arc_5": {
+                            "Start Point": [
+                                0.1441,
+                                0.0795
+                            ],
+                            "Mid Point": [
+                                0.1818,
+                                0.0536
+                            ],
+                            "End Point": [
+                                0.2224,
+                                0.0324
+                            ]
+                        },
+                        "line_5": {
+                            "Start Point": [
+                                0.2224,
+                                0.0324
+                            ],
+                            "End Point": [
+                                0.2545,
+                                0.1045
+                            ]
+                        },
+                        "arc_6": {
+                            "Start Point": [
+                                0.2545,
+                                0.1045
+                            ],
+                            "Mid Point": [
+                                0.2786,
+                                0.0951
+                            ],
+                            "End Point": [
+                                0.3033,
+                                0.0877
+                            ]
+                        },
+                        "line_6": {
+                            "Start Point": [
+                                0.3033,
+                                0.0877
+                            ],
+                            "End Point": [
+                                0.2842,
+                                0.0111
+                            ]
+                        },
+                        "arc_7": {
+                            "Start Point": [
+                                0.2842,
+                                0.0111
+                            ],
+                            "Mid Point": [
+                                0.3292,
+                                0.0028
+                            ],
+                            "End Point": [
+                                0.3749,
+                                0.0
+                            ]
+                        },
+                        "line_7": {
+                            "Start Point": [
+                                0.3749,
+                                0.0
+                            ],
+                            "End Point": [
+                                0.3749,
+                                0.0789
+                            ]
+                        },
+                        "arc_8": {
+                            "Start Point": [
+                                0.3749,
+                                0.0789
+                            ],
+                            "Mid Point": [
+                                0.4007,
+                                0.0801
+                            ],
+                            "End Point": [
+                                0.4264,
+                                0.0834
+                            ]
+                        },
+                        "line_8": {
+                            "Start Point": [
+                                0.4264,
+                                0.0834
+                            ],
+                            "End Point": [
+                                0.4401,
+                                0.0057
+                            ]
+                        },
+                        "arc_9": {
+                            "Start Point": [
+                                0.4401,
+                                0.0057
+                            ],
+                            "Mid Point": [
+                                0.4846,
+                                0.0164
+                            ],
+                            "End Point": [
+                                0.5275,
+                                0.0324
+                            ]
+                        },
+                        "line_9": {
+                            "Start Point": [
+                                0.5275,
+                                0.0324
+                            ],
+                            "End Point": [
+                                0.4954,
+                                0.1045
+                            ]
+                        },
+                        "arc_10": {
+                            "Start Point": [
+                                0.4954,
+                                0.1045
+                            ],
+                            "Mid Point": [
+                                0.5185,
+                                0.1161
+                            ],
+                            "End Point": [
+                                0.5405,
+                                0.1296
+                            ]
+                        },
+                        "line_10": {
+                            "Start Point": [
+                                0.5405,
+                                0.1296
+                            ],
+                            "End Point": [
+                                0.5846,
+                                0.0641
+                            ]
+                        },
+                        "arc_11": {
+                            "Start Point": [
+                                0.5846,
+                                0.0641
+                            ],
+                            "Mid Point": [
+                                0.621,
+                                0.092
+                            ],
+                            "End Point": [
+                                0.6536,
+                                0.1241
+                            ]
+                        },
+                        "line_11": {
+                            "Start Point": [
+                                0.6536,
+                                0.1241
+                            ],
+                            "End Point": [
+                                0.595,
+                                0.1769
+                            ]
+                        },
+                        "arc_12": {
+                            "Start Point": [
+                                0.595,
+                                0.1769
+                            ],
+                            "Mid Point": [
+                                0.6114,
+                                0.1968
+                            ],
+                            "End Point": [
+                                0.626,
+                                0.2181
+                            ]
+                        },
+                        "line_12": {
+                            "Start Point": [
+                                0.626,
+                                0.2181
+                            ],
+                            "End Point": [
+                                0.693,
+                                0.1763
+                            ]
+                        },
+                        "arc_13": {
+                            "Start Point": [
+                                0.693,
+                                0.1763
+                            ],
+                            "Mid Point": [
+                                0.7148,
+                                0.2165
+                            ],
+                            "End Point": [
+                                0.7316,
+                                0.2591
+                            ]
+                        },
+                        "line_13": {
+                            "Start Point": [
+                                0.7316,
+                                0.2591
+                            ],
+                            "End Point": [
+                                0.6565,
+                                0.2835
+                            ]
+                        },
+                        "arc_14": {
+                            "Start Point": [
+                                0.6565,
+                                0.2835
+                            ],
+                            "Mid Point": [
+                                0.6634,
+                                0.3084
+                            ],
+                            "End Point": [
+                                0.6681,
+                                0.3338
+                            ]
+                        },
+                        "line_14": {
+                            "Start Point": [
+                                0.6681,
+                                0.3338
+                            ],
+                            "End Point": [
+                                0.7463,
+                                0.3228
+                            ]
+                        },
+                        "arc_15": {
+                            "Start Point": [
+                                0.7463,
+                                0.3228
+                            ],
+                            "Mid Point": [
+                                0.7499,
+                                0.3685
+                            ],
+                            "End Point": [
+                                0.7479,
+                                0.4142
+                            ]
+                        },
+                        "line_15": {
+                            "Start Point": [
+                                0.7479,
+                                0.4142
+                            ],
+                            "End Point": [
+                                0.6694,
+                                0.4059
+                            ]
+                        },
+                        "arc_16": {
+                            "Start Point": [
+                                0.6694,
+                                0.4059
+                            ],
+                            "Mid Point": [
+                                0.6656,
+                                0.4315
+                            ],
+                            "End Point": [
+                                0.6595,
+                                0.4566
+                            ]
+                        },
+                        "line_16": {
+                            "Start Point": [
+                                0.6595,
+                                0.4566
+                            ],
+                            "End Point": [
+                                0.7354,
+                                0.4784
+                            ]
+                        },
+                        "arc_17": {
+                            "Start Point": [
+                                0.7354,
+                                0.4784
+                            ],
+                            "Mid Point": [
+                                0.7201,
+                                0.5215
+                            ],
+                            "End Point": [
+                                0.6997,
+                                0.5625
+                            ]
+                        },
+                        "line_17": {
+                            "Start Point": [
+                                0.6997,
+                                0.5625
+                            ],
+                            "End Point": [
+                                0.6313,
+                                0.523
+                            ]
+                        },
+                        "arc_18": {
+                            "Start Point": [
+                                0.6313,
+                                0.523
+                            ],
+                            "Mid Point": [
+                                0.6175,
+                                0.5448
+                            ],
+                            "End Point": [
+                                0.6017,
+                                0.5653
+                            ]
+                        },
+                        "line_18": {
+                            "Start Point": [
+                                0.6017,
+                                0.5653
+                            ],
+                            "End Point": [
+                                0.6622,
+                                0.616
+                            ]
+                        },
+                        "arc_19": {
+                            "Start Point": [
+                                0.6622,
+                                0.616
+                            ],
+                            "Mid Point": [
+                                0.6307,
+                                0.6493
+                            ],
+                            "End Point": [
+                                0.5954,
+                                0.6784
+                            ]
+                        },
+                        "line_19": {
+                            "Start Point": [
+                                0.5954,
+                                0.6784
+                            ],
+                            "End Point": [
+                                0.549,
+                                0.6145
+                            ]
+                        },
+                        "arc_20": {
+                            "Start Point": [
+                                0.549,
+                                0.6145
+                            ],
+                            "Mid Point": [
+                                0.5274,
+                                0.6288
+                            ],
+                            "End Point": [
+                                0.5047,
+                                0.6411
+                            ]
+                        },
+                        "line_20": {
+                            "Start Point": [
+                                0.5047,
+                                0.6411
+                            ],
+                            "End Point": [
+                                0.5393,
+                                0.712
+                            ]
+                        },
+                        "arc_21": {
+                            "Start Point": [
+                                0.5393,
+                                0.712
+                            ],
+                            "Mid Point": [
+                                0.497,
+                                0.7296
+                            ],
+                            "End Point": [
+                                0.4529,
+                                0.7418
+                            ]
+                        },
+                        "line_21": {
+                            "Start Point": [
+                                0.4529,
+                                0.7418
+                            ],
+                            "End Point": [
+                                0.4365,
+                                0.6646
+                            ]
+                        },
+                        "arc_22": {
+                            "Start Point": [
+                                0.4365,
+                                0.6646
+                            ],
+                            "Mid Point": [
+                                0.411,
+                                0.6688
+                            ],
+                            "End Point": [
+                                0.3853,
+                                0.6709
+                            ]
+                        },
+                        "line_22": {
+                            "Start Point": [
+                                0.3853,
+                                0.6709
+                            ],
+                            "End Point": [
+                                0.388,
+                                0.7498
+                            ]
+                        },
+                        "arc_23": {
+                            "Start Point": [
+                                0.388,
+                                0.7498
+                            ],
+                            "Mid Point": [
+                                0.3423,
+                                0.7486
+                            ],
+                            "End Point": [
+                                0.297,
+                                0.7418
+                            ]
+                        },
+                        "line_23": {
+                            "Start Point": [
+                                0.297,
+                                0.7418
+                            ],
+                            "End Point": [
+                                0.3134,
+                                0.6646
+                            ]
+                        },
+                        "arc_24": {
+                            "Start Point": [
+                                0.3134,
+                                0.6646
+                            ],
+                            "Mid Point": [
+                                0.2884,
+                                0.6581
+                            ],
+                            "End Point": [
+                                0.264,
+                                0.6495
+                            ]
+                        },
+                        "line_24": {
+                            "Start Point": [
+                                0.264,
+                                0.6495
+                            ],
+                            "End Point": [
+                                0.2345,
+                                0.7227
+                            ]
+                        },
+                        "arc_25": {
+                            "Start Point": [
+                                0.2345,
+                                0.7227
+                            ],
+                            "Mid Point": [
+                                0.1931,
+                                0.703
+                            ],
+                            "End Point": [
+                                0.1545,
+                                0.6784
+                            ]
+                        },
+                        "line_25": {
+                            "Start Point": [
+                                0.1545,
+                                0.6784
+                            ],
+                            "End Point": [
+                                0.2009,
+                                0.6145
+                            ]
+                        },
+                        "arc_26": {
+                            "Start Point": [
+                                0.2009,
+                                0.6145
+                            ],
+                            "Mid Point": [
+                                0.1807,
+                                0.5984
+                            ],
+                            "End Point": [
+                                0.162,
+                                0.5807
+                            ]
+                        },
+                        "line_26": {
+                            "Start Point": [
+                                0.162,
+                                0.5807
+                            ],
+                            "End Point": [
+                                0.1052,
+                                0.6355
+                            ]
+                        },
+                        "arc_27": {
+                            "Start Point": [
+                                0.1052,
+                                0.6355
+                            ],
+                            "Mid Point": [
+                                0.0755,
+                                0.6007
+                            ],
+                            "End Point": [
+                                0.0502,
+                                0.5625
+                            ]
+                        },
+                        "line_27": {
+                            "Start Point": [
+                                0.0502,
+                                0.5625
+                            ],
+                            "End Point": [
+                                0.1186,
+                                0.523
+                            ]
+                        },
+                        "arc_28": {
+                            "Start Point": [
+                                0.1186,
+                                0.523
+                            ],
+                            "Mid Point": [
+                                0.1066,
+                                0.5001
+                            ],
+                            "End Point": [
+                                0.0967,
+                                0.4763
+                            ]
+                        },
+                        "line_28": {
+                            "Start Point": [
+                                0.0967,
+                                0.4763
+                            ],
+                            "End Point": [
+                                0.0226,
+                                0.5033
+                            ]
+                        },
+                        "arc_29": {
+                            "Start Point": [
+                                0.0226,
+                                0.5033
+                            ],
+                            "Mid Point": [
+                                0.0096,
+                                0.4594
+                            ],
+                            "End Point": [
+                                0.002,
+                                0.4142
+                            ]
+                        },
+                        "line_29": {
+                            "Start Point": [
+                                0.002,
+                                0.4142
+                            ],
+                            "End Point": [
+                                0.0805,
+                                0.4059
+                            ]
+                        },
+                        "arc_30": {
+                            "Start Point": [
+                                0.0805,
+                                0.4059
+                            ],
+                            "Mid Point": [
+                                0.0789,
+                                0.3802
+                            ],
+                            "End Point": [
+                                0.0796,
+                                0.3543
+                            ]
+                        },
+                        "line_30": {
+                            "Start Point": [
+                                0.0796,
+                                0.3543
+                            ],
+                            "End Point": [
+                                0.0009,
+                                0.3488
+                            ]
+                        }
+                    },
+                    "loop_2": {
+                        "circle_1": {
+                            "Center": [
+                                0.3749,
+                                0.375
+                            ],
+                            "Radius": 0.2171
+                        }
+                    }
+                },
+                "face_3": {
+                    "loop_1": {
+                        "arc_1": {
+                            "Start Point": [
+                                0.0183,
+                                0.2591
+                            ],
+                            "Mid Point": [
+                                0.0298,
+                                0.2285
+                            ],
+                            "End Point": [
+                                0.0438,
+                                0.1989
+                            ]
+                        },
+                        "line_1": {
+                            "Start Point": [
+                                0.0438,
+                                0.1989
+                            ],
+                            "End Point": [
+                                0.1135,
+                                0.236
+                            ]
+                        },
+                        "arc_2": {
+                            "Start Point": [
+                                0.1135,
+                                0.236
+                            ],
+                            "Mid Point": [
+                                0.1024,
+                                0.2593
+                            ],
+                            "End Point": [
+                                0.0934,
+                                0.2835
+                            ]
+                        },
+                        "line_2": {
+                            "Start Point": [
+                                0.0934,
+                                0.2835
+                            ],
+                            "End Point": [
+                                0.0183,
+                                0.2591
+                            ]
+                        }
+                    }
+                },
+                "face_4": {
+                    "loop_1": {
+                        "line_1": {
+                            "Start Point": [
+                                0.0226,
+                                0.5033
+                            ],
+                            "End Point": [
+                                0.0967,
+                                0.4763
+                            ]
+                        },
+                        "arc_1": {
+                            "Start Point": [
+                                0.0967,
+                                0.4763
+                            ],
+                            "Mid Point": [
+                                0.1066,
+                                0.5001
+                            ],
+                            "End Point": [
+                                0.1186,
+                                0.523
+                            ]
+                        },
+                        "line_2": {
+                            "Start Point": [
+                                0.1186,
+                                0.523
+                            ],
+                            "End Point": [
+                                0.0502,
+                                0.5625
+                            ]
+                        },
+                        "arc_2": {
+                            "Start Point": [
+                                0.0502,
+                                0.5625
+                            ],
+                            "Mid Point": [
+                                0.0351,
+                                0.5335
+                            ],
+                            "End Point": [
+                                0.0226,
+                                0.5033
+                            ]
+                        }
+                    }
+                },
+                "face_5": {
+                    "loop_1": {
+                        "arc_1": {
+                            "Start Point": [
+                                0.0963,
+                                0.1241
+                            ],
+                            "Mid Point": [
+                                0.1192,
+                                0.1007
+                            ],
+                            "End Point": [
+                                0.1441,
+                                0.0795
+                            ]
+                        },
+                        "line_1": {
+                            "Start Point": [
+                                0.1441,
+                                0.0795
+                            ],
+                            "End Point": [
+                                0.1927,
+                                0.1417
+                            ]
+                        },
+                        "arc_2": {
+                            "Start Point": [
+                                0.1927,
+                                0.1417
+                            ],
+                            "Mid Point": [
+                                0.173,
+                                0.1585
+                            ],
+                            "End Point": [
+                                0.1549,
+                                0.1769
+                            ]
+                        },
+                        "line_2": {
+                            "Start Point": [
+                                0.1549,
+                                0.1769
+                            ],
+                            "End Point": [
+                                0.0963,
+                                0.1241
+                            ]
+                        }
+                    }
+                },
+                "face_6": {
+                    "loop_1": {
+                        "line_1": {
+                            "Start Point": [
+                                0.1052,
+                                0.6355
+                            ],
+                            "End Point": [
+                                0.162,
+                                0.5807
+                            ]
+                        },
+                        "arc_1": {
+                            "Start Point": [
+                                0.162,
+                                0.5807
+                            ],
+                            "Mid Point": [
+                                0.1807,
+                                0.5984
+                            ],
+                            "End Point": [
+                                0.2009,
+                                0.6145
+                            ]
+                        },
+                        "line_2": {
+                            "Start Point": [
+                                0.2009,
+                                0.6145
+                            ],
+                            "End Point": [
+                                0.1545,
+                                0.6784
+                            ]
+                        },
+                        "arc_2": {
+                            "Start Point": [
+                                0.1545,
+                                0.6784
+                            ],
+                            "Mid Point": [
+                                0.1289,
+                                0.658
+                            ],
+                            "End Point": [
+                                0.1052,
+                                0.6355
+                            ]
+                        }
+                    }
+                },
+                "face_7": {
+                    "loop_1": {
+                        "arc_1": {
+                            "Start Point": [
+                                0.2224,
+                                0.0324
+                            ],
+                            "Mid Point": [
+                                0.2529,
+                                0.0204
+                            ],
+                            "End Point": [
+                                0.2842,
+                                0.0111
+                            ]
+                        },
+                        "line_1": {
+                            "Start Point": [
+                                0.2842,
+                                0.0111
+                            ],
+                            "End Point": [
+                                0.3033,
+                                0.0877
+                            ]
+                        },
+                        "arc_2": {
+                            "Start Point": [
+                                0.3033,
+                                0.0877
+                            ],
+                            "Mid Point": [
+                                0.2786,
+                                0.0951
+                            ],
+                            "End Point": [
+                                0.2545,
+                                0.1045
+                            ]
+                        },
+                        "line_2": {
+                            "Start Point": [
+                                0.2545,
+                                0.1045
+                            ],
+                            "End Point": [
+                                0.2224,
+                                0.0324
+                            ]
+                        }
+                    }
+                },
+                "face_8": {
+                    "loop_1": {
+                        "line_1": {
+                            "Start Point": [
+                                0.2345,
+                                0.7227
+                            ],
+                            "End Point": [
+                                0.264,
+                                0.6495
+                            ]
+                        },
+                        "arc_1": {
+                            "Start Point": [
+                                0.264,
+                                0.6495
+                            ],
+                            "Mid Point": [
+                                0.2884,
+                                0.6581
+                            ],
+                            "End Point": [
+                                0.3134,
+                                0.6646
+                            ]
+                        },
+                        "line_2": {
+                            "Start Point": [
+                                0.3134,
+                                0.6646
+                            ],
+                            "End Point": [
+                                0.297,
+                                0.7418
+                            ]
+                        },
+                        "arc_2": {
+                            "Start Point": [
+                                0.297,
+                                0.7418
+                            ],
+                            "Mid Point": [
+                                0.2653,
+                                0.7336
+                            ],
+                            "End Point": [
+                                0.2345,
+                                0.7227
+                            ]
+                        }
+                    }
+                },
+                "face_9": {
+                    "loop_1": {
+                        "arc_1": {
+                            "Start Point": [
+                                0.3749,
+                                0.0
+                            ],
+                            "Mid Point": [
+                                0.4076,
+                                0.0014
+                            ],
+                            "End Point": [
+                                0.4401,
+                                0.0057
+                            ]
+                        },
+                        "line_1": {
+                            "Start Point": [
+                                0.4401,
+                                0.0057
+                            ],
+                            "End Point": [
+                                0.4264,
+                                0.0834
+                            ]
+                        },
+                        "arc_2": {
+                            "Start Point": [
+                                0.4264,
+                                0.0834
+                            ],
+                            "Mid Point": [
+                                0.4007,
+                                0.0801
+                            ],
+                            "End Point": [
+                                0.3749,
+                                0.0789
+                            ]
+                        },
+                        "line_2": {
+                            "Start Point": [
+                                0.3749,
+                                0.0789
+                            ],
+                            "End Point": [
+                                0.3749,
+                                0.0
+                            ]
+                        }
+                    }
+                },
+                "face_10": {
+                    "loop_1": {
+                        "arc_1": {
+                            "Start Point": [
+                                0.3853,
+                                0.6709
+                            ],
+                            "Mid Point": [
+                                0.411,
+                                0.6688
+                            ],
+                            "End Point": [
+                                0.4365,
+                                0.6646
+                            ]
+                        },
+                        "line_1": {
+                            "Start Point": [
+                                0.4365,
+                                0.6646
+                            ],
+                            "End Point": [
+                                0.4529,
+                                0.7418
+                            ]
+                        },
+                        "arc_2": {
+                            "Start Point": [
+                                0.4529,
+                                0.7418
+                            ],
+                            "Mid Point": [
+                                0.4206,
+                                0.7472
+                            ],
+                            "End Point": [
+                                0.388,
+                                0.7498
+                            ]
+                        },
+                        "line_2": {
+                            "Start Point": [
+                                0.388,
+                                0.7498
+                            ],
+                            "End Point": [
+                                0.3853,
+                                0.6709
+                            ]
+                        }
+                    }
+                },
+                "face_11": {
+                    "loop_1": {
+                        "line_1": {
+                            "Start Point": [
+                                0.4954,
+                                0.1045
+                            ],
+                            "End Point": [
+                                0.5275,
+                                0.0324
+                            ]
+                        },
+                        "arc_1": {
+                            "Start Point": [
+                                0.5275,
+                                0.0324
+                            ],
+                            "Mid Point": [
+                                0.5567,
+                                0.047
+                            ],
+                            "End Point": [
+                                0.5846,
+                                0.0641
+                            ]
+                        },
+                        "line_2": {
+                            "Start Point": [
+                                0.5846,
+                                0.0641
+                            ],
+                            "End Point": [
+                                0.5405,
+                                0.1296
+                            ]
+                        },
+                        "arc_2": {
+                            "Start Point": [
+                                0.5405,
+                                0.1296
+                            ],
+                            "Mid Point": [
+                                0.5185,
+                                0.1161
+                            ],
+                            "End Point": [
+                                0.4954,
+                                0.1045
+                            ]
+                        }
+                    }
+                },
+                "face_12": {
+                    "loop_1": {
+                        "arc_1": {
+                            "Start Point": [
+                                0.5047,
+                                0.6411
+                            ],
+                            "Mid Point": [
+                                0.5274,
+                                0.6288
+                            ],
+                            "End Point": [
+                                0.549,
+                                0.6145
+                            ]
+                        },
+                        "line_1": {
+                            "Start Point": [
+                                0.549,
+                                0.6145
+                            ],
+                            "End Point": [
+                                0.5954,
+                                0.6784
+                            ]
+                        },
+                        "arc_2": {
+                            "Start Point": [
+                                0.5954,
+                                0.6784
+                            ],
+                            "Mid Point": [
+                                0.5681,
+                                0.6964
+                            ],
+                            "End Point": [
+                                0.5393,
+                                0.712
+                            ]
+                        },
+                        "line_2": {
+                            "Start Point": [
+                                0.5393,
+                                0.712
+                            ],
+                            "End Point": [
+                                0.5047,
+                                0.6411
+                            ]
+                        }
+                    }
+                },
+                "face_13": {
+                    "loop_1": {
+                        "line_1": {
+                            "Start Point": [
+                                0.595,
+                                0.1769
+                            ],
+                            "End Point": [
+                                0.6536,
+                                0.1241
+                            ]
+                        },
+                        "arc_1": {
+                            "Start Point": [
+                                0.6536,
+                                0.1241
+                            ],
+                            "Mid Point": [
+                                0.6744,
+                                0.1493
+                            ],
+                            "End Point": [
+                                0.693,
+                                0.1763
+                            ]
+                        },
+                        "line_2": {
+                            "Start Point": [
+                                0.693,
+                                0.1763
+                            ],
+                            "End Point": [
+                                0.626,
+                                0.2181
+                            ]
+                        },
+                        "arc_2": {
+                            "Start Point": [
+                                0.626,
+                                0.2181
+                            ],
+                            "Mid Point": [
+                                0.6114,
+                                0.1968
+                            ],
+                            "End Point": [
+                                0.595,
+                                0.1769
+                            ]
+                        }
+                    }
+                },
+                "face_14": {
+                    "loop_1": {
+                        "arc_1": {
+                            "Start Point": [
+                                0.6017,
+                                0.5653
+                            ],
+                            "Mid Point": [
+                                0.6175,
+                                0.5448
+                            ],
+                            "End Point": [
+                                0.6313,
+                                0.523
+                            ]
+                        },
+                        "line_1": {
+                            "Start Point": [
+                                0.6313,
+                                0.523
+                            ],
+                            "End Point": [
+                                0.6997,
+                                0.5625
+                            ]
+                        },
+                        "arc_2": {
+                            "Start Point": [
+                                0.6997,
+                                0.5625
+                            ],
+                            "Mid Point": [
+                                0.6821,
+                                0.5901
+                            ],
+                            "End Point": [
+                                0.6622,
+                                0.616
+                            ]
+                        },
+                        "line_2": {
+                            "Start Point": [
+                                0.6622,
+                                0.616
+                            ],
+                            "End Point": [
+                                0.6017,
+                                0.5653
+                            ]
+                        }
+                    }
+                },
+                "face_15": {
+                    "loop_1": {
+                        "line_1": {
+                            "Start Point": [
+                                0.6565,
+                                0.2835
+                            ],
+                            "End Point": [
+                                0.7316,
+                                0.2591
+                            ]
+                        },
+                        "arc_1": {
+                            "Start Point": [
+                                0.7316,
+                                0.2591
+                            ],
+                            "Mid Point": [
+                                0.7403,
+                                0.2906
+                            ],
+                            "End Point": [
+                                0.7463,
+                                0.3228
+                            ]
+                        },
+                        "line_2": {
+                            "Start Point": [
+                                0.7463,
+                                0.3228
+                            ],
+                            "End Point": [
+                                0.6681,
+                                0.3338
+                            ]
+                        },
+                        "arc_2": {
+                            "Start Point": [
+                                0.6681,
+                                0.3338
+                            ],
+                            "Mid Point": [
+                                0.6634,
+                                0.3084
+                            ],
+                            "End Point": [
+                                0.6565,
+                                0.2835
+                            ]
+                        }
+                    }
+                },
+                "face_16": {
+                    "loop_1": {
+                        "arc_1": {
+                            "Start Point": [
+                                0.6595,
+                                0.4566
+                            ],
+                            "Mid Point": [
+                                0.6656,
+                                0.4315
+                            ],
+                            "End Point": [
+                                0.6694,
+                                0.4059
+                            ]
+                        },
+                        "line_1": {
+                            "Start Point": [
+                                0.6694,
+                                0.4059
+                            ],
+                            "End Point": [
+                                0.7479,
+                                0.4142
+                            ]
+                        },
+                        "arc_2": {
+                            "Start Point": [
+                                0.7479,
+                                0.4142
+                            ],
+                            "Mid Point": [
+                                0.7431,
+                                0.4466
+                            ],
+                            "End Point": [
+                                0.7354,
+                                0.4784
+                            ]
+                        },
+                        "line_2": {
+                            "Start Point": [
+                                0.7354,
+                                0.4784
+                            ],
+                            "End Point": [
+                                0.6595,
+                                0.4566
+                            ]
+                        }
+                    }
+                }
+            },
+            "extrusion": {
+                "extrude_depth_towards_normal": 0.0,
+                "extrude_depth_opposite_normal": 0.0395,
+                "sketch_scale": 0.7499,
+                "operation": "CutFeatureOperation"
+            },
+            "description": {
+                "name": "Hexagonal Gear",
+                "shape": "A three-dimensional model of a hexagonal gear with a central hole and six evenly spaced teeth on each side.",
+                "length": 0.7498857742146149,
+                "width": 0.7497714473684131,
+                "height": 0.039473684210525904
+            }
+        }
+    }
+}

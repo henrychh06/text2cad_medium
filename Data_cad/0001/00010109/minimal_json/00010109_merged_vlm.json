@@ -1,0 +1,375 @@
+{
+    "final_name": "Hexagonal Column",
+    "final_shape": "A three-dimensional model of a hexagonal column with a cylindrical top and two cylindrical holes on the sides, suitable for architectural or structural design.",
+    "parts": {
+        "part_1": {
+            "coordinate_system": {
+                "Euler Angles": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "Translation Vector": [
+                    0.0425,
+                    0.0,
+                    0.0
+                ]
+            },
+            "sketch": {
+                "face_1": {
+                    "loop_1": {
+                        "line_1": {
+                            "Start Point": [
+                                0.0,
+                                0.0
+                            ],
+                            "End Point": [
+                                0.5103,
+                                0.0
+                            ]
+                        },
+                        "line_2": {
+                            "Start Point": [
+                                0.5103,
+                                0.0
+                            ],
+                            "End Point": [
+                                0.5103,
+                                0.2552
+                            ]
+                        },
+                        "line_3": {
+                            "Start Point": [
+                                0.5103,
+                                0.2552
+                            ],
+                            "End Point": [
+                                0.0,
+                                0.2552
+                            ]
+                        },
+                        "line_4": {
+                            "Start Point": [
+                                0.0,
+                                0.2552
+                            ],
+                            "End Point": [
+                                0.0,
+                                0.0
+                            ]
+                        }
+                    }
+                }
+            },
+            "extrusion": {
+                "extrude_depth_towards_normal": 0.2126,
+                "extrude_depth_opposite_normal": 0.0,
+                "sketch_scale": 0.5103,
+                "operation": "NewBodyFeatureOperation"
+            },
+            "description": {
+                "name": "Hexagonal Column",
+                "shape": "A three-dimensional model of a hexagonal column with a cylindrical top and two cylindrical holes on the sides, suitable for architectural or structural design.",
+                "length": 0.510348738304508,
+                "width": 0.255174369152254,
+                "height": 0.21264530762687833
+            }
+        },
+        "part_2": {
+            "coordinate_system": {
+                "Euler Angles": [
+                    -90.0,
+                    0.0,
+                    -90.0
+                ],
+                "Translation Vector": [
+                    0.5529,
+                    0.0861,
+                    0.0649
+                ]
+            },
+            "sketch": {
+                "face_1": {
+                    "loop_1": {
+                        "circle_1": {
+                            "Center": [
+                                0.0415,
+                                0.0415
+                            ],
+                            "Radius": 0.0415
+                        }
+                    }
+                }
+            },
+            "extrusion": {
+                "extrude_depth_towards_normal": 0.0128,
+                "extrude_depth_opposite_normal": 0.0,
+                "sketch_scale": 0.0829,
+                "operation": "JoinFeatureOperation"
+            },
+            "description": {
+                "name": "Hexagonal Column",
+                "shape": "A three-dimensional model of a hexagonal column with a cylindrical top and two cylindrical holes on the sides, suitable for architectural or structural design.",
+                "length": 0.08293166997448255,
+                "width": 0.08293166997448255,
+                "height": 0.012758718457612698
+            }
+        },
+        "part_3": {
+            "coordinate_system": {
+                "Euler Angles": [
+                    -90.0,
+                    0.0,
+                    -90.0
+                ],
+                "Translation Vector": [
+                    0.5529,
+                    0.1038,
+                    0.0744
+                ]
+            },
+            "sketch": {
+                "face_1": {
+                    "loop_1": {
+                        "arc_1": {
+                            "Start Point": [
+                                0.0,
+                                0.0532
+                            ],
+                            "Mid Point": [
+                                0.0238,
+                                0.0
+                            ],
+                            "End Point": [
+                                0.0475,
+                                0.0532
+                            ]
+                        },
+                        "line_1": {
+                            "Start Point": [
+                                0.0475,
+                                0.0532
+                            ],
+                            "End Point": [
+                                0.0,
+                                0.0532
+                            ]
+                        }
+                    }
+                }
+            },
+            "extrusion": {
+                "extrude_depth_towards_normal": 0.1971,
+                "extrude_depth_opposite_normal": 0.0,
+                "sketch_scale": 0.0532,
+                "operation": "JoinFeatureOperation"
+            },
+            "description": {
+                "name": "Hexagonal Column",
+                "shape": "A three-dimensional model of a hexagonal column with a cylindrical top and two cylindrical holes on the sides, suitable for architectural or structural design.",
+                "length": 0.04754876665721575,
+                "width": 0.05316132690671958,
+                "height": 0.19712220017011622
+            }
+        },
+        "part_4": {
+            "coordinate_system": {
+                "Euler Angles": [
+                    -90.0,
+                    0.0,
+                    -90.0
+                ],
+                "Translation Vector": [
+                    0.5529,
+                    0.0149,
+                    0.0893
+                ]
+            },
+            "sketch": {
+                "face_1": {
+                    "loop_1": {
+                        "circle_1": {
+                            "Center": [
+                                0.017,
+                                0.017
+                            ],
+                            "Radius": 0.017
+                        }
+                    }
+                },
+                "face_2": {
+                    "loop_1": {
+                        "circle_1": {
+                            "Center": [
+                                0.2084,
+                                0.017
+                            ],
+                            "Radius": 0.017
+                        }
+                    }
+                }
+            },
+            "extrusion": {
+                "extrude_depth_towards_normal": 0.0,
+                "extrude_depth_opposite_normal": 0.2126,
+                "sketch_scale": 0.2254,
+                "operation": "CutFeatureOperation"
+            },
+            "description": {
+                "name": "Hexagonal Column",
+                "shape": "A three-dimensional model of a hexagonal column with a cylindrical top and two cylindrical holes on the sides, suitable for architectural or structural design.",
+                "length": 0.22540402608449106,
+                "width": 0.03402324922030053,
+                "height": 0.21264530762687833
+            }
+        },
+        "part_5": {
+            "coordinate_system": {
+                "Euler Angles": [
+                    90.0,
+                    0.0,
+                    -90.0
+                ],
+                "Translation Vector": [
+                    0.0425,
+                    0.2084,
+                    0.0532
+                ]
+            },
+            "sketch": {
+                "face_1": {
+                    "loop_1": {
+                        "line_1": {
+                            "Start Point": [
+                                0.0,
+                                0.0372
+                            ],
+                            "End Point": [
+                                0.0064,
+                                0.0372
+                            ]
+                        },
+                        "line_2": {
+                            "Start Point": [
+                                0.0064,
+                                0.0372
+                            ],
+                            "End Point": [
+                                0.0064,
+                                0.0532
+                            ]
+                        },
+                        "line_3": {
+                            "Start Point": [
+                                0.0064,
+                                0.0532
+                            ],
+                            "End Point": [
+                                0.0064,
+                                0.0691
+                            ]
+                        },
+                        "line_4": {
+                            "Start Point": [
+                                0.0064,
+                                0.0691
+                            ],
+                            "End Point": [
+                                0.0,
+                                0.0691
+                            ]
+                        },
+                        "line_5": {
+                            "Start Point": [
+                                0.0,
+                                0.0691
+                            ],
+                            "End Point": [
+                                0.0,
+                                0.0372
+                            ]
+                        }
+                    }
+                },
+                "face_2": {
+                    "loop_1": {
+                        "circle_1": {
+                            "Center": [
+                                0.0808,
+                                0.0532
+                            ],
+                            "Radius": 0.0532
+                        }
+                    }
+                },
+                "face_3": {
+                    "loop_1": {
+                        "line_1": {
+                            "Start Point": [
+                                0.1552,
+                                0.0372
+                            ],
+                            "End Point": [
+                                0.1552,
+                                0.0532
+                            ]
+                        },
+                        "line_2": {
+                            "Start Point": [
+                                0.1552,
+                                0.0532
+                            ],
+                            "End Point": [
+                                0.1552,
+                                0.0691
+                            ]
+                        },
+                        "line_3": {
+                            "Start Point": [
+                                0.1552,
+                                0.0691
+                            ],
+                            "End Point": [
+                                0.1616,
+                                0.0691
+                            ]
+                        },
+                        "line_4": {
+                            "Start Point": [
+                                0.1616,
+                                0.0691
+                            ],
+                            "End Point": [
+                                0.1616,
+                                0.0372
+                            ]
+                        },
+                        "line_5": {
+                            "Start Point": [
+                                0.1616,
+                                0.0372
+                            ],
+                            "End Point": [
+                                0.1552,
+                                0.0372
+                            ]
+                        }
+                    }
+                }
+            },
+            "extrusion": {
+                "extrude_depth_towards_normal": 0.0425,
+                "extrude_depth_opposite_normal": 0.0,
+                "sketch_scale": 0.1616,
+                "operation": "JoinFeatureOperation"
+            },
+            "description": {
+                "name": "Hexagonal Column",
+                "shape": "A three-dimensional model of a hexagonal column with a cylindrical top and two cylindrical holes on the sides, suitable for architectural or structural design.",
+                "length": 0.1616104337964275,
+                "width": 0.10632265381343918,
+                "height": 0.042529061525375667
+            }
+        }
+    }
+}

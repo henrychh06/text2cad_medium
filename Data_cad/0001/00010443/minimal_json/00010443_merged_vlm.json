@@ -1,0 +1,259 @@
+{
+    "final_name": "Bracket",
+    "final_shape": "3D CAD model of a brown, rectangular, machined bracket with two cylindrical holes and a central cylindrical hole, designed for mounting purposes.",
+    "parts": {
+        "part_1": {
+            "coordinate_system": {
+                "Euler Angles": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "Translation Vector": [
+                    0.0,
+                    0.0,
+                    0.0
+                ]
+            },
+            "sketch": {
+                "face_1": {
+                    "loop_1": {
+                        "line_1": {
+                            "Start Point": [
+                                0.0,
+                                0.0
+                            ],
+                            "End Point": [
+                                0.75,
+                                0.0
+                            ]
+                        },
+                        "line_2": {
+                            "Start Point": [
+                                0.75,
+                                0.0
+                            ],
+                            "End Point": [
+                                0.75,
+                                0.3
+                            ]
+                        },
+                        "line_3": {
+                            "Start Point": [
+                                0.75,
+                                0.3
+                            ],
+                            "End Point": [
+                                0.0,
+                                0.3
+                            ]
+                        },
+                        "line_4": {
+                            "Start Point": [
+                                0.0,
+                                0.3
+                            ],
+                            "End Point": [
+                                0.0,
+                                0.0
+                            ]
+                        }
+                    },
+                    "loop_2": {
+                        "circle_1": {
+                            "Center": [
+                                0.1103,
+                                0.15
+                            ],
+                            "Radius": 0.0487
+                        }
+                    },
+                    "loop_3": {
+                        "circle_1": {
+                            "Center": [
+                                0.5978,
+                                0.15
+                            ],
+                            "Radius": 0.1004
+                        }
+                    }
+                }
+            },
+            "extrusion": {
+                "extrude_depth_towards_normal": 0.1125,
+                "extrude_depth_opposite_normal": 0.0,
+                "sketch_scale": 0.75,
+                "operation": "NewBodyFeatureOperation"
+            },
+            "description": {
+                "name": "Bracket",
+                "shape": "3D CAD model of a brown, rectangular, machined bracket with two cylindrical holes and a central cylindrical hole, designed for mounting purposes.",
+                "length": 0.7499999999999999,
+                "width": 0.3,
+                "height": 0.11249999999999999
+            }
+        },
+        "part_2": {
+            "coordinate_system": {
+                "Euler Angles": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "Translation Vector": [
+                    0.0,
+                    0.0397,
+                    0.1125
+                ]
+            },
+            "sketch": {
+                "face_1": {
+                    "loop_1": {
+                        "circle_1": {
+                            "Center": [
+                                0.1103,
+                                0.1103
+                            ],
+                            "Radius": 0.1103
+                        }
+                    },
+                    "loop_2": {
+                        "circle_1": {
+                            "Center": [
+                                0.1103,
+                                0.1103
+                            ],
+                            "Radius": 0.0487
+                        }
+                    }
+                }
+            },
+            "extrusion": {
+                "extrude_depth_towards_normal": 0.15,
+                "extrude_depth_opposite_normal": 0.0,
+                "sketch_scale": 0.2205,
+                "operation": "JoinFeatureOperation"
+            },
+            "description": {
+                "name": "Bracket",
+                "shape": "3D CAD model of a brown, rectangular, machined bracket with two cylindrical holes and a central cylindrical hole, designed for mounting purposes.",
+                "length": 0.22052657480314958,
+                "width": 0.2205265748031496,
+                "height": 0.15000000000000002
+            }
+        },
+        "part_3": {
+            "coordinate_system": {
+                "Euler Angles": [
+                    0.0,
+                    0.0,
+                    180.0
+                ],
+                "Translation Vector": [
+                    0.0146,
+                    0.2604,
+                    0.0
+                ]
+            },
+            "sketch": {
+                "face_1": {
+                    "loop_1": {
+                        "line_1": {
+                            "Start Point": [
+                                0.0,
+                                0.0552
+                            ],
+                            "End Point": [
+                                0.0956,
+                                0.0
+                            ]
+                        },
+                        "line_2": {
+                            "Start Point": [
+                                0.0956,
+                                0.0
+                            ],
+                            "End Point": [
+                                0.1912,
+                                0.0552
+                            ]
+                        },
+                        "line_3": {
+                            "Start Point": [
+                                0.1912,
+                                0.0552
+                            ],
+                            "End Point": [
+                                0.1912,
+                                0.1656
+                            ]
+                        },
+                        "line_4": {
+                            "Start Point": [
+                                0.1912,
+                                0.1656
+                            ],
+                            "End Point": [
+                                0.0956,
+                                0.2208
+                            ]
+                        },
+                        "line_5": {
+                            "Start Point": [
+                                0.0956,
+                                0.2208
+                            ],
+                            "End Point": [
+                                0.0,
+                                0.1656
+                            ]
+                        },
+                        "line_6": {
+                            "Start Point": [
+                                0.0,
+                                0.1656
+                            ],
+                            "End Point": [
+                                0.0,
+                                0.0552
+                            ]
+                        }
+                    },
+                    "loop_2": {
+                        "circle_1": {
+                            "Center": [
+                                0.0956,
+                                0.1104
+                            ],
+                            "Radius": 0.0487
+                        }
+                    }
+                },
+                "face_2": {
+                    "loop_1": {
+                        "circle_1": {
+                            "Center": [
+                                0.0956,
+                                0.1104
+                            ],
+                            "Radius": 0.0487
+                        }
+                    }
+                }
+            },
+            "extrusion": {
+                "extrude_depth_towards_normal": 0.0,
+                "extrude_depth_opposite_normal": 0.0863,
+                "sketch_scale": 0.2208,
+                "operation": "CutFeatureOperation"
+            },
+            "description": {
+                "name": "Bracket",
+                "shape": "3D CAD model of a brown, rectangular, machined bracket with two cylindrical holes and a central cylindrical hole, designed for mounting purposes.",
+                "length": 0.19124999999999998,
+                "width": 0.22083661417322833,
+                "height": 0.08625000000000001
+            }
+        }
+    }
+}

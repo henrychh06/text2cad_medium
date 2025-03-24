@@ -1,0 +1,119 @@
+{
+    "final_name": "Triangular Prism",
+    "final_shape": "A three-dimensional object with a triangular base and a rectangular cross-section.",
+    "parts": {
+        "part_1": {
+            "coordinate_system": {
+                "Euler Angles": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "Translation Vector": [
+                    0.0,
+                    0.0,
+                    0.0
+                ]
+            },
+            "sketch": {
+                "face_1": {
+                    "loop_1": {
+                        "line_1": {
+                            "Start Point": [
+                                0.0,
+                                0.0
+                            ],
+                            "End Point": [
+                                0.1023,
+                                0.0
+                            ]
+                        },
+                        "line_2": {
+                            "Start Point": [
+                                0.1023,
+                                0.0
+                            ],
+                            "End Point": [
+                                0.1023,
+                                0.2216
+                            ]
+                        },
+                        "line_3": {
+                            "Start Point": [
+                                0.1023,
+                                0.2216
+                            ],
+                            "End Point": [
+                                0.4432,
+                                0.2216
+                            ]
+                        },
+                        "line_4": {
+                            "Start Point": [
+                                0.4432,
+                                0.2216
+                            ],
+                            "End Point": [
+                                0.4432,
+                                0.5284
+                            ]
+                        },
+                        "line_5": {
+                            "Start Point": [
+                                0.4432,
+                                0.5284
+                            ],
+                            "End Point": [
+                                0.1023,
+                                0.5284
+                            ]
+                        },
+                        "line_6": {
+                            "Start Point": [
+                                0.1023,
+                                0.5284
+                            ],
+                            "End Point": [
+                                0.1023,
+                                0.75
+                            ]
+                        },
+                        "line_7": {
+                            "Start Point": [
+                                0.1023,
+                                0.75
+                            ],
+                            "End Point": [
+                                0.0,
+                                0.75
+                            ]
+                        },
+                        "line_8": {
+                            "Start Point": [
+                                0.0,
+                                0.75
+                            ],
+                            "End Point": [
+                                0.0,
+                                0.0
+                            ]
+                        }
+                    }
+                }
+            },
+            "extrusion": {
+                "extrude_depth_towards_normal": 0.3068,
+                "extrude_depth_opposite_normal": 0.0,
+                "sketch_scale": 0.75,
+                "operation": "NewBodyFeatureOperation"
+            },
+            "description": {
+                "name": "Triangular Prism",
+                "shape": "A three-dimensional object with a triangular base and a rectangular cross-section.",
+                "length": 0.4431818181818182,
+                "width": 0.75,
+                "height": 0.3068181818181819
+            }
+        }
+    }
+}

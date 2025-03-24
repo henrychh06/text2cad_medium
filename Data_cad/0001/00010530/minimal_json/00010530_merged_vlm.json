@@ -1,0 +1,200 @@
+{
+    "final_name": "Curved Support Beam",
+    "final_shape": "A three-dimensional CAD model of a curved support beam with a rounded end and a flat base, suitable for architectural or structural design.",
+    "parts": {
+        "part_1": {
+            "coordinate_system": {
+                "Euler Angles": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "Translation Vector": [
+                    0.0,
+                    0.0,
+                    0.0
+                ]
+            },
+            "sketch": {
+                "face_1": {
+                    "loop_1": {
+                        "line_1": {
+                            "Start Point": [
+                                0.0,
+                                0.0
+                            ],
+                            "End Point": [
+                                0.75,
+                                0.0
+                            ]
+                        },
+                        "line_2": {
+                            "Start Point": [
+                                0.75,
+                                0.0
+                            ],
+                            "End Point": [
+                                0.75,
+                                0.3
+                            ]
+                        },
+                        "line_3": {
+                            "Start Point": [
+                                0.75,
+                                0.3
+                            ],
+                            "End Point": [
+                                0.0,
+                                0.3
+                            ]
+                        },
+                        "line_4": {
+                            "Start Point": [
+                                0.0,
+                                0.3
+                            ],
+                            "End Point": [
+                                0.0,
+                                0.0
+                            ]
+                        }
+                    }
+                }
+            },
+            "extrusion": {
+                "extrude_depth_towards_normal": 0.075,
+                "extrude_depth_opposite_normal": 0.0,
+                "sketch_scale": 0.75,
+                "operation": "NewBodyFeatureOperation"
+            },
+            "description": {
+                "name": "Curved Support Beam",
+                "shape": "A three-dimensional CAD model of a curved support beam with a rounded end and a flat base, suitable for architectural or structural design.",
+                "length": 0.75,
+                "width": 0.3,
+                "height": 0.075
+            }
+        },
+        "part_2": {
+            "coordinate_system": {
+                "Euler Angles": [
+                    0.0,
+                    0.0,
+                    -90.0
+                ],
+                "Translation Vector": [
+                    0.225,
+                    0.0,
+                    0.0
+                ]
+            },
+            "sketch": {
+                "face_1": {
+                    "loop_1": {
+                        "line_1": {
+                            "Start Point": [
+                                0.0,
+                                0.0
+                            ],
+                            "End Point": [
+                                0.3,
+                                0.0
+                            ]
+                        },
+                        "line_2": {
+                            "Start Point": [
+                                0.3,
+                                0.0
+                            ],
+                            "End Point": [
+                                0.3,
+                                0.075
+                            ]
+                        },
+                        "line_3": {
+                            "Start Point": [
+                                0.3,
+                                0.075
+                            ],
+                            "End Point": [
+                                0.0,
+                                0.075
+                            ]
+                        },
+                        "line_4": {
+                            "Start Point": [
+                                0.0,
+                                0.075
+                            ],
+                            "End Point": [
+                                0.0,
+                                0.0
+                            ]
+                        }
+                    }
+                },
+                "face_2": {
+                    "loop_1": {
+                        "line_1": {
+                            "Start Point": [
+                                0.0,
+                                0.075
+                            ],
+                            "End Point": [
+                                0.3,
+                                0.075
+                            ]
+                        },
+                        "line_2": {
+                            "Start Point": [
+                                0.3,
+                                0.075
+                            ],
+                            "End Point": [
+                                0.3,
+                                0.2625
+                            ]
+                        },
+                        "arc_1": {
+                            "Start Point": [
+                                0.3,
+                                0.2625
+                            ],
+                            "Mid Point": [
+                                0.15,
+                                0.4125
+                            ],
+                            "End Point": [
+                                0.0,
+                                0.2625
+                            ]
+                        },
+                        "line_3": {
+                            "Start Point": [
+                                0.0,
+                                0.2625
+                            ],
+                            "End Point": [
+                                0.0,
+                                0.075
+                            ]
+                        }
+                    }
+                }
+            },
+            "extrusion": {
+                "extrude_depth_towards_normal": 0.0,
+                "extrude_depth_opposite_normal": 0.075,
+                "sketch_scale": 0.4125,
+                "operation": "JoinFeatureOperation"
+            },
+            "description": {
+                "name": "Curved Support Beam",
+                "shape": "A three-dimensional CAD model of a curved support beam with a rounded end and a flat base, suitable for architectural or structural design.",
+                "length": 0.30000000000000004,
+                "width": 0.4125000000000001,
+                "height": 0.075
+            }
+        }
+    }
+}

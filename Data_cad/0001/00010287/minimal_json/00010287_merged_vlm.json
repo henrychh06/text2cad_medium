@@ -1,0 +1,99 @@
+{
+    "final_name": "Rectangular Block",
+    "final_shape": "A three-dimensional rectangular block with a flat top and bottom, and a slightly tapered side. It has a single cutout in the center, creating a rectangular shape with a smaller rectangular shape inside it.",
+    "parts": {
+        "part_1": {
+            "coordinate_system": {
+                "Euler Angles": [
+                    0.0,
+                    0.0,
+                    -90.0
+                ],
+                "Translation Vector": [
+                    0.0,
+                    0.375,
+                    0.0
+                ]
+            },
+            "sketch": {
+                "face_1": {
+                    "loop_1": {
+                        "line_1": {
+                            "Start Point": [
+                                0.0,
+                                0.0375
+                            ],
+                            "End Point": [
+                                0.0217,
+                                0.0
+                            ]
+                        },
+                        "line_2": {
+                            "Start Point": [
+                                0.0217,
+                                0.0
+                            ],
+                            "End Point": [
+                                0.065,
+                                0.0
+                            ]
+                        },
+                        "line_3": {
+                            "Start Point": [
+                                0.065,
+                                0.0
+                            ],
+                            "End Point": [
+                                0.0866,
+                                0.0375
+                            ]
+                        },
+                        "line_4": {
+                            "Start Point": [
+                                0.0866,
+                                0.0375
+                            ],
+                            "End Point": [
+                                0.065,
+                                0.075
+                            ]
+                        },
+                        "line_5": {
+                            "Start Point": [
+                                0.065,
+                                0.075
+                            ],
+                            "End Point": [
+                                0.0217,
+                                0.075
+                            ]
+                        },
+                        "line_6": {
+                            "Start Point": [
+                                0.0217,
+                                0.075
+                            ],
+                            "End Point": [
+                                0.0,
+                                0.0375
+                            ]
+                        }
+                    }
+                }
+            },
+            "extrusion": {
+                "extrude_depth_towards_normal": 0.1875,
+                "extrude_depth_opposite_normal": 0.1875,
+                "sketch_scale": 0.0866,
+                "operation": "NewBodyFeatureOperation"
+            },
+            "description": {
+                "name": "Rectangular Block",
+                "shape": "A three-dimensional rectangular block with a flat top and bottom, and a slightly tapered side. It has a single cutout in the center, creating a rectangular shape with a smaller rectangular shape inside it.",
+                "length": 0.08660255905511811,
+                "width": 0.07500000000000001,
+                "height": 0.375
+            }
+        }
+    }
+}

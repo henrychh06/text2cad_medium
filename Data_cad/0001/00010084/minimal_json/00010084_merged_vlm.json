@@ -1,0 +1,139 @@
+{
+    "final_name": "Long Rectangular Beam",
+    "final_shape": "A long, straight, rectangular beam with a flat bottom and a slightly tapered top, suitable for structural support or as a base for machinery.",
+    "parts": {
+        "part_1": {
+            "coordinate_system": {
+                "Euler Angles": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "Translation Vector": [
+                    0.0,
+                    0.0,
+                    0.0
+                ]
+            },
+            "sketch": {
+                "face_1": {
+                    "loop_1": {
+                        "line_1": {
+                            "Start Point": [
+                                0.0,
+                                0.0
+                            ],
+                            "End Point": [
+                                0.0156,
+                                0.0
+                            ]
+                        },
+                        "line_2": {
+                            "Start Point": [
+                                0.0156,
+                                0.0
+                            ],
+                            "End Point": [
+                                0.0156,
+                                0.0208
+                            ]
+                        },
+                        "line_3": {
+                            "Start Point": [
+                                0.0156,
+                                0.0208
+                            ],
+                            "End Point": [
+                                0.0156,
+                                0.0417
+                            ]
+                        },
+                        "line_4": {
+                            "Start Point": [
+                                0.0156,
+                                0.0417
+                            ],
+                            "End Point": [
+                                0.0,
+                                0.0417
+                            ]
+                        },
+                        "line_5": {
+                            "Start Point": [
+                                0.0,
+                                0.0417
+                            ],
+                            "End Point": [
+                                0.0,
+                                0.0391
+                            ]
+                        },
+                        "line_6": {
+                            "Start Point": [
+                                0.0,
+                                0.0391
+                            ],
+                            "End Point": [
+                                0.0117,
+                                0.0378
+                            ]
+                        },
+                        "line_7": {
+                            "Start Point": [
+                                0.0117,
+                                0.0378
+                            ],
+                            "End Point": [
+                                0.0117,
+                                0.0208
+                            ]
+                        },
+                        "line_8": {
+                            "Start Point": [
+                                0.0117,
+                                0.0208
+                            ],
+                            "End Point": [
+                                0.0117,
+                                0.0039
+                            ]
+                        },
+                        "line_9": {
+                            "Start Point": [
+                                0.0117,
+                                0.0039
+                            ],
+                            "End Point": [
+                                0.0,
+                                0.0026
+                            ]
+                        },
+                        "line_10": {
+                            "Start Point": [
+                                0.0,
+                                0.0026
+                            ],
+                            "End Point": [
+                                0.0,
+                                0.0
+                            ]
+                        }
+                    }
+                }
+            },
+            "extrusion": {
+                "extrude_depth_towards_normal": 0.75,
+                "extrude_depth_opposite_normal": 0.0,
+                "sketch_scale": 0.0417,
+                "operation": "NewBodyFeatureOperation"
+            },
+            "description": {
+                "name": "Long Rectangular Beam",
+                "shape": "A long, straight, rectangular beam with a flat bottom and a slightly tapered top, suitable for structural support or as a base for machinery.",
+                "length": 0.015624999999999997,
+                "width": 0.04166666666666666,
+                "height": 0.75
+            }
+        }
+    }
+}

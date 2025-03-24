@@ -1,0 +1,79 @@
+{
+    "final_name": "Rectangular Solid",
+    "final_shape": "A three-dimensional rectangular solid with a flat top and bottom and a slightly tapered front and back. The object has a simple, rectangular shape with a flat top and bottom and a slightly tapered front and back. It is a solid object with no holes or cutouts.",
+    "parts": {
+        "part_1": {
+            "coordinate_system": {
+                "Euler Angles": [
+                    0.0,
+                    0.0,
+                    -90.0
+                ],
+                "Translation Vector": [
+                    0.0,
+                    0.0081,
+                    0.0
+                ]
+            },
+            "sketch": {
+                "face_1": {
+                    "loop_1": {
+                        "line_1": {
+                            "Start Point": [
+                                0.0,
+                                0.0
+                            ],
+                            "End Point": [
+                                0.75,
+                                0.0
+                            ]
+                        },
+                        "line_2": {
+                            "Start Point": [
+                                0.75,
+                                0.0
+                            ],
+                            "End Point": [
+                                0.75,
+                                0.2924
+                            ]
+                        },
+                        "line_3": {
+                            "Start Point": [
+                                0.75,
+                                0.2924
+                            ],
+                            "End Point": [
+                                0.0,
+                                0.2924
+                            ]
+                        },
+                        "line_4": {
+                            "Start Point": [
+                                0.0,
+                                0.2924
+                            ],
+                            "End Point": [
+                                0.0,
+                                0.0
+                            ]
+                        }
+                    }
+                }
+            },
+            "extrusion": {
+                "extrude_depth_towards_normal": 0.006,
+                "extrude_depth_opposite_normal": 0.0,
+                "sketch_scale": 0.75,
+                "operation": "NewBodyFeatureOperation"
+            },
+            "description": {
+                "name": "Rectangular Solid",
+                "shape": "A three-dimensional rectangular solid with a flat top and bottom and a slightly tapered front and back. The object has a simple, rectangular shape with a flat top and bottom and a slightly tapered front and back. It is a solid object with no holes or cutouts.",
+                "length": 0.7499999946510556,
+                "width": 0.2923841660507891,
+                "height": 0.006047587536554083
+            }
+        }
+    }
+}

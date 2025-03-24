@@ -1,0 +1,175 @@
+{
+    "final_name": "Rectangular Tube",
+    "final_shape": "A three-dimensional representation of a rectangular tube with a flat base and a cylindrical shape, suitable for mechanical or architectural design.",
+    "parts": {
+        "part_1": {
+            "coordinate_system": {
+                "Euler Angles": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "Translation Vector": [
+                    0.0,
+                    0.0,
+                    0.0
+                ]
+            },
+            "sketch": {
+                "face_1": {
+                    "loop_1": {
+                        "arc_1": {
+                            "Start Point": [
+                                0.0,
+                                0.0061
+                            ],
+                            "Mid Point": [
+                                0.0028,
+                                0.0028
+                            ],
+                            "End Point": [
+                                0.0061,
+                                0.0
+                            ]
+                        },
+                        "line_1": {
+                            "Start Point": [
+                                0.0061,
+                                0.0
+                            ],
+                            "End Point": [
+                                0.0394,
+                                0.0
+                            ]
+                        },
+                        "arc_2": {
+                            "Start Point": [
+                                0.0394,
+                                0.0
+                            ],
+                            "Mid Point": [
+                                0.0427,
+                                0.0028
+                            ],
+                            "End Point": [
+                                0.0455,
+                                0.0061
+                            ]
+                        },
+                        "line_2": {
+                            "Start Point": [
+                                0.0455,
+                                0.0061
+                            ],
+                            "End Point": [
+                                0.0455,
+                                0.0394
+                            ]
+                        },
+                        "arc_3": {
+                            "Start Point": [
+                                0.0455,
+                                0.0394
+                            ],
+                            "Mid Point": [
+                                0.0427,
+                                0.0427
+                            ],
+                            "End Point": [
+                                0.0394,
+                                0.0455
+                            ]
+                        },
+                        "line_3": {
+                            "Start Point": [
+                                0.0394,
+                                0.0455
+                            ],
+                            "End Point": [
+                                0.0061,
+                                0.0455
+                            ]
+                        },
+                        "arc_4": {
+                            "Start Point": [
+                                0.0061,
+                                0.0455
+                            ],
+                            "Mid Point": [
+                                0.0028,
+                                0.0427
+                            ],
+                            "End Point": [
+                                0.0,
+                                0.0394
+                            ]
+                        },
+                        "line_4": {
+                            "Start Point": [
+                                0.0,
+                                0.0394
+                            ],
+                            "End Point": [
+                                0.0,
+                                0.0061
+                            ]
+                        }
+                    }
+                }
+            },
+            "extrusion": {
+                "extrude_depth_towards_normal": 0.75,
+                "extrude_depth_opposite_normal": 0.0,
+                "sketch_scale": 0.0455,
+                "operation": "NewBodyFeatureOperation"
+            },
+            "description": {
+                "name": "Rectangular Tube",
+                "shape": "A three-dimensional representation of a rectangular tube with a flat base and a cylindrical shape, suitable for mechanical or architectural design.",
+                "length": 0.04545454545454545,
+                "width": 0.04545454545454545,
+                "height": 0.75
+            }
+        },
+        "part_2": {
+            "coordinate_system": {
+                "Euler Angles": [
+                    0.0,
+                    0.0,
+                    180.0
+                ],
+                "Translation Vector": [
+                    0.0079,
+                    0.0375,
+                    0.0
+                ]
+            },
+            "sketch": {
+                "face_1": {
+                    "loop_1": {
+                        "circle_1": {
+                            "Center": [
+                                0.0148,
+                                0.0148
+                            ],
+                            "Radius": 0.0148
+                        }
+                    }
+                }
+            },
+            "extrusion": {
+                "extrude_depth_towards_normal": 0.0,
+                "extrude_depth_opposite_normal": 0.0455,
+                "sketch_scale": 0.0296,
+                "operation": "CutFeatureOperation"
+            },
+            "description": {
+                "name": "Rectangular Tube",
+                "shape": "A three-dimensional representation of a rectangular tube with a flat base and a cylindrical shape, suitable for mechanical or architectural design.",
+                "length": 0.02956363636363636,
+                "width": 0.02956363636363636,
+                "height": 0.045454545454545456
+            }
+        }
+    }
+}

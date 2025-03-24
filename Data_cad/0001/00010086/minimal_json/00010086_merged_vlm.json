@@ -1,0 +1,139 @@
+{
+    "final_name": "Vertical Wooden Panel",
+    "final_shape": "A tall, vertical wooden panel with a simple, rectangular shape and a flat top and bottom. It has a single, straight cutout on the side, dividing it into two sections.",
+    "parts": {
+        "part_1": {
+            "coordinate_system": {
+                "Euler Angles": [
+                    -90.0,
+                    0.0,
+                    -90.0
+                ],
+                "Translation Vector": [
+                    0.375,
+                    0.0,
+                    0.0
+                ]
+            },
+            "sketch": {
+                "face_1": {
+                    "loop_1": {
+                        "line_1": {
+                            "Start Point": [
+                                0.0,
+                                0.0
+                            ],
+                            "End Point": [
+                                0.0469,
+                                0.0
+                            ]
+                        },
+                        "line_2": {
+                            "Start Point": [
+                                0.0469,
+                                0.0
+                            ],
+                            "End Point": [
+                                0.0937,
+                                0.0
+                            ]
+                        },
+                        "line_3": {
+                            "Start Point": [
+                                0.0937,
+                                0.0
+                            ],
+                            "End Point": [
+                                0.0937,
+                                0.0352
+                            ]
+                        },
+                        "line_4": {
+                            "Start Point": [
+                                0.0937,
+                                0.0352
+                            ],
+                            "End Point": [
+                                0.0879,
+                                0.0352
+                            ]
+                        },
+                        "line_5": {
+                            "Start Point": [
+                                0.0879,
+                                0.0352
+                            ],
+                            "End Point": [
+                                0.085,
+                                0.0088
+                            ]
+                        },
+                        "line_6": {
+                            "Start Point": [
+                                0.085,
+                                0.0088
+                            ],
+                            "End Point": [
+                                0.0469,
+                                0.0088
+                            ]
+                        },
+                        "line_7": {
+                            "Start Point": [
+                                0.0469,
+                                0.0088
+                            ],
+                            "End Point": [
+                                0.0088,
+                                0.0088
+                            ]
+                        },
+                        "line_8": {
+                            "Start Point": [
+                                0.0088,
+                                0.0088
+                            ],
+                            "End Point": [
+                                0.0059,
+                                0.0352
+                            ]
+                        },
+                        "line_9": {
+                            "Start Point": [
+                                0.0059,
+                                0.0352
+                            ],
+                            "End Point": [
+                                0.0,
+                                0.0352
+                            ]
+                        },
+                        "line_10": {
+                            "Start Point": [
+                                0.0,
+                                0.0352
+                            ],
+                            "End Point": [
+                                0.0,
+                                0.0
+                            ]
+                        }
+                    }
+                }
+            },
+            "extrusion": {
+                "extrude_depth_towards_normal": 0.1875,
+                "extrude_depth_opposite_normal": 0.1875,
+                "sketch_scale": 0.0937,
+                "operation": "NewBodyFeatureOperation"
+            },
+            "description": {
+                "name": "Vertical Wooden Panel",
+                "shape": "A tall, vertical wooden panel with a simple, rectangular shape and a flat top and bottom. It has a single, straight cutout on the side, dividing it into two sections.",
+                "length": 0.09374999999999999,
+                "width": 0.03515624999999999,
+                "height": 0.375
+            }
+        }
+    }
+}

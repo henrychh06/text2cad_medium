@@ -1,0 +1,336 @@
+{
+    "final_name": "Bracket",
+    "final_shape": "A three-dimensional representation of a metal bracket with holes for screws, designed for structural support or mounting purposes.",
+    "parts": {
+        "part_1": {
+            "coordinate_system": {
+                "Euler Angles": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "Translation Vector": [
+                    0.0,
+                    0.0,
+                    0.0
+                ]
+            },
+            "sketch": {
+                "face_1": {
+                    "loop_1": {
+                        "arc_1": {
+                            "Start Point": [
+                                0.0,
+                                0.0281
+                            ],
+                            "Mid Point": [
+                                0.0082,
+                                0.0082
+                            ],
+                            "End Point": [
+                                0.0281,
+                                0.0
+                            ]
+                        },
+                        "line_1": {
+                            "Start Point": [
+                                0.0281,
+                                0.0
+                            ],
+                            "End Point": [
+                                0.375,
+                                0.0
+                            ]
+                        },
+                        "line_2": {
+                            "Start Point": [
+                                0.375,
+                                0.0
+                            ],
+                            "End Point": [
+                                0.375,
+                                0.1467
+                            ]
+                        },
+                        "line_3": {
+                            "Start Point": [
+                                0.375,
+                                0.1467
+                            ],
+                            "End Point": [
+                                0.0971,
+                                0.0722
+                            ]
+                        },
+                        "arc_2": {
+                            "Start Point": [
+                                0.0971,
+                                0.0722
+                            ],
+                            "Mid Point": [
+                                0.0307,
+                                0.0497
+                            ],
+                            "End Point": [
+                                0.0936,
+                                0.0807
+                            ]
+                        },
+                        "line_4": {
+                            "Start Point": [
+                                0.0936,
+                                0.0807
+                            ],
+                            "End Point": [
+                                0.375,
+                                0.2432
+                            ]
+                        },
+                        "line_5": {
+                            "Start Point": [
+                                0.375,
+                                0.2432
+                            ],
+                            "End Point": [
+                                0.375,
+                                0.4492
+                            ]
+                        },
+                        "line_6": {
+                            "Start Point": [
+                                0.375,
+                                0.4492
+                            ],
+                            "End Point": [
+                                0.0281,
+                                0.4492
+                            ]
+                        },
+                        "arc_3": {
+                            "Start Point": [
+                                0.0281,
+                                0.4492
+                            ],
+                            "Mid Point": [
+                                0.0082,
+                                0.4409
+                            ],
+                            "End Point": [
+                                0.0,
+                                0.4211
+                            ]
+                        },
+                        "line_7": {
+                            "Start Point": [
+                                0.0,
+                                0.4211
+                            ],
+                            "End Point": [
+                                0.0,
+                                0.0281
+                            ]
+                        }
+                    },
+                    "loop_2": {
+                        "circle_1": {
+                            "Center": [
+                                0.0632,
+                                0.2303
+                            ],
+                            "Radius": 0.0351
+                        }
+                    },
+                    "loop_3": {
+                        "circle_1": {
+                            "Center": [
+                                0.1277,
+                                0.386
+                            ],
+                            "Radius": 0.0351
+                        }
+                    }
+                },
+                "face_2": {
+                    "loop_1": {
+                        "arc_1": {
+                            "Start Point": [
+                                0.0936,
+                                0.0807
+                            ],
+                            "Mid Point": [
+                                0.0956,
+                                0.0766
+                            ],
+                            "End Point": [
+                                0.0971,
+                                0.0722
+                            ]
+                        },
+                        "line_1": {
+                            "Start Point": [
+                                0.0971,
+                                0.0722
+                            ],
+                            "End Point": [
+                                0.375,
+                                0.1467
+                            ]
+                        },
+                        "line_2": {
+                            "Start Point": [
+                                0.375,
+                                0.1467
+                            ],
+                            "End Point": [
+                                0.375,
+                                0.2432
+                            ]
+                        },
+                        "line_3": {
+                            "Start Point": [
+                                0.375,
+                                0.2432
+                            ],
+                            "End Point": [
+                                0.0936,
+                                0.0807
+                            ]
+                        }
+                    }
+                },
+                "face_3": {
+                    "loop_1": {
+                        "line_1": {
+                            "Start Point": [
+                                0.375,
+                                0.0
+                            ],
+                            "End Point": [
+                                0.375,
+                                0.1467
+                            ]
+                        },
+                        "line_2": {
+                            "Start Point": [
+                                0.375,
+                                0.1467
+                            ],
+                            "End Point": [
+                                0.375,
+                                0.2432
+                            ]
+                        },
+                        "line_3": {
+                            "Start Point": [
+                                0.375,
+                                0.2432
+                            ],
+                            "End Point": [
+                                0.375,
+                                0.4492
+                            ]
+                        },
+                        "line_4": {
+                            "Start Point": [
+                                0.375,
+                                0.4492
+                            ],
+                            "End Point": [
+                                0.7219,
+                                0.4492
+                            ]
+                        },
+                        "arc_1": {
+                            "Start Point": [
+                                0.7219,
+                                0.4492
+                            ],
+                            "Mid Point": [
+                                0.7418,
+                                0.4409
+                            ],
+                            "End Point": [
+                                0.75,
+                                0.4211
+                            ]
+                        },
+                        "line_5": {
+                            "Start Point": [
+                                0.75,
+                                0.4211
+                            ],
+                            "End Point": [
+                                0.75,
+                                0.0281
+                            ]
+                        },
+                        "arc_2": {
+                            "Start Point": [
+                                0.75,
+                                0.0281
+                            ],
+                            "Mid Point": [
+                                0.7418,
+                                0.0082
+                            ],
+                            "End Point": [
+                                0.7219,
+                                0.0
+                            ]
+                        },
+                        "line_6": {
+                            "Start Point": [
+                                0.7219,
+                                0.0
+                            ],
+                            "End Point": [
+                                0.375,
+                                0.0
+                            ]
+                        }
+                    },
+                    "loop_2": {
+                        "circle_1": {
+                            "Center": [
+                                0.6223,
+                                0.386
+                            ],
+                            "Radius": 0.0351
+                        }
+                    },
+                    "loop_3": {
+                        "circle_1": {
+                            "Center": [
+                                0.6868,
+                                0.0632
+                            ],
+                            "Radius": 0.0351
+                        }
+                    },
+                    "loop_4": {
+                        "circle_1": {
+                            "Center": [
+                                0.6868,
+                                0.2303
+                            ],
+                            "Radius": 0.0351
+                        }
+                    }
+                }
+            },
+            "extrusion": {
+                "extrude_depth_towards_normal": 0.0561,
+                "extrude_depth_opposite_normal": 0.0,
+                "sketch_scale": 0.75,
+                "operation": "NewBodyFeatureOperation"
+            },
+            "description": {
+                "name": "Bracket",
+                "shape": "A three-dimensional representation of a metal bracket with holes for screws, designed for structural support or mounting purposes.",
+                "length": 0.7500000356788437,
+                "width": 0.449164094313082,
+                "height": 0.05614551178913526
+            }
+        }
+    }
+}

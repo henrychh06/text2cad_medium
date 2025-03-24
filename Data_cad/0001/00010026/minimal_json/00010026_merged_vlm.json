@@ -1,0 +1,119 @@
+{
+    "final_name": "Bracket",
+    "final_shape": "A 3D CAD model of a simple, straight, angled bracket with a flat base and a single, straight, angled arm extending from the center of the base.",
+    "parts": {
+        "part_1": {
+            "coordinate_system": {
+                "Euler Angles": [
+                    -90.0,
+                    0.0,
+                    -90.0
+                ],
+                "Translation Vector": [
+                    0.0,
+                    0.0,
+                    0.0
+                ]
+            },
+            "sketch": {
+                "face_1": {
+                    "loop_1": {
+                        "line_1": {
+                            "Start Point": [
+                                0.0,
+                                0.0
+                            ],
+                            "End Point": [
+                                0.0067,
+                                0.0
+                            ]
+                        },
+                        "line_2": {
+                            "Start Point": [
+                                0.0067,
+                                0.0
+                            ],
+                            "End Point": [
+                                0.0067,
+                                0.1071
+                            ]
+                        },
+                        "line_3": {
+                            "Start Point": [
+                                0.0067,
+                                0.1071
+                            ],
+                            "End Point": [
+                                0.596,
+                                0.6429
+                            ]
+                        },
+                        "line_4": {
+                            "Start Point": [
+                                0.596,
+                                0.6429
+                            ],
+                            "End Point": [
+                                0.596,
+                                0.75
+                            ]
+                        },
+                        "line_5": {
+                            "Start Point": [
+                                0.596,
+                                0.75
+                            ],
+                            "End Point": [
+                                0.5893,
+                                0.75
+                            ]
+                        },
+                        "line_6": {
+                            "Start Point": [
+                                0.5893,
+                                0.75
+                            ],
+                            "End Point": [
+                                0.5893,
+                                0.6458
+                            ]
+                        },
+                        "line_7": {
+                            "Start Point": [
+                                0.5893,
+                                0.6458
+                            ],
+                            "End Point": [
+                                0.0,
+                                0.1101
+                            ]
+                        },
+                        "line_8": {
+                            "Start Point": [
+                                0.0,
+                                0.1101
+                            ],
+                            "End Point": [
+                                0.0,
+                                0.0
+                            ]
+                        }
+                    }
+                }
+            },
+            "extrusion": {
+                "extrude_depth_towards_normal": 0.0536,
+                "extrude_depth_opposite_normal": 0.0,
+                "sketch_scale": 0.75,
+                "operation": "NewBodyFeatureOperation"
+            },
+            "description": {
+                "name": "Bracket",
+                "shape": "A 3D CAD model of a simple, straight, angled bracket with a flat base and a single, straight, angled arm extending from the center of the base.",
+                "length": 0.5959821428571427,
+                "width": 0.7499999999999999,
+                "height": 0.05357142857142857
+            }
+        }
+    }
+}

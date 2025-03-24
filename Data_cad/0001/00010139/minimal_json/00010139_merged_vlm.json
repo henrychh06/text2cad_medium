@@ -1,0 +1,766 @@
+{
+    "final_name": "Curved Bracket",
+    "final_shape": "A three-dimensional CAD model of a curved bracket with a central hole and two curved arms, suitable for mounting or support purposes.",
+    "parts": {
+        "part_1": {
+            "coordinate_system": {
+                "Euler Angles": [
+                    0.0,
+                    0.0,
+                    -90.0
+                ],
+                "Translation Vector": [
+                    0.0099,
+                    0.0247,
+                    0.0001
+                ]
+            },
+            "sketch": {
+                "face_1": {
+                    "loop_1": {
+                        "arc_1": {
+                            "Start Point": [
+                                0.0,
+                                0.3751
+                            ],
+                            "Mid Point": [
+                                0.013,
+                                0.3205
+                            ],
+                            "End Point": [
+                                0.0549,
+                                0.3579
+                            ]
+                        },
+                        "arc_2": {
+                            "Start Point": [
+                                0.0549,
+                                0.3579
+                            ],
+                            "Mid Point": [
+                                0.1169,
+                                0.4002
+                            ],
+                            "End Point": [
+                                0.1887,
+                                0.4222
+                            ]
+                        },
+                        "arc_3": {
+                            "Start Point": [
+                                0.1887,
+                                0.4222
+                            ],
+                            "Mid Point": [
+                                0.123,
+                                0.2655
+                            ],
+                            "End Point": [
+                                0.1149,
+                                0.0958
+                            ]
+                        },
+                        "arc_4": {
+                            "Start Point": [
+                                0.1149,
+                                0.0958
+                            ],
+                            "Mid Point": [
+                                0.1194,
+                                0.0807
+                            ],
+                            "End Point": [
+                                0.1285,
+                                0.0677
+                            ]
+                        },
+                        "arc_5": {
+                            "Start Point": [
+                                0.1285,
+                                0.0677
+                            ],
+                            "Mid Point": [
+                                0.2506,
+                                0.0213
+                            ],
+                            "End Point": [
+                                0.3646,
+                                0.0851
+                            ]
+                        },
+                        "arc_6": {
+                            "Start Point": [
+                                0.3646,
+                                0.0851
+                            ],
+                            "Mid Point": [
+                                0.4061,
+                                0.0399
+                            ],
+                            "End Point": [
+                                0.4568,
+                                0.0055
+                            ]
+                        },
+                        "arc_7": {
+                            "Start Point": [
+                                0.4568,
+                                0.0055
+                            ],
+                            "Mid Point": [
+                                0.4765,
+                                0.0
+                            ],
+                            "End Point": [
+                                0.4968,
+                                0.003
+                            ]
+                        },
+                        "arc_8": {
+                            "Start Point": [
+                                0.4968,
+                                0.003
+                            ],
+                            "Mid Point": [
+                                0.6753,
+                                0.1429
+                            ],
+                            "End Point": [
+                                0.74,
+                                0.3603
+                            ]
+                        },
+                        "arc_9": {
+                            "Start Point": [
+                                0.74,
+                                0.3603
+                            ],
+                            "Mid Point": [
+                                0.7067,
+                                0.3919
+                            ],
+                            "End Point": [
+                                0.6609,
+                                0.3901
+                            ]
+                        },
+                        "arc_10": {
+                            "Start Point": [
+                                0.6609,
+                                0.3901
+                            ],
+                            "Mid Point": [
+                                0.6296,
+                                0.1821
+                            ],
+                            "End Point": [
+                                0.4722,
+                                0.0425
+                            ]
+                        },
+                        "arc_11": {
+                            "Start Point": [
+                                0.4722,
+                                0.0425
+                            ],
+                            "Mid Point": [
+                                0.4331,
+                                0.0768
+                            ],
+                            "End Point": [
+                                0.402,
+                                0.1185
+                            ]
+                        },
+                        "arc_12": {
+                            "Start Point": [
+                                0.402,
+                                0.1185
+                            ],
+                            "Mid Point": [
+                                0.4942,
+                                0.2435
+                            ],
+                            "End Point": [
+                                0.5436,
+                                0.3909
+                            ]
+                        },
+                        "arc_13": {
+                            "Start Point": [
+                                0.5436,
+                                0.3909
+                            ],
+                            "Mid Point": [
+                                0.4913,
+                                0.469
+                            ],
+                            "End Point": [
+                                0.3983,
+                                0.4824
+                            ]
+                        },
+                        "arc_14": {
+                            "Start Point": [
+                                0.3983,
+                                0.4824
+                            ],
+                            "Mid Point": [
+                                0.3912,
+                                0.4792
+                            ],
+                            "End Point": [
+                                0.3855,
+                                0.4738
+                            ]
+                        },
+                        "arc_15": {
+                            "Start Point": [
+                                0.3855,
+                                0.4738
+                            ],
+                            "Mid Point": [
+                                0.3268,
+                                0.3591
+                            ],
+                            "End Point": [
+                                0.3142,
+                                0.2307
+                            ]
+                        },
+                        "arc_16": {
+                            "Start Point": [
+                                0.3142,
+                                0.2307
+                            ],
+                            "Mid Point": [
+                                0.3205,
+                                0.1827
+                            ],
+                            "End Point": [
+                                0.3353,
+                                0.1367
+                            ]
+                        },
+                        "arc_17": {
+                            "Start Point": [
+                                0.3353,
+                                0.1367
+                            ],
+                            "Mid Point": [
+                                0.2925,
+                                0.0935
+                            ],
+                            "End Point": [
+                                0.2387,
+                                0.0651
+                            ]
+                        },
+                        "arc_18": {
+                            "Start Point": [
+                                0.2387,
+                                0.0651
+                            ],
+                            "Mid Point": [
+                                0.2027,
+                                0.0684
+                            ],
+                            "End Point": [
+                                0.1729,
+                                0.0889
+                            ]
+                        },
+                        "arc_19": {
+                            "Start Point": [
+                                0.1729,
+                                0.0889
+                            ],
+                            "Mid Point": [
+                                0.1664,
+                                0.0994
+                            ],
+                            "End Point": [
+                                0.1634,
+                                0.1114
+                            ]
+                        },
+                        "arc_20": {
+                            "Start Point": [
+                                0.1634,
+                                0.1114
+                            ],
+                            "Mid Point": [
+                                0.1858,
+                                0.308
+                            ],
+                            "End Point": [
+                                0.2828,
+                                0.4804
+                            ]
+                        },
+                        "arc_21": {
+                            "Start Point": [
+                                0.2828,
+                                0.4804
+                            ],
+                            "Mid Point": [
+                                0.13,
+                                0.4583
+                            ],
+                            "End Point": [
+                                0.0,
+                                0.3751
+                            ]
+                        }
+                    },
+                    "loop_2": {
+                        "circle_1": {
+                            "Center": [
+                                0.0228,
+                                0.3517
+                            ],
+                            "Radius": 0.0186
+                        }
+                    },
+                    "loop_3": {
+                        "arc_1": {
+                            "Start Point": [
+                                0.3758,
+                                0.1791
+                            ],
+                            "Mid Point": [
+                                0.4443,
+                                0.2826
+                            ],
+                            "End Point": [
+                                0.4863,
+                                0.3994
+                            ]
+                        },
+                        "arc_2": {
+                            "Start Point": [
+                                0.4863,
+                                0.3994
+                            ],
+                            "Mid Point": [
+                                0.4598,
+                                0.4368
+                            ],
+                            "End Point": [
+                                0.4145,
+                                0.4303
+                            ]
+                        },
+                        "arc_3": {
+                            "Start Point": [
+                                0.4145,
+                                0.4303
+                            ],
+                            "Mid Point": [
+                                0.3622,
+                                0.3098
+                            ],
+                            "End Point": [
+                                0.3758,
+                                0.1791
+                            ]
+                        }
+                    }
+                }
+            },
+            "extrusion": {
+                "extrude_depth_towards_normal": 0.0247,
+                "extrude_depth_opposite_normal": 0.0,
+                "sketch_scale": 0.74,
+                "operation": "NewBodyFeatureOperation"
+            },
+            "description": {
+                "name": "Curved Bracket",
+                "shape": "A three-dimensional CAD model of a curved bracket with a central hole and two curved arms, suitable for mounting or support purposes.",
+                "length": 0.7400233338920983,
+                "width": 0.4824375950293544,
+                "height": 0.024678542682238378
+            }
+        },
+        "part_2": {
+            "coordinate_system": {
+                "Euler Angles": [
+                    0.0,
+                    0.0,
+                    -90.0
+                ],
+                "Translation Vector": [
+                    0.0099,
+                    0.0247,
+                    0.0001
+                ]
+            },
+            "sketch": {
+                "face_1": {
+                    "loop_1": {
+                        "arc_1": {
+                            "Start Point": [
+                                0.0,
+                                0.3751
+                            ],
+                            "Mid Point": [
+                                0.013,
+                                0.3205
+                            ],
+                            "End Point": [
+                                0.0549,
+                                0.3579
+                            ]
+                        },
+                        "arc_2": {
+                            "Start Point": [
+                                0.0549,
+                                0.3579
+                            ],
+                            "Mid Point": [
+                                0.1169,
+                                0.4002
+                            ],
+                            "End Point": [
+                                0.1887,
+                                0.4222
+                            ]
+                        },
+                        "arc_3": {
+                            "Start Point": [
+                                0.1887,
+                                0.4222
+                            ],
+                            "Mid Point": [
+                                0.123,
+                                0.2655
+                            ],
+                            "End Point": [
+                                0.1149,
+                                0.0958
+                            ]
+                        },
+                        "arc_4": {
+                            "Start Point": [
+                                0.1149,
+                                0.0958
+                            ],
+                            "Mid Point": [
+                                0.1194,
+                                0.0807
+                            ],
+                            "End Point": [
+                                0.1285,
+                                0.0677
+                            ]
+                        },
+                        "arc_5": {
+                            "Start Point": [
+                                0.1285,
+                                0.0677
+                            ],
+                            "Mid Point": [
+                                0.2506,
+                                0.0213
+                            ],
+                            "End Point": [
+                                0.3646,
+                                0.0851
+                            ]
+                        },
+                        "arc_6": {
+                            "Start Point": [
+                                0.3646,
+                                0.0851
+                            ],
+                            "Mid Point": [
+                                0.4061,
+                                0.0399
+                            ],
+                            "End Point": [
+                                0.4568,
+                                0.0055
+                            ]
+                        },
+                        "arc_7": {
+                            "Start Point": [
+                                0.4568,
+                                0.0055
+                            ],
+                            "Mid Point": [
+                                0.4765,
+                                0.0
+                            ],
+                            "End Point": [
+                                0.4968,
+                                0.003
+                            ]
+                        },
+                        "arc_8": {
+                            "Start Point": [
+                                0.4968,
+                                0.003
+                            ],
+                            "Mid Point": [
+                                0.6753,
+                                0.1429
+                            ],
+                            "End Point": [
+                                0.74,
+                                0.3603
+                            ]
+                        },
+                        "arc_9": {
+                            "Start Point": [
+                                0.74,
+                                0.3603
+                            ],
+                            "Mid Point": [
+                                0.7067,
+                                0.3919
+                            ],
+                            "End Point": [
+                                0.6609,
+                                0.3901
+                            ]
+                        },
+                        "arc_10": {
+                            "Start Point": [
+                                0.6609,
+                                0.3901
+                            ],
+                            "Mid Point": [
+                                0.6296,
+                                0.1821
+                            ],
+                            "End Point": [
+                                0.4722,
+                                0.0425
+                            ]
+                        },
+                        "arc_11": {
+                            "Start Point": [
+                                0.4722,
+                                0.0425
+                            ],
+                            "Mid Point": [
+                                0.4331,
+                                0.0768
+                            ],
+                            "End Point": [
+                                0.402,
+                                0.1185
+                            ]
+                        },
+                        "arc_12": {
+                            "Start Point": [
+                                0.402,
+                                0.1185
+                            ],
+                            "Mid Point": [
+                                0.4942,
+                                0.2435
+                            ],
+                            "End Point": [
+                                0.5436,
+                                0.3909
+                            ]
+                        },
+                        "arc_13": {
+                            "Start Point": [
+                                0.5436,
+                                0.3909
+                            ],
+                            "Mid Point": [
+                                0.4913,
+                                0.469
+                            ],
+                            "End Point": [
+                                0.3983,
+                                0.4824
+                            ]
+                        },
+                        "arc_14": {
+                            "Start Point": [
+                                0.3983,
+                                0.4824
+                            ],
+                            "Mid Point": [
+                                0.3912,
+                                0.4792
+                            ],
+                            "End Point": [
+                                0.3855,
+                                0.4738
+                            ]
+                        },
+                        "arc_15": {
+                            "Start Point": [
+                                0.3855,
+                                0.4738
+                            ],
+                            "Mid Point": [
+                                0.3268,
+                                0.3591
+                            ],
+                            "End Point": [
+                                0.3142,
+                                0.2307
+                            ]
+                        },
+                        "arc_16": {
+                            "Start Point": [
+                                0.3142,
+                                0.2307
+                            ],
+                            "Mid Point": [
+                                0.3205,
+                                0.1827
+                            ],
+                            "End Point": [
+                                0.3353,
+                                0.1367
+                            ]
+                        },
+                        "arc_17": {
+                            "Start Point": [
+                                0.3353,
+                                0.1367
+                            ],
+                            "Mid Point": [
+                                0.2925,
+                                0.0935
+                            ],
+                            "End Point": [
+                                0.2387,
+                                0.0651
+                            ]
+                        },
+                        "arc_18": {
+                            "Start Point": [
+                                0.2387,
+                                0.0651
+                            ],
+                            "Mid Point": [
+                                0.2027,
+                                0.0684
+                            ],
+                            "End Point": [
+                                0.1729,
+                                0.0889
+                            ]
+                        },
+                        "arc_19": {
+                            "Start Point": [
+                                0.1729,
+                                0.0889
+                            ],
+                            "Mid Point": [
+                                0.1664,
+                                0.0994
+                            ],
+                            "End Point": [
+                                0.1634,
+                                0.1114
+                            ]
+                        },
+                        "arc_20": {
+                            "Start Point": [
+                                0.1634,
+                                0.1114
+                            ],
+                            "Mid Point": [
+                                0.1858,
+                                0.308
+                            ],
+                            "End Point": [
+                                0.2828,
+                                0.4804
+                            ]
+                        },
+                        "arc_21": {
+                            "Start Point": [
+                                0.2828,
+                                0.4804
+                            ],
+                            "Mid Point": [
+                                0.13,
+                                0.4583
+                            ],
+                            "End Point": [
+                                0.0,
+                                0.3751
+                            ]
+                        }
+                    },
+                    "loop_2": {
+                        "circle_1": {
+                            "Center": [
+                                0.0228,
+                                0.3517
+                            ],
+                            "Radius": 0.0186
+                        }
+                    },
+                    "loop_3": {
+                        "arc_1": {
+                            "Start Point": [
+                                0.3758,
+                                0.1791
+                            ],
+                            "Mid Point": [
+                                0.4443,
+                                0.2826
+                            ],
+                            "End Point": [
+                                0.4863,
+                                0.3994
+                            ]
+                        },
+                        "arc_2": {
+                            "Start Point": [
+                                0.4863,
+                                0.3994
+                            ],
+                            "Mid Point": [
+                                0.4598,
+                                0.4368
+                            ],
+                            "End Point": [
+                                0.4145,
+                                0.4303
+                            ]
+                        },
+                        "arc_3": {
+                            "Start Point": [
+                                0.4145,
+                                0.4303
+                            ],
+                            "Mid Point": [
+                                0.3622,
+                                0.3098
+                            ],
+                            "End Point": [
+                                0.3758,
+                                0.1791
+                            ]
+                        }
+                    }
+                }
+            },
+            "extrusion": {
+                "extrude_depth_towards_normal": 0.0165,
+                "extrude_depth_opposite_normal": 0.0,
+                "sketch_scale": 0.74,
+                "operation": "JoinFeatureOperation"
+            },
+            "description": {
+                "name": "Curved Bracket",
+                "shape": "A three-dimensional CAD model of a curved bracket with a central hole and two curved arms, suitable for mounting or support purposes.",
+                "length": 0.7400233338920983,
+                "width": 0.4824375950293544,
+                "height": 0.01645236178815892
+            }
+        }
+    }
+}

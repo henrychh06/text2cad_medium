@@ -1,0 +1,79 @@
+{
+    "final_name": "Rectangular Tube",
+    "final_shape": "A long, straight, rectangular tube with a flat bottom and a slightly tapered top, suitable for structural support or as a conduit.",
+    "parts": {
+        "part_1": {
+            "coordinate_system": {
+                "Euler Angles": [
+                    0.0,
+                    0.0,
+                    -90.0
+                ],
+                "Translation Vector": [
+                    0.0,
+                    0.375,
+                    0.0
+                ]
+            },
+            "sketch": {
+                "face_1": {
+                    "loop_1": {
+                        "line_1": {
+                            "Start Point": [
+                                0.0,
+                                0.0
+                            ],
+                            "End Point": [
+                                0.0093,
+                                0.0
+                            ]
+                        },
+                        "line_2": {
+                            "Start Point": [
+                                0.0093,
+                                0.0
+                            ],
+                            "End Point": [
+                                0.0093,
+                                0.0157
+                            ]
+                        },
+                        "line_3": {
+                            "Start Point": [
+                                0.0093,
+                                0.0157
+                            ],
+                            "End Point": [
+                                0.0082,
+                                0.0157
+                            ]
+                        },
+                        "line_4": {
+                            "Start Point": [
+                                0.0082,
+                                0.0157
+                            ],
+                            "End Point": [
+                                0.0,
+                                0.0
+                            ]
+                        }
+                    }
+                }
+            },
+            "extrusion": {
+                "extrude_depth_towards_normal": 0.1875,
+                "extrude_depth_opposite_normal": 0.1875,
+                "sketch_scale": 0.0157,
+                "operation": "NewBodyFeatureOperation"
+            },
+            "description": {
+                "name": "Rectangular Tube",
+                "shape": "A long, straight, rectangular tube with a flat bottom and a slightly tapered top, suitable for structural support or as a conduit.",
+                "length": 0.009285714285714283,
+                "width": 0.015714285714285712,
+                "height": 0.375
+            }
+        }
+    }
+}

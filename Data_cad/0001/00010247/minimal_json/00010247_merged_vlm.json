@@ -1,0 +1,236 @@
+{
+    "final_name": "Rectangular Frame",
+    "final_shape": "A simple rectangular frame with a flat back and a brown border, suitable for wall mounting or as a decorative piece.",
+    "parts": {
+        "part_1": {
+            "coordinate_system": {
+                "Euler Angles": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "Translation Vector": [
+                    0.0,
+                    0.0,
+                    0.0
+                ]
+            },
+            "sketch": {
+                "face_1": {
+                    "loop_1": {
+                        "line_1": {
+                            "Start Point": [
+                                0.0,
+                                0.0
+                            ],
+                            "End Point": [
+                                0.75,
+                                0.0
+                            ]
+                        },
+                        "line_2": {
+                            "Start Point": [
+                                0.75,
+                                0.0
+                            ],
+                            "End Point": [
+                                0.75,
+                                0.75
+                            ]
+                        },
+                        "line_3": {
+                            "Start Point": [
+                                0.75,
+                                0.75
+                            ],
+                            "End Point": [
+                                0.0,
+                                0.75
+                            ]
+                        },
+                        "line_4": {
+                            "Start Point": [
+                                0.0,
+                                0.75
+                            ],
+                            "End Point": [
+                                0.0,
+                                0.0
+                            ]
+                        }
+                    },
+                    "loop_2": {
+                        "line_1": {
+                            "Start Point": [
+                                0.0666,
+                                0.0666
+                            ],
+                            "End Point": [
+                                0.6834,
+                                0.0666
+                            ]
+                        },
+                        "line_2": {
+                            "Start Point": [
+                                0.6834,
+                                0.0666
+                            ],
+                            "End Point": [
+                                0.6834,
+                                0.6834
+                            ]
+                        },
+                        "line_3": {
+                            "Start Point": [
+                                0.6834,
+                                0.6834
+                            ],
+                            "End Point": [
+                                0.0666,
+                                0.6834
+                            ]
+                        },
+                        "line_4": {
+                            "Start Point": [
+                                0.0666,
+                                0.6834
+                            ],
+                            "End Point": [
+                                0.0666,
+                                0.0666
+                            ]
+                        }
+                    }
+                }
+            },
+            "extrusion": {
+                "extrude_depth_towards_normal": 0.0266,
+                "extrude_depth_opposite_normal": 0.0,
+                "sketch_scale": 0.75,
+                "operation": "NewBodyFeatureOperation"
+            },
+            "description": {
+                "name": "Rectangular Frame",
+                "shape": "A simple rectangular frame with a flat back and a brown border, suitable for wall mounting or as a decorative piece.",
+                "length": 0.7499999999999999,
+                "width": 0.7499999999999999,
+                "height": 0.026642984014209583
+            }
+        },
+        "part_2": {
+            "coordinate_system": {
+                "Euler Angles": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "Translation Vector": [
+                    0.0666,
+                    0.0666,
+                    0.0
+                ]
+            },
+            "sketch": {
+                "face_1": {
+                    "loop_1": {
+                        "line_1": {
+                            "Start Point": [
+                                0.0,
+                                0.0
+                            ],
+                            "End Point": [
+                                0.6168,
+                                0.0
+                            ]
+                        },
+                        "line_2": {
+                            "Start Point": [
+                                0.6168,
+                                0.0
+                            ],
+                            "End Point": [
+                                0.6168,
+                                0.6168
+                            ]
+                        },
+                        "line_3": {
+                            "Start Point": [
+                                0.6168,
+                                0.6168
+                            ],
+                            "End Point": [
+                                0.0,
+                                0.6168
+                            ]
+                        },
+                        "line_4": {
+                            "Start Point": [
+                                0.0,
+                                0.6168
+                            ],
+                            "End Point": [
+                                0.0,
+                                0.0
+                            ]
+                        }
+                    },
+                    "loop_2": {
+                        "line_1": {
+                            "Start Point": [
+                                0.0133,
+                                0.0133
+                            ],
+                            "End Point": [
+                                0.6035,
+                                0.0133
+                            ]
+                        },
+                        "line_2": {
+                            "Start Point": [
+                                0.6035,
+                                0.0133
+                            ],
+                            "End Point": [
+                                0.6035,
+                                0.6035
+                            ]
+                        },
+                        "line_3": {
+                            "Start Point": [
+                                0.6035,
+                                0.6035
+                            ],
+                            "End Point": [
+                                0.0133,
+                                0.6035
+                            ]
+                        },
+                        "line_4": {
+                            "Start Point": [
+                                0.0133,
+                                0.6035
+                            ],
+                            "End Point": [
+                                0.0133,
+                                0.0133
+                            ]
+                        }
+                    }
+                }
+            },
+            "extrusion": {
+                "extrude_depth_towards_normal": 0.0133,
+                "extrude_depth_opposite_normal": 0.0,
+                "sketch_scale": 0.6168,
+                "operation": "JoinFeatureOperation"
+            },
+            "description": {
+                "name": "Rectangular Frame",
+                "shape": "A simple rectangular frame with a flat back and a brown border, suitable for wall mounting or as a decorative piece.",
+                "length": 0.6167850799289518,
+                "width": 0.6167850799289518,
+                "height": 0.013321492007104791
+            }
+        }
+    }
+}

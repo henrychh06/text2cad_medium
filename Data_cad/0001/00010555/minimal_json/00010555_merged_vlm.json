@@ -1,0 +1,128 @@
+{
+    "final_name": "Rectangular Tube",
+    "final_shape": "A 3D model of a rectangular tube with a flat base and a cylindrical body, suitable for mechanical or architectural applications.",
+    "parts": {
+        "part_1": {
+            "coordinate_system": {
+                "Euler Angles": [
+                    -90.0,
+                    0.0,
+                    -90.0
+                ],
+                "Translation Vector": [
+                    0.0,
+                    0.0,
+                    0.0
+                ]
+            },
+            "sketch": {
+                "face_1": {
+                    "loop_1": {
+                        "line_1": {
+                            "Start Point": [
+                                0.0,
+                                0.0
+                            ],
+                            "End Point": [
+                                0.3571,
+                                0.0
+                            ]
+                        },
+                        "line_2": {
+                            "Start Point": [
+                                0.3571,
+                                0.0
+                            ],
+                            "End Point": [
+                                0.3571,
+                                0.3429
+                            ]
+                        },
+                        "line_3": {
+                            "Start Point": [
+                                0.3571,
+                                0.3429
+                            ],
+                            "End Point": [
+                                0.0,
+                                0.3429
+                            ]
+                        },
+                        "line_4": {
+                            "Start Point": [
+                                0.0,
+                                0.3429
+                            ],
+                            "End Point": [
+                                0.0,
+                                0.0
+                            ]
+                        }
+                    }
+                }
+            },
+            "extrusion": {
+                "extrude_depth_towards_normal": 0.0286,
+                "extrude_depth_opposite_normal": 0.0,
+                "sketch_scale": 0.3571,
+                "operation": "NewBodyFeatureOperation"
+            },
+            "description": {
+                "name": "Rectangular Tube",
+                "shape": "A 3D model of a rectangular tube with a flat base and a cylindrical body, suitable for mechanical or architectural applications.",
+                "length": 0.35714285714285715,
+                "width": 0.34285714285714286,
+                "height": 0.028571428571428574
+            }
+        },
+        "part_2": {
+            "coordinate_system": {
+                "Euler Angles": [
+                    -90.0,
+                    0.0,
+                    -90.0
+                ],
+                "Translation Vector": [
+                    0.0286,
+                    0.0357,
+                    0.0286
+                ]
+            },
+            "sketch": {
+                "face_1": {
+                    "loop_1": {
+                        "circle_1": {
+                            "Center": [
+                                0.1429,
+                                0.1429
+                            ],
+                            "Radius": 0.1429
+                        }
+                    },
+                    "loop_2": {
+                        "circle_1": {
+                            "Center": [
+                                0.1429,
+                                0.1429
+                            ],
+                            "Radius": 0.1357
+                        }
+                    }
+                }
+            },
+            "extrusion": {
+                "extrude_depth_towards_normal": 0.7143,
+                "extrude_depth_opposite_normal": 0.0,
+                "sketch_scale": 0.2857,
+                "operation": "JoinFeatureOperation"
+            },
+            "description": {
+                "name": "Rectangular Tube",
+                "shape": "A 3D model of a rectangular tube with a flat base and a cylindrical body, suitable for mechanical or architectural applications.",
+                "length": 0.28571428571428575,
+                "width": 0.28571428571428575,
+                "height": 0.7142857142857143
+            }
+        }
+    }
+}

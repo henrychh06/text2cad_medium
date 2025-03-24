@@ -1,0 +1,86 @@
+{
+    "final_name": "Rolling Pin",
+    "final_shape": "A cylindrical object with a tapered end and a hole in the center, used for rolling dough or other materials.",
+    "parts": {
+        "part_1": {
+            "coordinate_system": {
+                "Euler Angles": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "Translation Vector": [
+                    0.0,
+                    0.0,
+                    0.0
+                ]
+            },
+            "sketch": {
+                "face_1": {
+                    "loop_1": {
+                        "circle_1": {
+                            "Center": [
+                                0.2206,
+                                0.2206
+                            ],
+                            "Radius": 0.2206
+                        }
+                    }
+                }
+            },
+            "extrusion": {
+                "extrude_depth_towards_normal": 0.7059,
+                "extrude_depth_opposite_normal": 0.0,
+                "sketch_scale": 0.4412,
+                "operation": "NewBodyFeatureOperation"
+            },
+            "description": {
+                "name": "Rolling Pin",
+                "shape": "A cylindrical object with a tapered end and a hole in the center, used for rolling dough or other materials.",
+                "length": 0.4411764705882353,
+                "width": 0.4411764705882353,
+                "height": 0.7058823529411765
+            }
+        },
+        "part_2": {
+            "coordinate_system": {
+                "Euler Angles": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "Translation Vector": [
+                    0.1412,
+                    0.1412,
+                    0.7059
+                ]
+            },
+            "sketch": {
+                "face_1": {
+                    "loop_1": {
+                        "circle_1": {
+                            "Center": [
+                                0.0794,
+                                0.0794
+                            ],
+                            "Radius": 0.0794
+                        }
+                    }
+                }
+            },
+            "extrusion": {
+                "extrude_depth_towards_normal": 0.0441,
+                "extrude_depth_opposite_normal": 0.0,
+                "sketch_scale": 0.1588,
+                "operation": "JoinFeatureOperation"
+            },
+            "description": {
+                "name": "Rolling Pin",
+                "shape": "A cylindrical object with a tapered end and a hole in the center, used for rolling dough or other materials.",
+                "length": 0.1588235294117647,
+                "width": 0.1588235294117647,
+                "height": 0.04411764705882353
+            }
+        }
+    }
+}
