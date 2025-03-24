@@ -13,8 +13,9 @@ def load_model(model_name):
     print(f"Cargando modelo {model_name}...")
     model = AutoModelForCausalLM.from_pretrained(
         model_name,
-        torch_dtype="auto",
         device_map="auto"
+        torch_dtype=torch.float16,  # Reduce el consumo de memoria
+        low_cpu_mem_usage=True,
     )
     tokenizer = AutoTokenizer.from_pretrained(model_name)
     return model, tokenizer
