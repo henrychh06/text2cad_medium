@@ -459,7 +459,8 @@ def main():
         # Procesar cada UID
         for uid in tqdm(uids):
             root_id, sample_id = uid.split('/')
-            json_path = os.path.join(args.input_dir, uid, "minimal_json", f"{sample_id}.json")
+            json_path = os.path.join(args.input_dir, uid, "minimal_json", f"{sample_id}_merged_vlm.json")
+
             
             # Verificar si el archivo existe
             if not os.path.exists(json_path):
