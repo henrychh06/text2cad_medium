@@ -324,21 +324,20 @@ Based on the CAD assembly JSON information provided above, write detailed natura
     
     return prompt
 
+import time
 def process_single_cad(uid, json_path, model, tokenizer, annotation_dir=None):
-    """
-    Procesa un solo archivo CAD y genera todas las anotaciones necesarias.
-    """
     print(f"Procesando UID: {uid}")
+    t0 = time.time()
     
     # Cargar datos JSON
     json_data = load_minimal_json(json_path)
+    print(f"JSON cargado en {time.time() - t0:.2f} segundos")
     
-    # Extraemos el abstract directamente del campo final_shape
+    # Extraer abstract
     abstract_description = json_data.get("final_shape", "")
     if not abstract_description and "final_name" in json_data:
         abstract_description = json_data.get("final_name", "")
     
-    # Si no hay descripción, generamos una
     if not abstract_description:
         print("No se encontró final_shape, generando abstract...")
         abstract_prompt = f"""
@@ -348,26 +347,41 @@ def process_single_cad(uid, json_path, model, tokenizer, annotation_dir=None):
         
         Provide only a brief visual description of the overall shape.
         """
+        t_abs_start = time.time()
         abstract_description = generate_response(model, tokenizer, abstract_prompt)
+        print(f"Abstract generado en {time.time() - t_abs_start:.2f} segundos")
+    else:
+        print("Abstract extraído del JSON")
     
     print(f"Abstract Description: {abstract_description[:100]}...")
     
     # Generar instrucciones de nivel principiante
+    print("Iniciando generación de instrucciones de nivel principiante...")
+    t_beg_start = time.time()
     beginner_prompt = create_beginner_prompt(abstract_description, json_data)
     beginner_description = generate_response(model, tokenizer, beginner_prompt)
-    print(f"Beginner Instructions generadas: {beginner_description[:100]}...")
+    print(f"Beginner Instructions generadas en {time.time() - t_beg_start:.2f} segundos")
+    print(f"Beginner Instructions: {beginner_description[:100]}...")
     
     # Generar instrucciones de nivel intermedio
+    print("Iniciando generación de instrucciones de nivel intermedio...")
+    t_int_start = time.time()
     intermediate_prompt = create_intermediate_prompt(abstract_description, beginner_description, json_data)
     intermediate_description = generate_response(model, tokenizer, intermediate_prompt)
-    print(f"Intermediate Instructions generadas: {intermediate_description[:100]}...")
+    print(f"Intermediate Instructions generadas en {time.time() - t_int_start:.2f} segundos")
+    print(f"Intermediate Instructions: {intermediate_description[:100]}...")
     
     # Generar instrucciones de nivel experto
+    print("Iniciando generación de instrucciones de nivel experto...")
+    t_exp_start = time.time()
     expert_prompt = create_expert_prompt(abstract_description, beginner_description, intermediate_description, json_data)
     expert_description = generate_response(model, tokenizer, expert_prompt)
-    print(f"Expert Instructions generadas: {expert_description[:100]}...")
+    print(f"Expert Instructions generadas en {time.time() - t_exp_start:.2f} segundos")
+    print(f"Expert Instructions: {expert_description[:100]}...")
     
-    # Extraer keywords del archivo de anotación si el directorio está disponible
+    # Extraer o generar keywords
+    print("Extrayendo/generando keywords...")
+    t_kw_start = time.time()
     keywords = ""
     if annotation_dir:
         root_id, sample_id = uid.split('/')
@@ -375,8 +389,6 @@ def process_single_cad(uid, json_path, model, tokenizer, annotation_dir=None):
         if os.path.exists(annot_dir):
             keywords = extract_keywords_from_annotation(annot_dir, sample_id)
             print(f"Keywords extraídas: {keywords[:100]}...")
-    
-    # Si no pudimos extraer keywords, generamos algunas
     if not keywords:
         print("No se pudieron extraer keywords, generando...")
         keywords_prompt = f"""
@@ -387,12 +399,17 @@ def process_single_cad(uid, json_path, model, tokenizer, annotation_dir=None):
         Provide only a comma-separated list of keywords (no explanations or other text).
         """
         keywords = generate_response(model, tokenizer, keywords_prompt)
-        print(f"Keywords generadas: {keywords[:100]}...")
+        print(f"Keywords generadas en {time.time() - t_kw_start:.2f} segundos: {keywords[:100]}...")
     
     # Generar NLI (instrucciones en lenguaje natural)
+    print("Iniciando generación de NLI...")
+    t_nli_start = time.time()
     nli_prompt = create_nli_prompt(json_data)
     nli_data = generate_response(model, tokenizer, nli_prompt)
-    print(f"NLI generado: {nli_data[:100]}...")
+    print(f"NLI generado en {time.time() - t_nli_start:.2f} segundos")
+    print(f"NLI: {nli_data[:100]}...")
+    
+    print(f"UID {uid} procesado en {time.time() - t0:.2f} segundos")
     
     # Crear un objeto para capturar todos los niveles de datos
     all_level_data = {
@@ -410,12 +427,11 @@ def process_single_cad(uid, json_path, model, tokenizer, annotation_dir=None):
         "beginner": beginner_description,
         "intermediate": intermediate_description,
         "expert": expert_description,
-        "description": json_data.get("final_shape", ""),  # Usar final_shape si está disponible
+        "description": json_data.get("final_shape", ""),
         "keywords": keywords,
         "all_level_data": json.dumps(all_level_data),
         "nli_data": nli_data
     }
-
 def main():
     parser = argparse.ArgumentParser(description='Generar anotaciones de CAD usando Qwen2.5-72B-Instruct')
     parser.add_argument('--input_dir', required=True, help='Directorio raíz con los archivos minimal_json')
