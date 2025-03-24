@@ -6,48 +6,42 @@ import torch
 import argparse
 from tqdm import tqdm
 from transformers import AutoModelForCausalLM, AutoTokenizer
+from transformers import pipeline
 from glob import glob
 
-max_memory = {0: "20GB", 1: "20GB"}
+# max_memory = {0: "20GB", 1: "20GB"}
 
-def load_model(model_name):
-    """Carga el modelo Qwen2.5-72B-Instruct y el tokenizador."""
-    print(f"Cargando modelo {model_name}...")
-    model = AutoModelForCausalLM.from_pretrained(
-        model_name,
-        device_map="auto",
-        max_memory=max_memory,
-        torch_dtype=torch.float16,
+def load_pipeline(model_name):
+    print(f"Cargando pipeline del modelo {model_name}...")
+    pipe = pipeline(
+        "text-generation", 
+        model=model_name,
+        torch_dtype=torch.float16,  # Reduce el consumo de memoria
         low_cpu_mem_usage=True,
-    )
-    tokenizer = AutoTokenizer.from_pretrained(model_name)
-    return model, tokenizer
+        trust_remote_code=True)
+    return pipe
 
-def generate_response(model, tokenizer, prompt, system_message="You are Qwen, a helpful CAD design expert."):
-    """Genera una respuesta utilizando el modelo para un prompt dado."""
-    messages = [
-        {"role": "system", "content": system_message},
-        {"role": "user", "content": prompt}
-    ]
-    text = tokenizer.apply_chat_template(
-        messages,
-        tokenize=False,
-        add_generation_prompt=True
-    )
-    model_inputs = tokenizer([text], return_tensors="pt").to(model.device)
+def generate_response(pipe, prompt, system_message="You are Qwen, a helpful CAD design expert."):
+    """
+    Genera una respuesta combinando un mensaje del sistema y el prompt del usuario,
+    utilizando el pipeline de text-generation.
 
-    generated_ids = model.generate(
-        **model_inputs,
-        max_new_tokens=1024,  # Aumentamos para generar respuestas más largas
-        temperature=0.7,      # Añadimos algo de creatividad
-        do_sample=True        # Habilitamos muestreo para diversidad
-    )
-    generated_ids = [
-        output_ids[len(input_ids):] for input_ids, output_ids in zip(model_inputs.input_ids, generated_ids)
-    ]
+    Parámetros:
+      pipe: El pipeline de generación de texto ya inicializado.
+      prompt: El prompt o mensaje del usuario.
+      system_message: Mensaje del sistema que contextualiza la generación.
 
-    response = tokenizer.batch_decode(generated_ids, skip_special_tokens=True)[0]
-    return response
+    Retorna:
+      El texto generado por el modelo.
+    """
+    # Combina el mensaje del sistema con el prompt del usuario en un solo string.
+    combined_prompt = f"{system_message}\n{prompt}"
+    
+    # Genera la respuesta utilizando el pipeline.
+    response = pipe(combined_prompt, max_new_tokens=1024, temperature=0.7, do_sample=True)
+    
+    # Devuelve el texto generado. Se asume que el pipeline retorna una lista de diccionarios.
+    return response[0]['generated_text']
 
 def load_minimal_json(json_path):
     """Carga un archivo JSON minimal."""
@@ -325,13 +319,11 @@ Based on the CAD assembly JSON information provided above, write detailed natura
     return prompt
 
 import time
-def process_single_cad(uid, json_path, model, tokenizer, annotation_dir=None):
+def process_single_cad(uid, json_path, pipe, annotation_dir=None):
     print(f"Procesando UID: {uid}")
-    t0 = time.time()
     
     # Cargar datos JSON
     json_data = load_minimal_json(json_path)
-    print(f"JSON cargado en {time.time() - t0:.2f} segundos")
     
     # Extraer abstract
     abstract_description = json_data.get("final_shape", "")
@@ -347,41 +339,26 @@ def process_single_cad(uid, json_path, model, tokenizer, annotation_dir=None):
         
         Provide only a brief visual description of the overall shape.
         """
-        t_abs_start = time.time()
-        abstract_description = generate_response(model, tokenizer, abstract_prompt)
-        print(f"Abstract generado en {time.time() - t_abs_start:.2f} segundos")
-    else:
-        print("Abstract extraído del JSON")
+        abstract_description = generate_response(pipe, abstract_prompt)
     
     print(f"Abstract Description: {abstract_description[:100]}...")
     
     # Generar instrucciones de nivel principiante
-    print("Iniciando generación de instrucciones de nivel principiante...")
-    t_beg_start = time.time()
     beginner_prompt = create_beginner_prompt(abstract_description, json_data)
-    beginner_description = generate_response(model, tokenizer, beginner_prompt)
-    print(f"Beginner Instructions generadas en {time.time() - t_beg_start:.2f} segundos")
-    print(f"Beginner Instructions: {beginner_description[:100]}...")
+    beginner_description = generate_response(pipe, beginner_prompt)
+    print(f"Beginner Instructions generadas: {beginner_description[:100]}...")
     
     # Generar instrucciones de nivel intermedio
-    print("Iniciando generación de instrucciones de nivel intermedio...")
-    t_int_start = time.time()
     intermediate_prompt = create_intermediate_prompt(abstract_description, beginner_description, json_data)
-    intermediate_description = generate_response(model, tokenizer, intermediate_prompt)
-    print(f"Intermediate Instructions generadas en {time.time() - t_int_start:.2f} segundos")
-    print(f"Intermediate Instructions: {intermediate_description[:100]}...")
+    intermediate_description = generate_response(pipe, intermediate_prompt)
+    print(f"Intermediate Instructions generadas: {intermediate_description[:100]}...")
     
     # Generar instrucciones de nivel experto
-    print("Iniciando generación de instrucciones de nivel experto...")
-    t_exp_start = time.time()
     expert_prompt = create_expert_prompt(abstract_description, beginner_description, intermediate_description, json_data)
-    expert_description = generate_response(model, tokenizer, expert_prompt)
-    print(f"Expert Instructions generadas en {time.time() - t_exp_start:.2f} segundos")
-    print(f"Expert Instructions: {expert_description[:100]}...")
+    expert_description = generate_response(pipe, expert_prompt)
+    print(f"Expert Instructions generadas: {expert_description[:100]}...")
     
     # Extraer o generar keywords
-    print("Extrayendo/generando keywords...")
-    t_kw_start = time.time()
     keywords = ""
     if annotation_dir:
         root_id, sample_id = uid.split('/')
@@ -398,20 +375,15 @@ def process_single_cad(uid, json_path, model, tokenizer, annotation_dir=None):
         
         Provide only a comma-separated list of keywords (no explanations or other text).
         """
-        keywords = generate_response(model, tokenizer, keywords_prompt)
-        print(f"Keywords generadas en {time.time() - t_kw_start:.2f} segundos: {keywords[:100]}...")
+        keywords = generate_response(pipe, keywords_prompt)
+        print(f"Keywords generadas: {keywords[:100]}...")
     
-    # Generar NLI (instrucciones en lenguaje natural)
-    print("Iniciando generación de NLI...")
-    t_nli_start = time.time()
+    # Generar NLI
     nli_prompt = create_nli_prompt(json_data)
-    nli_data = generate_response(model, tokenizer, nli_prompt)
-    print(f"NLI generado en {time.time() - t_nli_start:.2f} segundos")
-    print(f"NLI: {nli_data[:100]}...")
+    nli_data = generate_response(pipe, nli_prompt)
+    print(f"NLI generado: {nli_data[:100]}...")
     
-    print(f"UID {uid} procesado en {time.time() - t0:.2f} segundos")
-    
-    # Crear un objeto para capturar todos los niveles de datos
+    # Crear objeto con los datos generados
     all_level_data = {
         "abstract": abstract_description,
         "beginner": beginner_description,
@@ -420,7 +392,6 @@ def process_single_cad(uid, json_path, model, tokenizer, annotation_dir=None):
         "keywords": keywords
     }
     
-    # Devolver todos los datos generados
     return {
         "uid": uid,
         "abstract": abstract_description,
@@ -432,20 +403,21 @@ def process_single_cad(uid, json_path, model, tokenizer, annotation_dir=None):
         "all_level_data": json.dumps(all_level_data),
         "nli_data": nli_data
     }
+
 def main():
-    parser = argparse.ArgumentParser(description='Generar anotaciones de CAD usando Qwen2.5-72B-Instruct')
+    parser = argparse.ArgumentParser(description='Generar anotaciones de CAD usando Qwen2.5-14B-Instruct-1M con pipeline')
     parser.add_argument('--input_dir', required=True, help='Directorio raíz con los archivos minimal_json')
     parser.add_argument('--split_json', required=True, help='Archivo JSON con los splits train/test/validation')
     parser.add_argument('--output_file', required=True, help='Archivo CSV de salida')
-    parser.add_argument('--model_name', default='Qwen/Qwen2.5-72B-Instruct', help='Nombre del modelo Qwen a utilizar')
+    parser.add_argument('--model_name', default='Qwen/Qwen2.5-14B-Instruct-1M', help='Nombre del modelo Qwen a utilizar')
     parser.add_argument('--split', default='train', choices=['train', 'test', 'validation', 'all'], 
                         help='Split a procesar (train, test, validation, all)')
     parser.add_argument('--max_samples', type=int, default=None, help='Número máximo de muestras a procesar')
     parser.add_argument('--annotation_dir', default=None, help='Directorio con las anotaciones existentes (para extraer keywords)')
     args = parser.parse_args()
     
-    # Cargar modelo y tokenizador
-    model, tokenizer = load_model(args.model_name)
+    # Cargar el pipeline en lugar de cargar el modelo y el tokenizador
+    pipe = load_pipeline(args.model_name)
     
     # Cargar split JSON
     with open(args.split_json, 'r') as f:
@@ -475,13 +447,12 @@ def main():
         # Procesar cada UID
         for uid in tqdm(uids):
             root_id, sample_id = uid.split('/')
-            json_path = os.path.join(args.input_dir, uid, "minimal_json", f"{sample_id}_merged_vlm.json")
-
+            json_path = os.path.join(args.input_dir, uid, "minimal_json", f"{sample_id}.json")
+            # Si usas un nombre de archivo alternativo, por ejemplo:
+            # json_path = os.path.join(args.input_dir, uid, "minimal_json", f"{sample_id}_merged_vlm.json2")
             
-            # Verificar si el archivo existe
             if not os.path.exists(json_path):
                 print(f"Advertencia: Archivo no encontrado: {json_path}")
-                # Intentar una ruta alternativa
                 alt_json_path = os.path.join(args.input_dir, root_id, sample_id, "minimal_json", f"{sample_id}.json")
                 if os.path.exists(alt_json_path):
                     json_path = alt_json_path
@@ -490,11 +461,9 @@ def main():
                     print(f"Error: No se pudo encontrar el archivo JSON para {uid}")
                     continue
             
-            # Procesar el archivo
             try:
-                result = process_single_cad(uid, json_path, model, tokenizer, args.annotation_dir)
+                result = process_single_cad(uid, json_path, pipe, args.annotation_dir)
                 writer.writerow(result)
-                # Guardar después de cada muestra para no perder datos en caso de error
                 csvfile.flush()
             except Exception as e:
                 print(f"Error procesando {uid}: {e}")
