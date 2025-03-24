@@ -14,7 +14,7 @@ def load_model(model_name):
     model = AutoModelForCausalLM.from_pretrained(
         model_name,
         device_map="auto"
-        torch_dtype=torch.float16,  # Reduce el consumo de memoria
+        #torch_dtype=torch.float16,  # Reduce el consumo de memoria
         low_cpu_mem_usage=True,
     )
     tokenizer = AutoTokenizer.from_pretrained(model_name)
