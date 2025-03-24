@@ -17,7 +17,7 @@ def load_pipeline(model_name):
         "text-generation", 
         model=model_name,
         torch_dtype=torch.float16,  # Reduce el consumo de memoria
-        low_cpu_mem_usage=True,
+        #low_cpu_mem_usage=True,
         trust_remote_code=True)
     return pipe
 
@@ -447,7 +447,7 @@ def main():
         # Procesar cada UID
         for uid in tqdm(uids):
             root_id, sample_id = uid.split('/')
-            json_path = os.path.join(args.input_dir, uid, "minimal_json", f"{sample_id}.json")
+            json_path = os.path.join(args.input_dir, uid, "minimal_json", f"{sample_id}_merged_vlm.json")
             # Si usas un nombre de archivo alternativo, por ejemplo:
             # json_path = os.path.join(args.input_dir, uid, "minimal_json", f"{sample_id}_merged_vlm.json2")
             
