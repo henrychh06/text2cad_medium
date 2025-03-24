@@ -8,13 +8,16 @@ from tqdm import tqdm
 from transformers import AutoModelForCausalLM, AutoTokenizer
 from glob import glob
 
+max_memory = {0: "20GB", 1: "20GB"}
+
 def load_model(model_name):
     """Carga el modelo Qwen2.5-72B-Instruct y el tokenizador."""
     print(f"Cargando modelo {model_name}...")
     model = AutoModelForCausalLM.from_pretrained(
         model_name,
         device_map="auto",
-        torch_dtype=torch.float16,  # Reduce el consumo de memoria
+        max_memory=max_memory,
+        torch_dtype=torch.float16,
         low_cpu_mem_usage=True,
     )
     tokenizer = AutoTokenizer.from_pretrained(model_name)
