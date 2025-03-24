@@ -51,7 +51,7 @@ def load_minimal_json(json_path):
 def extract_keywords_from_annotation(annotation_dir, sample_id):
     """
     Extrae palabras clave del archivo de anotación final_*.json.
-    Busca la etiqueta <KEYWORDS></KEYWORDS> en el contenido.
+    Busca la segunda etiqueta <KEYWORDS></KEYWORDS> en el contenido.
     """
     try:
         # Buscar el archivo final_*.json
@@ -59,17 +59,20 @@ def extract_keywords_from_annotation(annotation_dir, sample_id):
         
         if not annotation_files:
             return ""  # No se encontró el archivo
-            
+        
         # Leer el contenido del archivo
         with open(annotation_files[0], 'r') as f:
             content = f.read()
-            
-        # Usar regex para extraer las palabras clave entre las etiquetas <KEYWORDS></KEYWORDS>
-        keyword_match = re.search(r'<KEYWORDS>(.*?)</KEYWORDS>', content, re.DOTALL)
-        if keyword_match:
-            return keyword_match.group(1).strip()
+        
+        # Usar regex para extraer la segunda ocurrencia de palabras clave
+        keyword_matches = re.findall(r'<KEYWORDS>(.*?)</KEYWORDS>', content, re.DOTALL)
+        
+        # Retornar la segunda ocurrencia si existe, de lo contrario una cadena vacía
+        if len(keyword_matches) >= 2:
+            return keyword_matches[1].strip()
         else:
-            return ""  # No se encontraron las etiquetas
+            return ""  # No se encontró una segunda ocurrencia
+    
     except Exception as e:
         print(f"Error al extraer palabras clave: {e}")
         return ""
