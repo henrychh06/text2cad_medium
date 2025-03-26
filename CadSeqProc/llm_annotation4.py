@@ -371,7 +371,7 @@ def main():
     parser.add_argument('--input_dir', required=True, help='Directorio raíz con los archivos minimal_json')
     parser.add_argument('--split_json', required=True, help='Archivo JSON con los splits train/test/validation')
     parser.add_argument('--output_file', required=True, help='Archivo CSV de salida')
-    parser.add_argument('--model_name', default='Qwen/Qwen2.5-14B-Instruct-1M', help='Nombre del modelo Qwen a utilizar')
+    parser.add_argument('--model_name', default='Qwen/Qwen2.5-7B-Instruct-1M', help='Nombre del modelo Qwen a utilizar')
     parser.add_argument('--split', default='train', choices=['train', 'test', 'validation', 'all'], help='Split a procesar')
     parser.add_argument('--max_samples', type=int, default=None, help='Número máximo de muestras a procesar')
     parser.add_argument('--annotation_dir', default=None, help='Directorio con anotaciones existentes (para extraer keywords)')
