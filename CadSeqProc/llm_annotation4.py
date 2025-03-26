@@ -26,9 +26,12 @@ def generate_response(pipe, prompt, system_message="You are Qwen, a helpful CAD 
     response = pipe(combined_prompt, max_new_tokens=1024, temperature=0.7, do_sample=True)
     generated_text = response[0]['generated_text']
     # Si el output empieza con el system_message, se elimina esa parte:
-    if generated_text.startswith(system_message):
-        generated_text = generated_text[len(system_message):].strip()
-    return generated_text
+    if generated_text.startswith(combined_prompt):
+    # Retorna solo lo que sigue después del combined_prompt
+        return generated_text[len(combined_prompt):].strip()
+    else:
+    # Si no se detecta, retorna el texto completo
+        return generated_text.strip()
 
 def load_minimal_json(json_path):
     with open(json_path, 'r') as f:
@@ -36,7 +39,7 @@ def load_minimal_json(json_path):
 
 def extract_keywords_from_annotation(annotation_dir, sample_id):
     try:
-        annotation_files = glob(os.path.join(annotation_dir, f"final_{sample_id}.json"))
+        annotation_files = glob(os.path.join(annotation_dir, sample_id, "minimal_json",  f"final_{sample_id}.json"))
         if not annotation_files:
             return ""
         with open(annotation_files[0], 'r') as f:
@@ -400,7 +403,7 @@ def main():
             json_path = os.path.join(args.input_dir, uid, "minimal_json", f"{sample_id}.json")
             if not os.path.exists(json_path):
                 print(f"Advertencia: Archivo no encontrado: {json_path}")
-                alt_json_path = os.path.join(args.input_dir, root_id, sample_id, "minimal_json", f"{sample_id}.json")
+                alt_json_path = os.path.join(args.input_dir, root_id, sample_id, "minimal_json", f"{sample_id}_merged.json")
                 if os.path.exists(alt_json_path):
                     json_path = alt_json_path
                     print(f"Usando ruta alternativa: {json_path}")
