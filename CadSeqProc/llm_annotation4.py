@@ -39,7 +39,7 @@ def load_minimal_json(json_path):
 
 def extract_keywords_from_annotation(annotation_dir, sample_id):
     try:
-        annotation_files = glob(os.path.join(annotation_dir, sample_id, "minimal_json",  f"final_{sample_id}.json"))
+        annotation_files = glob(os.path.join(annotation_dir, sample_id, "minimal_json",  f"{sample_id}_merged_vlm.json"))
         if not annotation_files:
             return ""
         with open(annotation_files[0], 'r') as f:
@@ -400,10 +400,10 @@ def main():
         for uid in tqdm(uids):
             root_id, sample_id = uid.split('/')
             # Ajusta la ruta al nombre de archivo de acuerdo a tus datos (ej. _merged_vlm.json2)
-            json_path = os.path.join(args.input_dir, uid, "minimal_json", f"{sample_id}.json")
+            json_path = os.path.join(args.input_dir, uid, "minimal_json", f"{sample_id}_merged_vlm.json")
             if not os.path.exists(json_path):
                 print(f"Advertencia: Archivo no encontrado: {json_path}")
-                alt_json_path = os.path.join(args.input_dir, root_id, sample_id, "minimal_json", f"{sample_id}_merged.json")
+                alt_json_path = os.path.join(args.input_dir, root_id, sample_id, "minimal_json", f"{sample_id}_merged_vlm.json")
                 if os.path.exists(alt_json_path):
                     json_path = alt_json_path
                     print(f"Usando ruta alternativa: {json_path}")
