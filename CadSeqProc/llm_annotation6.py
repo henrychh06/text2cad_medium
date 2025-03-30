@@ -105,19 +105,21 @@ Based solely on the above JSON data, provide expert-level CAD instructions that:
 
 def create_all_level_data_prompt(minimal_json, custom_instruction):
     """
-    Genera el prompt para combinar los tres niveles (beginner, intermediate y expert) en un solo bloque,
-    etiquetado con <level1>, <level2> y <level3>.
+    Versión 1: Usa un formato JSON explícito para las instrucciones
     """
     prompt = f"""{custom_instruction}
 
 Minimal JSON data:
-{json.dumps(minimal_json, indent=2)}
+{json.dumps(minimal_json, ensure_ascii=False, indent=2)}
 
-Based solely on the above JSON data, generate a response that contains three sections:
-- Beginner-level instructions using simple language with a step-by-step overview of the CAD process.
-- Intermediate-level instructions, include an overview of the geometry, construction steps and relative dimensions without exact coordinates.
-- Expert-level instructions, provide precise parameters, technical details, and a step-by-step process that an expert can follow to reproduce the model exactly.
-Ensure that the output includes all three sections in the exact order, and that each section is clearly delimited by its respective tags (level1, level2, level3).
+Based solely on the above JSON data, generate a response in JSON format with three sections:
+{{
+  "beginner_level": "Write beginner-level instructions here with simple language and step-by-step overview",
+  "intermediate_level": "Write intermediate-level instructions here with geometry overview and relative dimensions",
+  "expert_level": "Write expert-level instructions here with precise parameters and technical details"
+}}
+
+Ensure your response is valid JSON that can be parsed without errors.
 """
     return prompt
 
@@ -224,7 +226,10 @@ def process_single_cad(uid, json_path, pipe, annotation_dir=None):
         "You are a senior CAD engineer. Provide expert-level instructions for creating the CAD model with precise parameters."
     )
     custom_instruction_all_levels = (
-        "You are a senior CAD engineer. Provide multi-level instructions for creating the CAD model."
+        "You are a senior CAD engineer. Combine all levels of instructions into a single structured output."
+    )
+    custom_instruction_nli = (
+        "You are a senior CAD engineer. Provide detailed natural language instructions for creating this CAD model."
     )
 
     # Generar instrucciones de nivel Beginner
@@ -242,7 +247,7 @@ def process_single_cad(uid, json_path, pipe, annotation_dir=None):
     expert_out = generate_response(pipe, expert_prompt)
     expert_out = expert_out.strip()
 
-    # Generar el campo all_level_data que agrupa los tres niveles con etiquetas
+    # Generar el campo all_level_data que agrupa los tres niveles con etiquetas, usando la versión 1
     all_level_data_prompt = create_all_level_data_prompt(json_data, custom_instruction_all_levels)
     all_level_data_out = generate_response(pipe, all_level_data_prompt)
     all_level_data_out = all_level_data_out.strip()
@@ -252,8 +257,8 @@ def process_single_cad(uid, json_path, pipe, annotation_dir=None):
     keywords = ""
     if annotation_dir:
         # Aquí se podría extraer de anotaciones existentes
-        # Por simplicidad, se omite esta parte y se genera con el LLM si no hay keywords
-        pass
+        keywords = extract_keywords_from_annotation(annotation_dir, sample_id)
+    
     if not keywords:
         keywords_prompt = f"""
         You are a senior CAD engineer. Based on the following description of the CAD model, provide a comma-separated list of 5 keywordsm, in this format [keyword_1, ... , keyword_5].
@@ -262,9 +267,66 @@ def process_single_cad(uid, json_path, pipe, annotation_dir=None):
         keywords = generate_response(pipe, keywords_prompt)
         keywords = keywords.strip()
 
-    # Generar NLI (instrucciones en lenguaje natural detalladas con tags de partes) - se mantiene igual según tu ejemplo original
+    # Generar NLI (instrucciones en lenguaje natural detalladas con tags de partes)
     nli_prompt = create_nli_prompt(json_data)
     nli_out = generate_response(pipe, nli_prompt)
+    
+    # Procesamiento adicional para el NLI: asegurar que cada parte esté dentro de sus tags
+    if "parts" in json_data:
+        # Crear un prompt específico para cada parte y generar instrucciones para cada una
+        processed_nli = ""
+        for part_id in json_data["parts"].keys():
+            part_prompt = f"""
+            You are a senior CAD engineer. Based on the following CAD part information, provide detailed instructions for creating this specific part (Part {part_id}) of the CAD model.
+            
+            Part information:
+            {json.dumps(json_data["parts"][part_id], ensure_ascii=False, indent=2)}
+            
+            Provide comprehensive step-by-step instructions focusing ONLY on Part {part_id}.
+            """
+            part_instructions = generate_response(pipe, part_prompt)
+            processed_nli += f"\n<part_{part_id}>\n{part_instructions.strip()}\n</part_{part_id}>\n"
+        
+        # Reemplazar la salida NLI con la versión procesada
+        nli_out = processed_nli
+    
+    # Extraer cada nivel de all_level_data si es formato JSON
+    try:
+        # Intentar parsear el JSON si es que la salida es un JSON válido
+        all_level_json = json.loads(all_level_data_out)
+        
+        # Si el parsing es exitoso, extraer cada nivel
+        beginner_level = all_level_json.get("beginner_level", "")
+        intermediate_level = all_level_json.get("intermediate_level", "")
+        expert_level = all_level_json.get("expert_level", "")
+        
+        # Usar el texto parseado si existe, de lo contrario mantener los valores originales
+        if beginner_level:
+            beginner_out = beginner_level
+        if intermediate_level:
+            intermediate_out = intermediate_level
+        if expert_level:
+            expert_out = expert_level
+            
+        # Construir el all_level_data final con etiquetas XML
+        all_level_data_formatted = f"""<level1>
+{beginner_out}
+</level1>
+
+<level2>
+{intermediate_out}
+</level2>
+
+<level3>
+{expert_out}
+</level3>"""
+        
+        # Actualizar all_level_data_out con el formato XML
+        all_level_data_out = all_level_data_formatted
+        
+    except json.JSONDecodeError:
+        # Si no se puede parsear como JSON, dejamos el output tal como está
+        print(f"Advertencia: No se pudo parsear all_level_data como JSON para {uid}")
     
     # Construir el diccionario final para el CSV siguiendo el orden deseado
     result = {
