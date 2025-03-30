@@ -46,7 +46,7 @@ def load_minimal_json(json_path):
 def extract_keywords_from_annotation(uid, annotation_dir):
     try:
         root_id, sample_id = uid.split('/')
-        annotation_files = glob(os.path.join(annotation_dir, root_id, sample_id, "qwen2_vlm_annotation",  f"final_{sample_id}.json"))
+        annotation_files = glob(os.path.join(annotation_dir, root_id, sample_id, "qwen2_vlm_annotation", f"final_{sample_id}.json"))
         if not annotation_files:
             return ""
         with open(annotation_files[0], 'r') as f:
@@ -264,7 +264,7 @@ def process_single_cad(uid, json_path, pipe, annotation_dir=None):
         if annotation_dir:
             sample_id = uid.split('/')[-1]
             print(f"Extrayendo keywords de anotaciones existentes para {sample_id}...")
-            keywords = extract_keywords_from_annotation(annotation_dir, sample_id)
+            keywords = extract_keywords_from_annotation(uid, annotation_dir)
             print(f"Keywords extraídas: {keywords[:50]}...")
         
         if not keywords:
