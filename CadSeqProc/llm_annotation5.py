@@ -255,6 +255,7 @@ def process_single_cad(uid, json_path, pipe, annotation_dir=None):
     all_level_data_prompt = create_all_level_data_prompt(json_data, custom_instruction_all_levels)
     all_level_data_out = generate_response(pipe, all_level_data_prompt)
     all_level_data_out = all_level_data_out.strip()
+    print(f"Instructions generadas: {all_level_data_out[:100]}...")
 
     # Extraer o generar keywords (en este ejemplo se asume generación si no se extraen)
     keywords = ""
