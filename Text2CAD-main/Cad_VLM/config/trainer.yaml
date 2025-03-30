@@ -13,7 +13,7 @@ text_encoder:
     # Maximum Text Sequence Length
     max_seq_len: 512
     # Cache Directory
-    cache_dir: "YOUR DIR"
+    cache_dir: "/workspace/text2cad_medium/Cache"
 
   # ----------------- Configuration for the Adaptive Layer ----------------- #
   adaptive_layer:
@@ -44,11 +44,11 @@ cad_decoder:
 # --------------- Configuration related to training dataloader --------------- #
 train_data:
   # Root directory of the training data
-  cad_seq_dir: "YOUR DIR"
+  cad_seq_dir: "/workspace/text2cad_medium/Data_cad/"
   # Path to the CSV file containing the text prompts
-  prompt_path: "YOUR PATH"
+  prompt_path: "/workspace/text2cad_medium/CadSeqProc/annotations_cad_finish.csv"
   # JSON file containing information about train, test, and validation splits
-  split_filepath: "YOUR PATH"
+  split_filepath: "/workspace/text2cad_medium/Data/train_val_test_split.json"
   # Maximum sequence length for input data
   max_seq_len: 512
 
@@ -59,13 +59,13 @@ train:
   # Batch size for training
   batch_size: 2 # for 80 GB gpu
   # Number of epochs for training
-  num_epochs: 5
+  num_epochs: 3
   # Number of workers for the DataLoader during training
   num_workers: 5
   # Prefetch factor for the DataLoader during training
   prefetch_factor: 5
   # Directory for logging training information
-  log_dir: "YOUR DIR"
+  log_dir: "/workspace/text2cad_medium/Logs"
   # Path to saved model checkpoint for Resuming Training (optional)
   checkpoint_path:  # Set to None if no checkpoint is available
   # Checkpoint interval
