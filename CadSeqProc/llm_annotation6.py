@@ -289,7 +289,7 @@ def process_single_cad(uid, json_path, pipe, annotation_dir=None):
             Provide comprehensive step-by-step instructions focusing ONLY on Part {part_id}.
             """
             part_instructions = generate_response(pipe, part_prompt)
-            processed_nli += f"\n<part_{part_id}>\n{part_instructions.strip()}\n</part_{part_id}>\n"
+            processed_nli += f"\n<{part_id}>\n{part_instructions.strip()}\n</{part_id}>\n"
         
         # Reemplazar la salida NLI con la versión procesada
         nli_out = processed_nli
