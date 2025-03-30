@@ -111,17 +111,12 @@ def create_all_level_data_prompt(minimal_json, custom_instruction):
     prompt = f"""{custom_instruction}
 
 Minimal JSON data:
-{json.dumps(minimal_json, ensure_ascii=False, indent=2)}
+{json.dumps(minimal_json, indent=2)}
 
 Based solely on the above JSON data, generate a response that contains three sections:
-
-Beginner-level instructions using simple language with a step-by-step overview of the CAD process.
-
-Intermediate-level instructions, include an overview of the geometry, construction steps and relative dimensions without exact coordinates.
-
-Expert-level instructions, provide precise parameters, technical details, and a step-by-step process that an expert can follow to reproduce the model exactly.
-
-
+- Beginner-level instructions using simple language with a step-by-step overview of the CAD process.
+- Intermediate-level instructions, include an overview of the geometry, construction steps and relative dimensions without exact coordinates.
+- Expert-level instructions, provide precise parameters, technical details, and a step-by-step process that an expert can follow to reproduce the model exactly.
 Ensure that the output includes all three sections in the exact order, and that each section is clearly delimited by its respective tags (level1, level2, level3).
 """
     return prompt
@@ -229,7 +224,7 @@ def process_single_cad(uid, json_path, pipe, annotation_dir=None):
         "You are a senior CAD engineer. Provide expert-level instructions for creating the CAD model with precise parameters."
     )
     custom_instruction_all_levels = (
-        "You are a senior CAD engineer. Combine all levels of instructions into a single structured output."
+        "You are a senior CAD engineer. Provide multi-level instructions for creating the CAD model."
     )
 
     # Generar instrucciones de nivel Beginner
