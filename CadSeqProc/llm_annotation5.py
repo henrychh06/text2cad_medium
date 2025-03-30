@@ -111,7 +111,7 @@ def create_all_level_data_prompt(minimal_json, custom_instruction):
     prompt = f"""{custom_instruction}
 
 Minimal JSON data:
-{json.dumps(minimal_json, indent=2)}
+{json.dumps(minimal_json, ensure_ascii=False, indent=2)}
 
 Based solely on the above JSON data, generate a response that contains three sections:
 <level1>
