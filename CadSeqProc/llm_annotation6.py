@@ -114,19 +114,15 @@ Minimal JSON data:
 {json.dumps(minimal_json, ensure_ascii=False, indent=2)}
 
 Based solely on the above JSON data, generate a response that contains three sections:
-<level1>
+
 Beginner-level instructions using simple language with a step-by-step overview of the CAD process.
-</level1>
 
-<level2>
 Intermediate-level instructions, include an overview of the geometry, construction steps and relative dimensions without exact coordinates.
-</level2>
 
-<level3>
 Expert-level instructions, provide precise parameters, technical details, and a step-by-step process that an expert can follow to reproduce the model exactly.
-</level3>
 
-Ensure that the output includes all three sections in the exact order, and that each section is clearly delimited by its respective tags.
+
+Ensure that the output includes all three sections in the exact order, and that each section is clearly delimited by its respective tags (level1, level2, level3).
 """
     return prompt
 
