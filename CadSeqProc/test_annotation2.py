@@ -292,7 +292,7 @@ def process_single_cad(uid, json_path, pipe, annotation_dir=None):
                     print(f"Advertencia: Instrucciones para parte {part_id} demasiado cortas, usando instrucciones generales")
                     part_instructions = f"Create part {part_id} according to the specifications in the JSON data. This part should be created using the appropriate sketching tools, then extruded to the specified dimensions."
                 
-                nli_out += f"\n{part_id}>\n{part_instructions.strip()}\n</{part_id}>\n"
+                nli_out += f"\n<{part_id}>\n{part_instructions.strip()}\n</{part_id}>\n"
                 print(f"Instrucciones para parte {part_id} generadas: {len(part_instructions)} caracteres")
         
         # Si no se generaron instrucciones por partes o están vacías, usar el NLI raw
