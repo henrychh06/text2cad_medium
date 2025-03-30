@@ -105,7 +105,8 @@ Based solely on the above JSON data, provide expert-level CAD instructions that:
 
 def create_all_level_data_prompt(minimal_json, custom_instruction):
     """
-    Versión modificada que usa un formato diferente para las etiquetas
+    Genera el prompt para combinar los tres niveles (beginner, intermediate y expert) en un solo bloque,
+    etiquetado con <level1>, <level2> y <level3>.
     """
     prompt = f"""{custom_instruction}
 
@@ -113,16 +114,19 @@ Minimal JSON data:
 {json.dumps(minimal_json, ensure_ascii=False, indent=2)}
 
 Based solely on the above JSON data, generate a response that contains three sections:
-BEGINNER LEVEL:
-[Beginner-level instructions: use simple language with a step-by-step overview of the CAD process.]
+<level1>
+Beginner-level instructions using simple language with a step-by-step overview of the CAD process.
+</level1>
 
-INTERMEDIATE LEVEL:
-[Intermediate-level instructions: include an overview of the geometry, construction steps and relative dimensions without exact coordinates.]
+<level2>
+Intermediate-level instructions, include an overview of the geometry, construction steps and relative dimensions without exact coordinates.
+</level2>
 
-EXPERT LEVEL:
-[Expert-level instructions: provide precise parameters, technical details, and a step-by-step process that an expert can follow to reproduce the model exactly.]
+<level3>
+Expert-level instructions, provide precise parameters, technical details, and a step-by-step process that an expert can follow to reproduce the model exactly.
+</level3>
 
-Ensure that the output includes all three sections in the exact order.
+Ensure that the output includes all three sections in the exact order, and that each section is clearly delimited by its respective tags.
 """
     return prompt
 
