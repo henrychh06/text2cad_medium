@@ -61,9 +61,9 @@ train:
   # Number of epochs for training
   num_epochs: 3
   # Number of workers for the DataLoader during training
-  num_workers: 5
+  num_workers: 10
   # Prefetch factor for the DataLoader during training
-  prefetch_factor: 5
+  prefetch_factor: 10
   # Directory for logging training information
   log_dir: "/workspace/text2cad_medium/Logs"
   # Path to saved model checkpoint for Resuming Training (optional)
