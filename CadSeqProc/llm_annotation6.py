@@ -253,12 +253,15 @@ def process_single_cad(uid, json_path, pipe, annotation_dir=None):
     all_level_data_out = all_level_data_out.strip()
     print(f"Instructions generadas: {all_level_data_out[:100]}...")
 
-    # Extraer o generar keywords (en este ejemplo se asume generación si no se extraen)
+    # Extraer o generar keywords
     keywords = ""
+    t_kw = time.time()
     if annotation_dir:
-        # Aquí se podría extraer de anotaciones existentes
-        keywords = extract_keywords_from_annotation(annotation_dir, sample_id)
-    
+        root_id, sample_id = uid.split('/')
+        annot_dir = os.path.join(annotation_dir, uid, "qwen2_vlm_annotation")
+        if os.path.exists(annot_dir):
+            keywords = extract_keywords_from_annotation(annot_dir, sample_id)
+            print(f"Keywords extraídas: {keywords[:100]}...")
     if not keywords:
         keywords_prompt = f"""
         You are a senior CAD engineer. Based on the following description of the CAD model, provide a comma-separated list of 5 keywordsm, in this format [keyword_1, ... , keyword_5].
@@ -266,6 +269,7 @@ def process_single_cad(uid, json_path, pipe, annotation_dir=None):
         """
         keywords = generate_response(pipe, keywords_prompt)
         keywords = keywords.strip()
+        print(f"Keywords generadas: {keywords[:100]}... (en {time.time()-t_kw:.2f} s)")
 
     # Generar NLI (instrucciones en lenguaje natural detalladas con tags de partes)
     nli_prompt = create_nli_prompt(json_data)
