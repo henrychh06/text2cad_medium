@@ -120,13 +120,13 @@ For reference, here is the complete CAD data:
 Write THREE sets of CAD instructions with different detail levels:
 
 BEGINNER LEVEL:
-Create simple step-by-step instructions that use basic language and avoid technical terms.
+Create simple step-by-step instructions that use basic language and avoid technical terms (2-4 sentences).
 
 INTERMEDIATE LEVEL:
-Provide more detailed instructions with geometry overview and relative dimensions.
+Provide more detailed instructions with geometry overview and relative dimensions (4-6 sentences).
 
 EXPERT LEVEL:
-Give precise technical details with exact measurements and CAD terminology.
+Provide more detailed instruction and give precise technical details with exact measurements and CAD terminology (6-8 sentences).
 
 Format your response EXACTLY like this:
 
@@ -157,7 +157,14 @@ Provide clear, detailed instructions for creating ONLY this specific part.
 Include step-by-step guidance on sketching, positioning, and extruding this part.
 Be specific and focus on the practical aspects of creating this component.
 
-Format your response as a continuous paragraph without special formatting.
+These intermediate CAD parts are listed in the "parts" key of the CAD assembly JSON.
+
+The first intermediate CAD part is the base part and the subsequent parts build upon the previously constructed parts using the operation defined for that part.
+
+All intermediate parts combine to a final CAD model.
+
+Every intermediate CAD part is generated using the following steps: Step 1: Draw a 2D sketch. Step 2: Scale the 2D sketch using the sketch_scale parameter. Step 3: Transform the scaled 2D sketch into a 3D sketch using the Euler angles and translation. Step 4: Extrude the 2D sketch to generate the 3D model. Step 5: Final dimensions of the 3D model are defined by the length, width, and height parameters.
+
 """
     return prompt
 
@@ -165,15 +172,23 @@ def create_nli_prompt(json_data):
     """
     Versión completa del prompt NLI que incluye todos los detalles del modelo CAD
     """
-    prompt = """You are a senior CAD engineer. Provide natural language instructions for creating this CAD model.
+    prompt = """[INST] You are a senior CAD engineer and you are tasked to provide natural language instructions to a junior CAD designer for generating a parametric CAD model.
 
-The CAD model consists of one or more parts. Each part is created by:
-1. Drawing a 2D sketch
-2. Scaling the sketch
-3. Transforming it using Euler angles and translation
-4. Extruding it to create a 3D model
+    Overview information about the CAD assembly JSON:
 
-Complete CAD data:
+    The CAD assembly JSON lists the process of constructing a CAD model.
+
+    Every CAD model consists of one or multiple intermediate CAD parts.
+
+    These intermediate CAD parts are listed in the "parts" key of the CAD assembly JSON.
+
+    The first intermediate CAD part is the base part and the subsequent parts build upon the previously constructed parts using the operation defined for that part.
+
+    All intermediate parts combine to a final CAD model.
+
+    Every intermediate CAD part is generated using the following steps: Step 1: Draw a 2D sketch. Step 2: Scale the 2D sketch using the sketch_scale parameter. Step 3: Transform the scaled 2D sketch into a 3D sketch using the Euler angles and translation. Step 4: Extrude the 2D sketch to generate the 3D model. Step 5: Final dimensions of the 3D model are defined by the length, width, and height parameters.
+
+    Detailed CAD assembly JSON:
 """
     # Incluir todos los datos del JSON
     prompt += json.dumps(json_data, ensure_ascii=False, indent=2)
@@ -181,7 +196,10 @@ Complete CAD data:
     prompt += """
 
 Provide detailed instructions to create this CAD model. Include all necessary steps from initial setup to final model.
+Based on the CAD assembly JSON information provided above, write detailed natural language instructions for creating this CAD model. Your instructions should cover the complete process from initial setup to the final model, including all steps for creating and transforming each part.
+
 Your instructions should be practical and directly applicable in a CAD program.
+
 """
     
     return prompt
@@ -274,7 +292,7 @@ def process_single_cad(uid, json_path, pipe, annotation_dir=None):
                     print(f"Advertencia: Instrucciones para parte {part_id} demasiado cortas, usando instrucciones generales")
                     part_instructions = f"Create part {part_id} according to the specifications in the JSON data. This part should be created using the appropriate sketching tools, then extruded to the specified dimensions."
                 
-                nli_out += f"\n<part_{part_id}>\n{part_instructions.strip()}\n</part_{part_id}>\n"
+                nli_out += f"\n{part_id}>\n{part_instructions.strip()}\n</{part_id}>\n"
                 print(f"Instrucciones para parte {part_id} generadas: {len(part_instructions)} caracteres")
         
         # Si no se generaron instrucciones por partes o están vacías, usar el NLI raw
