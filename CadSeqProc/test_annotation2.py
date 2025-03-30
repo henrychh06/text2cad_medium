@@ -345,8 +345,8 @@ def process_single_cad(uid, json_path, pipe, annotation_dir=None):
         # Construir el diccionario final para el CSV
         result = {
             "uid": uid,
-            "abstract": f'"{abstract_description}"',
-            "beginner": f'"{beginner_out}"',
+            "abstract": abstract_description,
+            "beginner": beginner_out,
             "expert": expert_out,
             "description": description,
             "keywords": keywords,
