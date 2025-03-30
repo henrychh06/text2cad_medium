@@ -41,9 +41,9 @@ Minimal JSON data:
 
 Based solely on the above JSON data, generate a response in JSON format with three sections:
 {{
-  "beginner_level": "Write beginner-level instructions here with simple language and step-by-step overview",
-  "intermediate_level": "Write intermediate-level instructions here with geometry overview and relative dimensions",
-  "expert_level": "Write expert-level instructions here with precise parameters and technical details"
+  "beginner_level": "Write beginner-level instructions here with simple language and step-by-step overview (2-4 sentences)",
+  "intermediate_level": "Write intermediate-level instructions here with geometry overview and relative dimensions (4-6 sentences)",
+  "expert_level": "Write expert-level instructions here with precise parameters and technical details (6-8 sentences)"
 }}
 
 Ensure your response is valid JSON that can be parsed without errors.
