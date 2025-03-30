@@ -43,8 +43,9 @@ def load_minimal_json(json_path):
     with open(json_path, 'r') as f:
         return json.load(f)
 
-def extract_keywords_from_annotation(uid, annotation_dir, sample_id):
+def extract_keywords_from_annotation(uid, annotation_dir, root_id):
     try:
+        sample_id = uid.split('/')[-1]
         root_id, sample_id = uid.split('/')
         annotation_files = glob(os.path.join(annotation_dir, root_id, "qwen2_vlm_annotation",  f"final_{sample_id}.json"))
         if not annotation_files:
