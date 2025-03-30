@@ -45,7 +45,7 @@ def load_minimal_json(json_path):
 
 def extract_keywords_from_annotation(annotation_dir, sample_id):
     try:
-        annotation_files = glob(os.path.join(annotation_dir, sample_id, "minimal_json",  f"{sample_id}.json"))
+        annotation_files = glob(os.path.join(annotation_dir, sample_id, "qwen2_vlm_annotation",  f"final_{sample_id}.json"))
         if not annotation_files:
             return ""
         with open(annotation_files[0], 'r') as f:
