@@ -44,7 +44,7 @@ cad_decoder:
 # --------------- Configuration related to training dataloader --------------- #
 train_data:
   # Root directory of the training data
-  cad_seq_dir: "/workspace/text2cad_medium/Data_cad/"
+  cad_seq_dir: "/workspace/text2cad_medium/Data/"
   # Path to the CSV file containing the text prompts
   prompt_path: "/workspace/text2cad_medium/CadSeqProc/annotations_cad_finish.csv"
   # JSON file containing information about train, test, and validation splits
