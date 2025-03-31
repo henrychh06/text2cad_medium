@@ -59,7 +59,7 @@ train:
   # Batch size for training
   batch_size: 16 # for 80 GB gpu
   # Number of epochs for training
-  num_epochs: 1
+  num_epochs: 10
   # Number of workers for the DataLoader during training
   num_workers: 30
   # Prefetch factor for the DataLoader during training
